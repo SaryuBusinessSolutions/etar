@@ -1,0 +1,11 @@
+{
+  "websiteurl": "https://examle.com",
+  "title": "dummy title",
+  "description": "dummy description",
+  "copyright": "dummy copyright",
+  "image": "image.jpg",
+  "favicon": "favicon.ico",
+  "removehtmlext": true,
+  "removehtmlextgen": false,
+  "postPath": "/posts"
+}

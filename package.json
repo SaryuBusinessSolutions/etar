@@ -1,0 +1,16 @@
+{
+  "name": "etar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "install": "npm i -g tailwindcss gulp gulp-concat gulp-clean-css gulp-uglify",
+    "link": "npm link tailwindcss gulp gulp-concat gulp-clean-css gulp-uglify",
+    "tailwindcss": "tailwindcss -i ./src/_static/css/input.css -o ./src/_static/css/tailwind.css",
+    "push": "git add . && git commit -m 'changes' && git push origin main",
+    "update": "picogen clean  && npm run tailwindcss && gulp buildcss buildjs && picogen generate -s -f && npm run push"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
