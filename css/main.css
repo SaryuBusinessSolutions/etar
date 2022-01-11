@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+
+* {
+  font-family: "Fira Sans", sans-serif;
+}
+
+.stroke{
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgba(77, 77, 77, 0.186);
+}

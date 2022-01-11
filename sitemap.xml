@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>https://etarindia.com/about</loc>
+		<lastmod>2022-01-10T09:35:15.718Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://etarindia.com/contact</loc>
+		<lastmod>2022-01-10T09:42:09.821Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://etarindia.com/</loc>
+		<lastmod>2022-01-10T11:21:39.615Z</lastmod>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://etarindia.com/p1</loc>
+		<lastmod>2022-01-11T08:58:00.207Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+</urlset>

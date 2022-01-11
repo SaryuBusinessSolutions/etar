@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+
+  <link rel="stylesheet" href="./css/fontawsome.css">
+  <link rel="stylesheet" href="./css/tailwind.css">
+  <link rel="stylesheet" href="./css/locomotive.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body x-data="{navOpen:false}" data-scroll-container>
+  <div id="preloader" class="fixed z-[99] w-screen h-screen bg-white flex flex-col justify-center items-center">
+  <img class="w-14" src="./img/logo.png" alt="">
+  <p>loading...</p>
+</div>
+  <header id="navbar" class="fixed w-full z-[9] bg-white bg-opacity-20 backdrop-blur-sm">
+  <div class="flex w-full container mx-auto justify-between items-center py-2 px-6 md:px-3">
+    <a href="./">
+      <img class="w-20" src="./img/logo.png" alt="">
+    </a>
+    <div @click="navOpen = !navOpen; navTogle(event,navOpen)">
+      <svg width="30" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect y="8" class="transition duration-300" rx="3.5"
+          :class="navOpen ? 'rotate-[35deg] origin-center translate-y-[14.5%] translate-x-[-14.5%]':'rotate-0 origin-center translate-y-0 translate-x-0'"
+          width="40" height="7" fill="black" />
+        <rect y="23" class="transition duration-300" rx="3.5"
+          :class="navOpen ? 'rotate-[-35deg] origin-center translate-y-[-14.5%] translate-x-[-14.5%]':'rotate-0 origin-center translate-y-0 translate-x-0'"
+          width="40" height="7" fill="black" />
+      </svg>
+    </div>
+  </div>
+</header>
+<div @click="navOpen = !navOpen; navTogle(event,navOpen)" :class="navOpen || 'hidden'"
+  class="fixed top-0 left-0 w-full h-full z-[8] bg-white bg-opacity-20 backdrop-blur-[8px] flex items-center">
+  <div class="container mx-auto px-6 md:px-3 space-y-5 flex flex-col justify-center items-center">
+    <a href="./" class="text-5xl">HOME</a>
+    <a href="./about" class="text-5xl">ABOUT</a>
+    <a href="./contact" class="text-5xl">CONTACT</a>
+  </div>
+</div>
+<div data-scroll-section id="navfix" class="h-16"></div>
+
+<div class="fixed z-[5] right-2 top-1/2 -translate-y-1/2 flex flex-col space-y-5">
+  <div class="">
+    <svg class="w-6 md:w-8" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10.2778 0C4.61061 0 0 4.61061 0 10.2778V26.7222C0 32.3894 4.61061 37 10.2778 37H26.7222C32.3894 37 37 32.3894 37 26.7222V10.2778C37 4.61061 
+      32.3894 0 26.7222 0H10.2778ZM10.2778 4.11111H26.7222C30.1221 4.11111 32.8889 6.87789 32.8889 10.2778V26.7222C32.8889 30.1221 30.1221 32.8889 26.7222 
+      32.8889H10.2778C6.87789 32.8889 4.11111 30.1221 4.11111 26.7222V10.2778C4.11111 6.87789 6.87789 4.11111 10.2778 4.11111ZM28.7778 6.16667C28.2326 
+      6.16667 27.7098 6.38323 27.3243 6.76873C26.9388 7.15422 26.7222 7.67706 26.7222 8.22222C26.7222 8.76739 26.9388 9.29023 27.3243 9.67572C27.7098 
+      10.0612 28.2326 10.2778 28.7778 10.2778C29.3229 10.2778 29.8458 10.0612 30.2313 9.67572C30.6168 9.29023 30.8333 8.76739 30.8333 8.22222C30.8333 
+      7.67706 30.6168 7.15422 30.2313 6.76873C29.8458 6.38323 29.3229 6.16667 28.7778 6.16667ZM18.5 8.22222C12.8328 8.22222 8.22222 12.8328 8.22222 
+      18.5C8.22222 24.1672 12.8328 28.7778 18.5 28.7778C24.1672 28.7778 28.7778 24.1672 28.7778 18.5C28.7778 12.8328 24.1672 8.22222 18.5 8.22222ZM18.5 
+      12.3333C21.8999 12.3333 24.6667 15.1001 24.6667 18.5C24.6667 21.8999 21.8999 24.6667 18.5 24.6667C15.1001 24.6667 12.3333 21.8999 12.3333 18.5C12.3333 
+      15.1001 15.1001 12.3333 18.5 12.3333Z" fill="black" />
+    </svg>
+  </div>
+  <div class="w-25">
+    <svg class="w-6 md:w-8" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M18.5 0C8.30464 0 0 8.30464 0 18.5C0 28.6954 8.30464 37 18.5 37C28.6954 37 37 28.6954 37 18.5C37 8.30464 28.6954 0 18.5 0ZM18.5 3.7C26.6957 
+        3.7 33.3 10.3043 33.3 18.5C33.3 25.9268 27.8708 32.0291 20.7547 33.1121V22.9118H25.0617L25.7374 18.5361H20.7547V16.1441C20.7547 14.3256 21.3471 
+        12.7115 23.0491 12.7115H25.7808V8.89229C25.2998 8.82754 24.2847 8.68633 22.3662 8.68633C18.3591 8.68633 16.0105 10.8027 16.0105 
+        15.6238V18.5361H11.8913V22.9118H16.0105V33.076C9.01004 31.8956 3.7 25.8449 3.7 18.5C3.7 10.3043 10.3043 3.7 18.5 3.7Z"
+        fill="black" />
+    </svg>
+  </div>
+</div>
+  <div data-scroll-section class="relative landscape:min-h-screen">
+  <div  class="swiper relative landscape:min-h-screen">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide overflow-hidden"><div class="relative landscape:min-h-screen">
+  <div data-scroll data-scroll-speed="1" class="px-6 flex flex-col-reverse md:px-3 md:flex-row">
+    <div class="py-[2%] flex flex-col items-center justify-around md:w-[50%] md:pr-[10%] lg:w-[40%] lg:pr-[10%]">
+      <p class="text-3xl md:text-5xl">ETAR MOVE 1</p>
+      <div class="flex my-5 justify-center space-x-5 md:my-0 md:flex-col md:space-x-0 md:space-y-5">
+        <svg class="w-14" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path opacity="0.35"
+            d="M37.5 50.0001C42.6777 50.0001 46.875 45.8027 46.875 40.6251C46.875 35.4474 42.6777 31.2501 37.5 31.2501C32.3223 31.2501 28.125 35.4474 28.125 40.6251C28.125 45.8027 32.3223 50.0001 37.5 50.0001Z"
+            fill="black" />
+          <path
+            d="M51.4375 56.25C50.6875 56.25 49.9375 55.9844 49.3375 55.4407C48.0594 54.2813 47.9625 52.3063 49.1219 51.025C54.6938 44.875 54.4406 35.4594 48.5438 29.5875C45.5906 26.6219 41.6719 24.9938 37.5 24.9938C33.3281 24.9938 29.4094 26.6219 26.4656 29.5782C20.5594 35.4594 20.3063 44.8782 25.8781 51.025C27.0375 52.3032 26.9406 54.2813 25.6625 55.4407C24.3875 56.5969 22.4063 56.5063 21.2469 55.2219C13.4281 46.5969 13.7781 33.3907 22.0438 25.1594C26.1625 21.025 31.6563 18.7438 37.5 18.7438C43.3438 18.7438 48.8375 21.025 52.9656 25.1719C61.2219 33.3938 61.5719 46.6 53.7531 55.225C53.1375 55.9032 52.2875 56.25 51.4375 56.25V56.25Z"
+            fill="black" />
+          <path
+            d="M59.8125 65.625C59.0188 65.625 58.2281 65.325 57.6188 64.725C56.3906 63.5156 56.3781 61.5344 57.5844 60.3063C68.3688 49.3563 68.2813 31.6094 57.3875 20.7438C52.0781 15.4219 45.0156 12.4938 37.5 12.4938C29.9844 12.4938 22.9219 15.4219 17.6188 20.7375C6.72187 31.6094 6.63125 49.3563 17.4187 60.3063C18.6281 61.5375 18.6125 63.5156 17.3844 64.725C16.1469 65.9375 14.175 65.9156 12.9625 64.6906C-0.224996 51.3 -0.118749 29.6 13.2 16.3188C19.6781 9.82502 28.3125 6.24377 37.5 6.24377C46.6875 6.24377 55.3219 9.82502 61.8063 16.3281C75.1188 29.6063 75.225 51.3063 62.0375 64.6969C61.425 65.3125 60.6188 65.625 59.8125 65.625V65.625Z"
+            fill="black" />
+        </svg>
+        <svg class="w-14" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M16.4062 23.4375C8.6792 23.4375 2.34375 29.773 2.34375 37.5V39.8438H2.81983C3.98255 46.4172 9.51233 51.5625 16.4062 51.5625H58.5938C65.4877 51.5625 71.0175 46.4172 72.1802 39.8438H72.6562V37.5C72.6562 29.773 66.3208 23.4375 58.5938 23.4375H16.4062ZM16.4062 28.125H58.5938C63.7573 28.125 67.9688 32.3364 67.9688 37.5C67.9688 42.6636 63.7573 46.875 58.5938 46.875H16.4062C11.2427 46.875 7.03125 42.6636 7.03125 37.5C7.03125 32.3364 11.2427 28.125 16.4062 28.125ZM14.0625 32.8125V35.1562H11.7188V39.8438H14.0625V42.1875H18.75V39.8438H21.0938V42.1875H25.7812V39.8438H28.125V42.1875H32.8125V39.8438H35.1562V42.1875H39.8438V39.8438H42.1875V42.1875H46.875V39.8438H49.2188V42.1875H53.9062V39.8438H56.25V42.1875H60.9375V39.8438H63.2812V35.1562H60.9375V32.8125H56.25V35.1562H53.9062V32.8125H49.2188V35.1562H46.875V32.8125H42.1875V35.1562H39.8438V32.8125H35.1562V35.1562H32.8125V32.8125H28.125V35.1562H25.7812V32.8125H21.0938V35.1562H18.75V32.8125H14.0625Z"
+            fill="black" />
+        </svg>
+        <svg class="w-14" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M18.75 12.5C18.44 12.5053 18.1337 12.5682 17.8467 12.6855C13.4825 13.1632 10 16.7667 10 21.25V28.1934C8.51091 29.059 7.5 30.6526 7.5 32.5V45C7.5 46.38 8.62 47.5 10 47.5V52.5C9.98725 53.4016 10.4609 54.2402 11.2397 54.6947C12.0184 55.1492 12.9816 55.1492 13.7603 54.6947C14.5391 54.2402 15.0128 53.4016 15 52.5V47.5C16.38 47.5 17.5 46.38 17.5 45V32.5C17.5 30.6526 16.4891 29.059 15 28.1934V21.25C15 19.148 16.648 17.5 18.75 17.5C20.852 17.5 22.5 19.148 22.5 21.25V53.75C22.5 58.553 26.447 62.5 31.25 62.5C31.56 62.4947 31.8663 62.4318 32.1533 62.3145C36.5175 61.8368 40 58.2333 40 53.75V21.25C40 19.148 41.648 17.5 43.75 17.5C45.852 17.5 47.5 19.148 47.5 21.25V53.75C47.5 58.553 51.447 62.5 56.25 62.5C56.56 62.4947 56.8663 62.4318 57.1533 62.3145C61.5174 61.8368 65 58.2333 65 53.75V46.8066C66.4891 45.941 67.5 44.3474 67.5 42.5V30C67.5 28.62 66.38 27.5 65 27.5V22.5C65.0127 21.5984 64.539 20.7598 63.7603 20.3053C62.9816 19.8508 62.0184 19.8508 61.2397 20.3053C60.4609 20.7598 59.9872 21.5984 60 22.5V27.5C58.62 27.5 57.5 28.62 57.5 30V42.5C57.5 44.3474 58.5109 45.941 60 46.8066V53.75C60 55.852 58.352 57.5 56.25 57.5C54.148 57.5 52.5 55.852 52.5 53.75V21.25C52.5 16.447 48.553 12.5 43.75 12.5C43.44 12.5053 43.1337 12.5682 42.8467 12.6856C38.4825 13.1632 35 16.7667 35 21.25V53.75C35 55.852 33.352 57.5 31.25 57.5C29.148 57.5 27.5 55.852 27.5 53.75V21.25C27.5 16.447 23.553 12.5 18.75 12.5V12.5ZM62.5 12.5C61.1193 12.5 60 13.6193 60 15C60 16.3807 61.1193 17.5 62.5 17.5C63.8807 17.5 65 16.3807 65 15C65 13.6193 63.8807 12.5 62.5 12.5ZM12.5 57.5C11.1193 57.5 10 58.6193 10 60C10 61.3807 11.1193 62.5 12.5 62.5C13.8807 62.5 15 61.3807 15 60C15 58.6193 13.8807 57.5 12.5 57.5Z"
+            fill="black" />
+        </svg>
+      </div>
+      <button class="button-1">VIEW DETAILS</button>
+    </div>
+    <div class="md:w-[50%] md:pr-[5%] lg:w-[60%] lg:pr-[5%] md:mt-1">
+      <img src="img/91.png" class="md:w-[70%]" alt="etar earphone">
+    </div>
+  </div>
+  <div data-scroll data-scroll-speed="2"
+    class="absolute top-[30%] right-0 -translate-y-1/2 bg-neutral-100 -z-10 rounded-l-lg w-[80%] md:w-[65%] md:top-[25%] h-[20%] md:h-[40%]">
+  </div>
+  <div data-scroll data-scroll-speed="3" class="absolute top-[25%] -z-10 left-[-5%]">
+    <div class="bubble-bg w-20 top-0 md:w-48"></div>
+    <div class="bubble-bg w-20 top-10 left-20 md:w-48 "></div>
+    <div class="bubble-bg w-20 top-20 md:w-48"></div>
+  </div>
+</div></div>
+      <div class="swiper-slide overflow-hidden"><div class="relative landscape:min-h-screen">
+  <div data-scroll data-scroll-speed="1" class="px-6 flex flex-col-reverse md:px-3 md:flex-row">
+    <div class="py-[2%] flex flex-col items-center justify-around md:w-[50%] md:pr-[10%] lg:w-[40%] lg:pr-[10%]">
+      <p class="text-3xl md:text-5xl">ETAR MOVE 1</p>
+      <div class="flex my-5 justify-center space-x-5 md:my-0 md:flex-col md:space-x-0 md:space-y-5">
+        <svg class="w-14" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path opacity="0.35"
+            d="M37.5 50.0001C42.6777 50.0001 46.875 45.8027 46.875 40.6251C46.875 35.4474 42.6777 31.2501 37.5 31.2501C32.3223 31.2501 28.125 35.4474 28.125 40.6251C28.125 45.8027 32.3223 50.0001 37.5 50.0001Z"
+            fill="black" />
+          <path
+            d="M51.4375 56.25C50.6875 56.25 49.9375 55.9844 49.3375 55.4407C48.0594 54.2813 47.9625 52.3063 49.1219 51.025C54.6938 44.875 54.4406 35.4594 48.5438 29.5875C45.5906 26.6219 41.6719 24.9938 37.5 24.9938C33.3281 24.9938 29.4094 26.6219 26.4656 29.5782C20.5594 35.4594 20.3063 44.8782 25.8781 51.025C27.0375 52.3032 26.9406 54.2813 25.6625 55.4407C24.3875 56.5969 22.4063 56.5063 21.2469 55.2219C13.4281 46.5969 13.7781 33.3907 22.0438 25.1594C26.1625 21.025 31.6563 18.7438 37.5 18.7438C43.3438 18.7438 48.8375 21.025 52.9656 25.1719C61.2219 33.3938 61.5719 46.6 53.7531 55.225C53.1375 55.9032 52.2875 56.25 51.4375 56.25V56.25Z"
+            fill="black" />
+          <path
+            d="M59.8125 65.625C59.0188 65.625 58.2281 65.325 57.6188 64.725C56.3906 63.5156 56.3781 61.5344 57.5844 60.3063C68.3688 49.3563 68.2813 31.6094 57.3875 20.7438C52.0781 15.4219 45.0156 12.4938 37.5 12.4938C29.9844 12.4938 22.9219 15.4219 17.6188 20.7375C6.72187 31.6094 6.63125 49.3563 17.4187 60.3063C18.6281 61.5375 18.6125 63.5156 17.3844 64.725C16.1469 65.9375 14.175 65.9156 12.9625 64.6906C-0.224996 51.3 -0.118749 29.6 13.2 16.3188C19.6781 9.82502 28.3125 6.24377 37.5 6.24377C46.6875 6.24377 55.3219 9.82502 61.8063 16.3281C75.1188 29.6063 75.225 51.3063 62.0375 64.6969C61.425 65.3125 60.6188 65.625 59.8125 65.625V65.625Z"
+            fill="black" />
+        </svg>
+        <svg class="w-14" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M16.4062 23.4375C8.6792 23.4375 2.34375 29.773 2.34375 37.5V39.8438H2.81983C3.98255 46.4172 9.51233 51.5625 16.4062 51.5625H58.5938C65.4877 51.5625 71.0175 46.4172 72.1802 39.8438H72.6562V37.5C72.6562 29.773 66.3208 23.4375 58.5938 23.4375H16.4062ZM16.4062 28.125H58.5938C63.7573 28.125 67.9688 32.3364 67.9688 37.5C67.9688 42.6636 63.7573 46.875 58.5938 46.875H16.4062C11.2427 46.875 7.03125 42.6636 7.03125 37.5C7.03125 32.3364 11.2427 28.125 16.4062 28.125ZM14.0625 32.8125V35.1562H11.7188V39.8438H14.0625V42.1875H18.75V39.8438H21.0938V42.1875H25.7812V39.8438H28.125V42.1875H32.8125V39.8438H35.1562V42.1875H39.8438V39.8438H42.1875V42.1875H46.875V39.8438H49.2188V42.1875H53.9062V39.8438H56.25V42.1875H60.9375V39.8438H63.2812V35.1562H60.9375V32.8125H56.25V35.1562H53.9062V32.8125H49.2188V35.1562H46.875V32.8125H42.1875V35.1562H39.8438V32.8125H35.1562V35.1562H32.8125V32.8125H28.125V35.1562H25.7812V32.8125H21.0938V35.1562H18.75V32.8125H14.0625Z"
+            fill="black" />
+        </svg>
+        <svg class="w-14" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M18.75 12.5C18.44 12.5053 18.1337 12.5682 17.8467 12.6855C13.4825 13.1632 10 16.7667 10 21.25V28.1934C8.51091 29.059 7.5 30.6526 7.5 32.5V45C7.5 46.38 8.62 47.5 10 47.5V52.5C9.98725 53.4016 10.4609 54.2402 11.2397 54.6947C12.0184 55.1492 12.9816 55.1492 13.7603 54.6947C14.5391 54.2402 15.0128 53.4016 15 52.5V47.5C16.38 47.5 17.5 46.38 17.5 45V32.5C17.5 30.6526 16.4891 29.059 15 28.1934V21.25C15 19.148 16.648 17.5 18.75 17.5C20.852 17.5 22.5 19.148 22.5 21.25V53.75C22.5 58.553 26.447 62.5 31.25 62.5C31.56 62.4947 31.8663 62.4318 32.1533 62.3145C36.5175 61.8368 40 58.2333 40 53.75V21.25C40 19.148 41.648 17.5 43.75 17.5C45.852 17.5 47.5 19.148 47.5 21.25V53.75C47.5 58.553 51.447 62.5 56.25 62.5C56.56 62.4947 56.8663 62.4318 57.1533 62.3145C61.5174 61.8368 65 58.2333 65 53.75V46.8066C66.4891 45.941 67.5 44.3474 67.5 42.5V30C67.5 28.62 66.38 27.5 65 27.5V22.5C65.0127 21.5984 64.539 20.7598 63.7603 20.3053C62.9816 19.8508 62.0184 19.8508 61.2397 20.3053C60.4609 20.7598 59.9872 21.5984 60 22.5V27.5C58.62 27.5 57.5 28.62 57.5 30V42.5C57.5 44.3474 58.5109 45.941 60 46.8066V53.75C60 55.852 58.352 57.5 56.25 57.5C54.148 57.5 52.5 55.852 52.5 53.75V21.25C52.5 16.447 48.553 12.5 43.75 12.5C43.44 12.5053 43.1337 12.5682 42.8467 12.6856C38.4825 13.1632 35 16.7667 35 21.25V53.75C35 55.852 33.352 57.5 31.25 57.5C29.148 57.5 27.5 55.852 27.5 53.75V21.25C27.5 16.447 23.553 12.5 18.75 12.5V12.5ZM62.5 12.5C61.1193 12.5 60 13.6193 60 15C60 16.3807 61.1193 17.5 62.5 17.5C63.8807 17.5 65 16.3807 65 15C65 13.6193 63.8807 12.5 62.5 12.5ZM12.5 57.5C11.1193 57.5 10 58.6193 10 60C10 61.3807 11.1193 62.5 12.5 62.5C13.8807 62.5 15 61.3807 15 60C15 58.6193 13.8807 57.5 12.5 57.5Z"
+            fill="black" />
+        </svg>
+      </div>
+      <button class="button-1">VIEW DETAILS</button>
+    </div>
+    <div class="md:w-[50%] md:pr-[5%] lg:w-[60%] lg:pr-[5%] md:mt-1">
+      <img src="img/110.png" class="md:w-[70%]" alt="etar earphone">
+    </div>
+  </div>
+  <div data-scroll data-scroll-speed="2"
+    class="absolute top-[30%] right-0 -translate-y-1/2 bg-neutral-100 -z-10 rounded-l-lg w-[80%] md:w-[65%] md:top-[25%] h-[20%] md:h-[40%]">
+  </div>
+  <div data-scroll data-scroll-speed="3" class="absolute top-[25%] -z-10 left-[-5%]">
+    <div class="bubble-bg w-20 top-0 md:w-48"></div>
+    <div class="bubble-bg w-20 top-10 left-20 md:w-48 "></div>
+    <div class="bubble-bg w-20 top-20 md:w-48"></div>
+  </div>
+</div></div>
+      <div class="swiper-slide overflow-hidden"><div class="relative landscape:min-h-screen">
+  <div data-scroll data-scroll-speed="1" class="px-6 flex flex-col-reverse md:px-3 md:flex-row">
+    <div class="py-[2%] flex flex-col items-center justify-around md:w-[50%] md:pr-[10%] lg:w-[40%] lg:pr-[10%]">
+      <p class="text-3xl md:text-5xl">ETAR MOVE 1</p>
+      <div class="flex my-5 justify-center space-x-5 md:my-0 md:flex-col md:space-x-0 md:space-y-5">
+        <svg class="w-14" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path opacity="0.35"
+            d="M37.5 50.0001C42.6777 50.0001 46.875 45.8027 46.875 40.6251C46.875 35.4474 42.6777 31.2501 37.5 31.2501C32.3223 31.2501 28.125 35.4474 28.125 40.6251C28.125 45.8027 32.3223 50.0001 37.5 50.0001Z"
+            fill="black" />
+          <path
+            d="M51.4375 56.25C50.6875 56.25 49.9375 55.9844 49.3375 55.4407C48.0594 54.2813 47.9625 52.3063 49.1219 51.025C54.6938 44.875 54.4406 35.4594 48.5438 29.5875C45.5906 26.6219 41.6719 24.9938 37.5 24.9938C33.3281 24.9938 29.4094 26.6219 26.4656 29.5782C20.5594 35.4594 20.3063 44.8782 25.8781 51.025C27.0375 52.3032 26.9406 54.2813 25.6625 55.4407C24.3875 56.5969 22.4063 56.5063 21.2469 55.2219C13.4281 46.5969 13.7781 33.3907 22.0438 25.1594C26.1625 21.025 31.6563 18.7438 37.5 18.7438C43.3438 18.7438 48.8375 21.025 52.9656 25.1719C61.2219 33.3938 61.5719 46.6 53.7531 55.225C53.1375 55.9032 52.2875 56.25 51.4375 56.25V56.25Z"
+            fill="black" />
+          <path
+            d="M59.8125 65.625C59.0188 65.625 58.2281 65.325 57.6188 64.725C56.3906 63.5156 56.3781 61.5344 57.5844 60.3063C68.3688 49.3563 68.2813 31.6094 57.3875 20.7438C52.0781 15.4219 45.0156 12.4938 37.5 12.4938C29.9844 12.4938 22.9219 15.4219 17.6188 20.7375C6.72187 31.6094 6.63125 49.3563 17.4187 60.3063C18.6281 61.5375 18.6125 63.5156 17.3844 64.725C16.1469 65.9375 14.175 65.9156 12.9625 64.6906C-0.224996 51.3 -0.118749 29.6 13.2 16.3188C19.6781 9.82502 28.3125 6.24377 37.5 6.24377C46.6875 6.24377 55.3219 9.82502 61.8063 16.3281C75.1188 29.6063 75.225 51.3063 62.0375 64.6969C61.425 65.3125 60.6188 65.625 59.8125 65.625V65.625Z"
+            fill="black" />
+        </svg>
+        <svg class="w-14" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M16.4062 23.4375C8.6792 23.4375 2.34375 29.773 2.34375 37.5V39.8438H2.81983C3.98255 46.4172 9.51233 51.5625 16.4062 51.5625H58.5938C65.4877 51.5625 71.0175 46.4172 72.1802 39.8438H72.6562V37.5C72.6562 29.773 66.3208 23.4375 58.5938 23.4375H16.4062ZM16.4062 28.125H58.5938C63.7573 28.125 67.9688 32.3364 67.9688 37.5C67.9688 42.6636 63.7573 46.875 58.5938 46.875H16.4062C11.2427 46.875 7.03125 42.6636 7.03125 37.5C7.03125 32.3364 11.2427 28.125 16.4062 28.125ZM14.0625 32.8125V35.1562H11.7188V39.8438H14.0625V42.1875H18.75V39.8438H21.0938V42.1875H25.7812V39.8438H28.125V42.1875H32.8125V39.8438H35.1562V42.1875H39.8438V39.8438H42.1875V42.1875H46.875V39.8438H49.2188V42.1875H53.9062V39.8438H56.25V42.1875H60.9375V39.8438H63.2812V35.1562H60.9375V32.8125H56.25V35.1562H53.9062V32.8125H49.2188V35.1562H46.875V32.8125H42.1875V35.1562H39.8438V32.8125H35.1562V35.1562H32.8125V32.8125H28.125V35.1562H25.7812V32.8125H21.0938V35.1562H18.75V32.8125H14.0625Z"
+            fill="black" />
+        </svg>
+        <svg class="w-14" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M18.75 12.5C18.44 12.5053 18.1337 12.5682 17.8467 12.6855C13.4825 13.1632 10 16.7667 10 21.25V28.1934C8.51091 29.059 7.5 30.6526 7.5 32.5V45C7.5 46.38 8.62 47.5 10 47.5V52.5C9.98725 53.4016 10.4609 54.2402 11.2397 54.6947C12.0184 55.1492 12.9816 55.1492 13.7603 54.6947C14.5391 54.2402 15.0128 53.4016 15 52.5V47.5C16.38 47.5 17.5 46.38 17.5 45V32.5C17.5 30.6526 16.4891 29.059 15 28.1934V21.25C15 19.148 16.648 17.5 18.75 17.5C20.852 17.5 22.5 19.148 22.5 21.25V53.75C22.5 58.553 26.447 62.5 31.25 62.5C31.56 62.4947 31.8663 62.4318 32.1533 62.3145C36.5175 61.8368 40 58.2333 40 53.75V21.25C40 19.148 41.648 17.5 43.75 17.5C45.852 17.5 47.5 19.148 47.5 21.25V53.75C47.5 58.553 51.447 62.5 56.25 62.5C56.56 62.4947 56.8663 62.4318 57.1533 62.3145C61.5174 61.8368 65 58.2333 65 53.75V46.8066C66.4891 45.941 67.5 44.3474 67.5 42.5V30C67.5 28.62 66.38 27.5 65 27.5V22.5C65.0127 21.5984 64.539 20.7598 63.7603 20.3053C62.9816 19.8508 62.0184 19.8508 61.2397 20.3053C60.4609 20.7598 59.9872 21.5984 60 22.5V27.5C58.62 27.5 57.5 28.62 57.5 30V42.5C57.5 44.3474 58.5109 45.941 60 46.8066V53.75C60 55.852 58.352 57.5 56.25 57.5C54.148 57.5 52.5 55.852 52.5 53.75V21.25C52.5 16.447 48.553 12.5 43.75 12.5C43.44 12.5053 43.1337 12.5682 42.8467 12.6856C38.4825 13.1632 35 16.7667 35 21.25V53.75C35 55.852 33.352 57.5 31.25 57.5C29.148 57.5 27.5 55.852 27.5 53.75V21.25C27.5 16.447 23.553 12.5 18.75 12.5V12.5ZM62.5 12.5C61.1193 12.5 60 13.6193 60 15C60 16.3807 61.1193 17.5 62.5 17.5C63.8807 17.5 65 16.3807 65 15C65 13.6193 63.8807 12.5 62.5 12.5ZM12.5 57.5C11.1193 57.5 10 58.6193 10 60C10 61.3807 11.1193 62.5 12.5 62.5C13.8807 62.5 15 61.3807 15 60C15 58.6193 13.8807 57.5 12.5 57.5Z"
+            fill="black" />
+        </svg>
+      </div>
+      <button class="button-1">VIEW DETAILS</button>
+    </div>
+    <div class="md:w-[50%] md:pr-[5%] lg:w-[60%] lg:pr-[5%] md:mt-1">
+      <img src="img/91.png" class="md:w-[70%]" alt="etar earphone">
+    </div>
+  </div>
+  <div data-scroll data-scroll-speed="2"
+    class="absolute top-[30%] right-0 -translate-y-1/2 bg-neutral-100 -z-10 rounded-l-lg w-[80%] md:w-[65%] md:top-[25%] h-[20%] md:h-[40%]">
+  </div>
+  <div data-scroll data-scroll-speed="3" class="absolute top-[25%] -z-10 left-[-5%]">
+    <div class="bubble-bg w-20 top-0 md:w-48"></div>
+    <div class="bubble-bg w-20 top-10 left-20 md:w-48 "></div>
+    <div class="bubble-bg w-20 top-20 md:w-48"></div>
+  </div>
+</div></div>
+    </div>
+  </div>
+</div>
+
+
+<div data-scroll-section
+  class="container mx-auto grid px-6 gap-y-5 md:px-10 md:gap-y-10 md:gap-10 md:grid-cols-2 mt-10">
+  <div class="flex bg-neutral-50 relative rounded-2xl py-4 px-8 overflow-hidden hover:shadow-2xl group transition-shadow duration-300 ease-in-out">
+  <div class="flex-[3] z-[1] flex flex-col justify-around">
+    <p class="lg:text-2xl">EATER MOVE 1</p>
+    <button class="button-1 mr-auto text-sm lg:text-base">VIEW MORE</button>
+  </div>
+  <div data-scroll data-scroll-speed="1" class="flex-[2] z-[1]">
+    <img src="img/91.png" class="group-hover:scale-95 transition-all duration-500 ease-in-out" alt="">
+  </div>
+  <div class="circle-bg w-1/2 bg-neutral-100 top-[80%] left-[80%] -translate-x-1/2 -translate-y-1/2 group-hover:shadow-2xl transition-shadow duration-300 ease-in-out"></div>
+</div>
+  <div class="flex bg-neutral-50 relative rounded-2xl py-4 px-8 overflow-hidden hover:shadow-2xl group transition-shadow duration-300 ease-in-out">
+  <div class="flex-[3] z-[1] flex flex-col justify-around">
+    <p class="lg:text-2xl">EATER MOVE 1</p>
+    <button class="button-1 mr-auto text-sm lg:text-base">VIEW MORE</button>
+  </div>
+  <div data-scroll data-scroll-speed="1" class="flex-[2] z-[1]">
+    <img src="img/91.png" class="group-hover:scale-95 transition-all duration-500 ease-in-out" alt="">
+  </div>
+  <div class="circle-bg w-1/2 bg-neutral-100 top-[80%] left-[80%] -translate-x-1/2 -translate-y-1/2 group-hover:shadow-2xl transition-shadow duration-300 ease-in-out"></div>
+</div>
+  <div class="flex bg-neutral-50 relative rounded-2xl py-4 px-8 overflow-hidden hover:shadow-2xl group transition-shadow duration-300 ease-in-out">
+  <div class="flex-[3] z-[1] flex flex-col justify-around">
+    <p class="lg:text-2xl">EATER MOVE 1</p>
+    <button class="button-1 mr-auto text-sm lg:text-base">VIEW MORE</button>
+  </div>
+  <div data-scroll data-scroll-speed="1" class="flex-[2] z-[1]">
+    <img src="img/91.png" class="group-hover:scale-95 transition-all duration-500 ease-in-out" alt="">
+  </div>
+  <div class="circle-bg w-1/2 bg-neutral-100 top-[80%] left-[80%] -translate-x-1/2 -translate-y-1/2 group-hover:shadow-2xl transition-shadow duration-300 ease-in-out"></div>
+</div>
+  <div class="flex bg-neutral-50 relative rounded-2xl py-4 px-8 overflow-hidden hover:shadow-2xl group transition-shadow duration-300 ease-in-out">
+  <div class="flex-[3] z-[1] flex flex-col justify-around">
+    <p class="lg:text-2xl">EATER MOVE 1</p>
+    <button class="button-1 mr-auto text-sm lg:text-base">VIEW MORE</button>
+  </div>
+  <div data-scroll data-scroll-speed="1" class="flex-[2] z-[1]">
+    <img src="img/91.png" class="group-hover:scale-95 transition-all duration-500 ease-in-out" alt="">
+  </div>
+  <div class="circle-bg w-1/2 bg-neutral-100 top-[80%] left-[80%] -translate-x-1/2 -translate-y-1/2 group-hover:shadow-2xl transition-shadow duration-300 ease-in-out"></div>
+</div>
+</div>
+
+<div data-scroll-section
+  class="container mx-auto grid px-6 gap-y-5 md:px-10 md:gap-y-10 md:gap-10 sm:grid-cols-3 lg:grid-cols-4 mt-10">
+  <div class="bg-neutral-50 rounded-2xl flex flex-col py-4 px-8 relative overflow-hidden group hover:shadow-xl transition-shadow duration-300 ease-in-out">
+  <div data-scroll data-scroll-speed="1" class="flex-[2] z-[1]">
+    <img src="img/91.png" class="group-hover:scale-95 transition-all duration-500 ease-in-out" alt="">
+  </div>
+  <div class="flex-[3] z-[1] space-y-4">
+    <p class="lg:text-xl group-hover:tracking-wide transition-all duration-500 ease-in-out">EATER MOVE 1</p>
+    <button class="button-1 mr-auto text-sm lg:text-base">VIEW MORE</button>
+  </div>
+  <div class="circle-bg w-full bg-neutral-100 top-[-15%] left-[-15%] group-hover:shadow-md transition-shadow duration-300 ease-in-out"></div>
+</div>
+  <div class="bg-neutral-50 rounded-2xl flex flex-col py-4 px-8 relative overflow-hidden group hover:shadow-xl transition-shadow duration-300 ease-in-out">
+  <div data-scroll data-scroll-speed="1" class="flex-[2] z-[1]">
+    <img src="img/91.png" class="group-hover:scale-95 transition-all duration-500 ease-in-out" alt="">
+  </div>
+  <div class="flex-[3] z-[1] space-y-4">
+    <p class="lg:text-xl group-hover:tracking-wide transition-all duration-500 ease-in-out">EATER MOVE 1</p>
+    <button class="button-1 mr-auto text-sm lg:text-base">VIEW MORE</button>
+  </div>
+  <div class="circle-bg w-full bg-neutral-100 top-[-15%] left-[-15%] group-hover:shadow-md transition-shadow duration-300 ease-in-out"></div>
+</div>
+  <div class="bg-neutral-50 rounded-2xl flex flex-col py-4 px-8 relative overflow-hidden group hover:shadow-xl transition-shadow duration-300 ease-in-out">
+  <div data-scroll data-scroll-speed="1" class="flex-[2] z-[1]">
+    <img src="img/91.png" class="group-hover:scale-95 transition-all duration-500 ease-in-out" alt="">
+  </div>
+  <div class="flex-[3] z-[1] space-y-4">
+    <p class="lg:text-xl group-hover:tracking-wide transition-all duration-500 ease-in-out">EATER MOVE 1</p>
+    <button class="button-1 mr-auto text-sm lg:text-base">VIEW MORE</button>
+  </div>
+  <div class="circle-bg w-full bg-neutral-100 top-[-15%] left-[-15%] group-hover:shadow-md transition-shadow duration-300 ease-in-out"></div>
+</div>
+  <div class="bg-neutral-50 rounded-2xl flex flex-col py-4 px-8 relative overflow-hidden group hover:shadow-xl transition-shadow duration-300 ease-in-out">
+  <div data-scroll data-scroll-speed="1" class="flex-[2] z-[1]">
+    <img src="img/91.png" class="group-hover:scale-95 transition-all duration-500 ease-in-out" alt="">
+  </div>
+  <div class="flex-[3] z-[1] space-y-4">
+    <p class="lg:text-xl group-hover:tracking-wide transition-all duration-500 ease-in-out">EATER MOVE 1</p>
+    <button class="button-1 mr-auto text-sm lg:text-base">VIEW MORE</button>
+  </div>
+  <div class="circle-bg w-full bg-neutral-100 top-[-15%] left-[-15%] group-hover:shadow-md transition-shadow duration-300 ease-in-out"></div>
+</div>
+</div>
+  <footer data-scroll-section class="bg-neutral-100 py-5 mt-10 space-y-10">
+  <div class="container px-6 md:px-3 mx-auto flex flex-col md:flex-row space-y-8 md:space-y-0">
+    <div class="flex-[2] space-y-3">
+      <p class="font-bold text-red-500">COMPNAY</p>
+      <img class="w-20" src="./img/logo.png" alt="">
+      <p class="w-3/4 text-stone-600 font-light">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply
+        dummy text of the printing and typesetting industry
+      </p>
+    </div>
+    <div class="flex-1 space-y-3">
+      <p class="font-bold text-red-500">PRODUCTS</p>
+      <div class="flex flex-col">
+        <div class="flex flex-col">
+          <a class="text-stone-600 font-light group transition-all duration-300" href="">
+  <i class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-300"></i><i class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-300"></i>
+  <span class="group-hover:ml-0.5 transition-all duration-300">Earbuds</span>
+</a>
+          <a class="text-stone-600 font-light group transition-all duration-300" href="">
+  <i class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-300"></i><i class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-300"></i>
+  <span class="group-hover:ml-0.5 transition-all duration-300">Earbuds</span>
+</a>
+          <a class="text-stone-600 font-light group transition-all duration-300" href="">
+  <i class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-300"></i><i class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-300"></i>
+  <span class="group-hover:ml-0.5 transition-all duration-300">Earbuds</span>
+</a>
+          <a class="text-stone-600 font-light group transition-all duration-300" href="">
+  <i class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-300"></i><i class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-300"></i>
+  <span class="group-hover:ml-0.5 transition-all duration-300">Earbuds</span>
+</a>
+        </div>
+      </div>
+    </div>
+    <div class="flex-1 space-y-3">
+      <p class="font-bold text-red-500">CONTACT</p>
+      <div class="flex flex-col">
+        <a class="text-stone-600 font-light group transition-all duration-300" href="">
+  <i class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-300"></i><i class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-300"></i>
+  <span class="group-hover:ml-0.5 transition-all duration-300">Earbuds</span>
+</a>
+        <a class="text-stone-600 font-light group transition-all duration-300" href="">
+  <i class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-300"></i><i class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-300"></i>
+  <span class="group-hover:ml-0.5 transition-all duration-300">Earbuds</span>
+</a>
+        <a class="text-stone-600 font-light group transition-all duration-300" href="">
+  <i class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-300"></i><i class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-300"></i>
+  <span class="group-hover:ml-0.5 transition-all duration-300">Earbuds</span>
+</a>
+        <a class="text-stone-600 font-light group transition-all duration-300" href="">
+  <i class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-300"></i><i class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-300"></i>
+  <span class="group-hover:ml-0.5 transition-all duration-300">Earbuds</span>
+</a>
+      </div>
+    </div>
+  </div>
+  <div class="container mx-auto spcae-y-2">
+    <p class="text-center text-sm">Copyright © 2022 ETAR INDIA</p>
+    <p class="text-center text-xs">Designed By Digiopro</p>
+  </div>
+</footer>
+
+  <script src="./js/alpine.js"></script>
+  <script src="./js/locomotive.js"></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
