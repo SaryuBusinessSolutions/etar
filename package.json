@@ -6,9 +6,11 @@
   "scripts": {
     "install": "npm i -g tailwindcss gulp gulp-concat gulp-clean-css gulp-uglify",
     "link": "npm link tailwindcss gulp gulp-concat gulp-clean-css gulp-uglify",
+    "gulp":"gulp buildcss buildjs",
     "tailwindcss": "tailwindcss -i ./src/_static/css/input.css -o ./src/_static/css/tailwind.css",
     "push": "git add . && git commit -m 'changes' && git push origin main",
-    "update": "picogen clean  && npm run tailwindcss && gulp buildcss buildjs && picogen generate -s -f && npm run push"
+    "pages": "git subtree push --prefix public origin gh-pages",
+    "update": "picogen clean  && npm run tailwindcss && picogen generate -s -f && npm run push && npm run pages"
   },
   "keywords": [],
   "author": "",
