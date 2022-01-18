@@ -11,13 +11,58 @@
 		<priority>0.80</priority>
 	</url>
 	<url>
+		<loc>https://etarindia.com/earbuds</loc>
+		<lastmod>2022-01-15T10:09:52.435Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://etarindia.com/earphone</loc>
+		<lastmod>2022-01-15T10:10:08.109Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	<url>
 		<loc>https://etarindia.com/</loc>
-		<lastmod>2022-01-10T11:21:39.615Z</lastmod>
+		<lastmod>2022-01-17T10:47:30.408Z</lastmod>
 		<priority>1.0</priority>
 	</url>
 	<url>
-		<loc>https://etarindia.com/p1</loc>
-		<lastmod>2022-01-11T08:58:00.207Z</lastmod>
+		<loc>https://etarindia.com/mini-speaker</loc>
+		<lastmod>2022-01-15T10:10:19.919Z</lastmod>
 		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://etarindia.com/speaker</loc>
+		<lastmod>2022-01-15T10:10:24.760Z</lastmod>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://etarindia.com/power-bank/move-1</loc>
+		<lastmod>2022-01-15T10:14:34.317Z</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://etarindia.com/earphone/move-1</loc>
+		<lastmod>2022-01-15T10:14:34.317Z</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://etarindia.com/earbuds/move-1</loc>
+		<lastmod>2022-01-15T10:14:34.317Z</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://etarindia.com/charger/move-1</loc>
+		<lastmod>2022-01-15T10:14:34.317Z</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://etarindia.com/car-charger/move-1</loc>
+		<lastmod>2022-01-15T10:14:34.317Z</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://etarindia.com/bluetooth-earphone/move-1</loc>
+		<lastmod>2022-01-15T10:14:34.317Z</lastmod>
+		<priority>0.64</priority>
 	</url>
 </urlset>

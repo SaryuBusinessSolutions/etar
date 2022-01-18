@@ -1,7 +1,11 @@
+// variables
 let scroll;
+let fuse;
+let swiper;
 
 // events
 document.addEventListener('DOMContentLoaded', () => {
+  loadFuse();
   navbarfix();
   locomotiveInit();
   swiperWraper();
@@ -12,6 +16,21 @@ window.onload = ()=>{
   loaded();
 }
 
+function loadFuse(){
+  const options = {
+    keys: ['url', 'title', 'content']
+  }
+  fuse = new Fuse([], options)
+
+  fetch('/siteSearch.json')
+    .then(body => body.json())
+    .then(data => {
+      fuse.setCollection(data);
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+}
 
 // function
 function loaded(){
@@ -50,13 +69,25 @@ function locomotiveInit() {
   }
 }
 
-function navTogle(event, navOpen) {
-  navOpen ? scroll.stop() : scroll.start();
+function navTogle(navOpen) {
+  let nav  = document.querySelector('[x-data*="navOpen"]')._x_dataStack[0];
+
+  if(!navOpen) nav.$data.navOpen = !nav.$data.navOpen;
   navOpen ? document.body.classList.add('overflow-hidden') : document.body.classList.remove('overflow-hidden');
+  navOpen ? swiper.disable() : swiper.enable();
+  document.querySelectorAll('.navlink').forEach((navlink, index) => {
+    setTimeout(() => {
+      navlink.classList.toggle('translate-x-full');
+      navlink.classList.toggle('md:translate-x-[200%]');
+    }, 100*index);
+  });
+  setTimeout(() => {
+    if (navOpen) nav.$data.navOpen = !nav.$data.navOpen;
+  }, 600);
 }
 
 function swiperWraper(){
-  const swiper = new Swiper('.swiper', {
+  swiper = new Swiper('.swiper', {
     autoHeight:true,
     loop: true,
     slidesPerView: "auto",

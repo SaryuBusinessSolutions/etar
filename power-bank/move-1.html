@@ -7,22 +7,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
 
-  <link rel="stylesheet" href="./css/fontawsome.css">
-  <link rel="stylesheet" href="./css/tailwind.css">
-  <link rel="stylesheet" href="./css/locomotive.css">
-  <link rel="stylesheet" href="./css/swiper.css" />
-  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="../css/fontawsome.css">
+  <link rel="stylesheet" href="../css/tailwind.css">
+  <link rel="stylesheet" href="../css/locomotive.css">
+  <link rel="stylesheet" href="../css/swiper.css" />
+  <link rel="stylesheet" href="../css/main.css">
 </head>
 
 <body x-data="{navOpen:false,test:'wokring'}" data-scroll-container>
   <div id="preloader" class="fixed z-[99] w-screen h-screen bg-white flex flex-col justify-center items-center">
-  <img class="w-14" src="./img/logo.png" alt="">
+  <img class="w-14" src="../img/logo.png" alt="">
   <p>loading...</p>
 </div>
   <header id="navbar" class="fixed w-full z-[9] bg-white bg-opacity-20 backdrop-blur-sm">
   <div class="flex w-full container mx-auto justify-between items-center py-2 px-6 md:px-3">
-    <a href="./">
-      <img class="w-20" src="./img/logo.png" alt="">
+    <a href="../">
+      <img class="w-20" src="../img/logo.png" alt="">
     </a>
     <div @click="navTogle(navOpen)">
       <svg width="30" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -39,9 +39,9 @@
 <div @click="navTogle(navOpen)" :class="navOpen || 'hidden'"
   class="fixed top-0 left-0 w-full h-full z-[8] bg-white bg-opacity-20 backdrop-blur-[8px] flex items-center">
   <div class="container mx-auto px-6 md:px-3 space-y-5 flex flex-col justify-center items-center">
-    <a href="./" class="text-5xl navlink transition-all duration-500 ease-in-out translate-x-full md:translate-x-[200%]">HOME</a>
-    <a href="./about" class="text-5xl navlink transition-all duration-500 ease-in-out translate-x-full md:translate-x-[200%]">ABOUT</a>
-    <a href="./contact" class="text-5xl navlink transition-all duration-500 ease-in-out translate-x-full md:translate-x-[200%]">CONTACT</a>
+    <a href="../" class="text-5xl navlink transition-all duration-500 ease-in-out translate-x-full md:translate-x-[200%]">HOME</a>
+    <a href="../about" class="text-5xl navlink transition-all duration-500 ease-in-out translate-x-full md:translate-x-[200%]">ABOUT</a>
+    <a href="../contact" class="text-5xl navlink transition-all duration-500 ease-in-out translate-x-full md:translate-x-[200%]">CONTACT</a>
   </div>
 </div>
 <div data-scroll-section id="navfix" class="h-16"></div>
@@ -72,18 +72,14 @@
   </div>
 </div>
   <div data-scroll-section class="maxhfix h-screen flex justify-center items-center">
-  <p data-scroll data-scroll-speed="2" class="text-6xl md:text-9xl z-[1]">CONTACT</p>
-  <p split data-scroll-speed="1" class="text-8xl md:text-[20rem] absolute text-white stroke">CONTACT</p>
-</div>
-
-<div data-scroll-section>
-
+  <img data-scroll data-scroll-speed="2" src="../img/110.png" class="w-full md:w-[40%] z-[1]" alt="">
+  <p  data-scroll data-scroll-speed="1" class="text-8xl md:text-[20rem] absolute text-white stroke  text-clip overflow-hidden text-center">ETAR MOVE 1</p>
 </div>
   <footer data-scroll-section class="bg-[#111111] py-5 mt-10 space-y-10">
   <div class="container px-6 md:px-3 mx-auto flex flex-col md:flex-row space-y-8 md:space-y-0">
     <div class="flex-[2] space-y-3">
       <p class="font-bold text-red-500">COMPNAY</p>
-      <img class="w-20" src="./img/logo.png" alt="">
+      <img class="w-20" src="../img/logo.png" alt="">
       <p class="w-3/4 text-white font-light">
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply
         dummy text of the printing and typesetting industry
@@ -93,19 +89,19 @@
       <p class="font-bold text-red-500">PRODUCTS</p>
       <div class="flex flex-col">
         <div class="flex flex-col">
-          <a class="text-white font-light group transition-all duration-500 ease-in-out" href="./earbuds">
+          <a class="text-white font-light group transition-all duration-500 ease-in-out" href="../earbuds">
   <i class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-500 ease-in-out"></i><i class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-500 ease-in-out"></i>
   <span class="group-hover:ml-0.5 transition-all duration-500 ease-in-out">Earbuds</span>
 </a>
-          <a class="text-white font-light group transition-all duration-500 ease-in-out" href="./speaker">
+          <a class="text-white font-light group transition-all duration-500 ease-in-out" href="../speaker">
   <i class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-500 ease-in-out"></i><i class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-500 ease-in-out"></i>
   <span class="group-hover:ml-0.5 transition-all duration-500 ease-in-out">Speaker</span>
 </a>
-          <a class="text-white font-light group transition-all duration-500 ease-in-out" href="./mini-speaker">
+          <a class="text-white font-light group transition-all duration-500 ease-in-out" href="../mini-speaker">
   <i class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-500 ease-in-out"></i><i class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-500 ease-in-out"></i>
   <span class="group-hover:ml-0.5 transition-all duration-500 ease-in-out">Mini Speaker</span>
 </a>
-          <a class="text-white font-light group transition-all duration-500 ease-in-out" href="./earphone">
+          <a class="text-white font-light group transition-all duration-500 ease-in-out" href="../earphone">
   <i class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-500 ease-in-out"></i><i class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-500 ease-in-out"></i>
   <span class="group-hover:ml-0.5 transition-all duration-500 ease-in-out">Earphone</span>
 </a>
@@ -115,19 +111,19 @@
     <div class="flex-1 space-y-3">
       <p class="font-bold text-red-500">CONTACT</p>
       <div class="flex flex-col">
-        <a class="text-white font-light group transition-all duration-500 ease-in-out" href="./earbuds">
+        <a class="text-white font-light group transition-all duration-500 ease-in-out" href="../earbuds">
   <i class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-500 ease-in-out"></i><i class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-500 ease-in-out"></i>
   <span class="group-hover:ml-0.5 transition-all duration-500 ease-in-out">Earbuds</span>
 </a>
-        <a class="text-white font-light group transition-all duration-500 ease-in-out" href="./earbuds">
+        <a class="text-white font-light group transition-all duration-500 ease-in-out" href="../earbuds">
   <i class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-500 ease-in-out"></i><i class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-500 ease-in-out"></i>
   <span class="group-hover:ml-0.5 transition-all duration-500 ease-in-out">Earbuds</span>
 </a>
-        <a class="text-white font-light group transition-all duration-500 ease-in-out" href="./earbuds">
+        <a class="text-white font-light group transition-all duration-500 ease-in-out" href="../earbuds">
   <i class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-500 ease-in-out"></i><i class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-500 ease-in-out"></i>
   <span class="group-hover:ml-0.5 transition-all duration-500 ease-in-out">Earbuds</span>
 </a>
-        <a class="text-white font-light group transition-all duration-500 ease-in-out" href="./earbuds">
+        <a class="text-white font-light group transition-all duration-500 ease-in-out" href="../earbuds">
   <i class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-500 ease-in-out"></i><i class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-500 ease-in-out"></i>
   <span class="group-hover:ml-0.5 transition-all duration-500 ease-in-out">Earbuds</span>
 </a>
@@ -140,11 +136,11 @@
   </div>
 </footer>
 
-  <script src="./js/alpine.js"></script>
-  <script src="./js/locomotive.js"></script>
-  <script src="./js/swiper.js"></script>
-  <script src="./js/fuse.js"></script>
-  <script src="./js/main.js"></script>
+  <script src="../js/alpine.js"></script>
+  <script src="../js/locomotive.js"></script>
+  <script src="../js/swiper.js"></script>
+  <script src="../js/fuse.js"></script>
+  <script src="../js/main.js"></script>
 </body>
 
 </html>
