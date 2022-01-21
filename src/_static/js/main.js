@@ -22,6 +22,7 @@ function loadFuse(){
   }
   fuse = new Fuse([], options)
 
+  searchFile = document.body.getAttribute("siteSearch")
   fetch('/siteSearch.json')
     .then(body => body.json())
     .then(data => {
