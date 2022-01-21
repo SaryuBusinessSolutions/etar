@@ -28,7 +28,12 @@
       <a href="earphone/move-1" class="button-1 rounded-lg px-5">VIEW DETAILS</a>
     </div>
     <div class="md:w-[50%] md:pr-[5%] lg:w-[60%] lg:pr-[5%] md:mt-1">
-      <img src="<%- img %>" class="md:w-[70%]" alt="etar earphone">
+      <%- include('../img',{
+        alt : "etar",
+        src : "img/products/small/"+img,
+        md : "img/products/large/"+img,
+        classes : "md:w-[70%]",
+      }) %>
     </div>
   </div>
   <div data-scroll data-scroll-speed="2"

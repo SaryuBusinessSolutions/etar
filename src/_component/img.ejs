@@ -1,0 +1,12 @@
+<picture>
+  <% if (typeof sm != 'undefined') { %>
+  <source media="(min-width:640px)" srcset="<%- sm %>">
+  <% } if (typeof md != 'undefined') { %>
+  <source media="(min-width:768px)" srcset="<%- md %>">
+  <% } if (typeof lg != 'undefined') { %>
+  <source media="(min-width:1024px)" srcset="<%- lg %>">
+  <% } if (typeof xl != 'undefined') { %>
+  <source media="(min-width:1280px)" srcset="<%- xl %>">
+  <% } %>
+</picture>
+<img src="<%- src %>" class="<%- classes %>" alt="<%- alt %> <%- typeof attr != 'undefined' ? attr : "" %>">

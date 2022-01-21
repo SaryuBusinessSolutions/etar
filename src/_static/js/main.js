@@ -77,8 +77,8 @@ function navTogle(navOpen) {
   navOpen ? swiper.disable() : swiper.enable();
   document.querySelectorAll('.navlink').forEach((navlink, index) => {
     setTimeout(() => {
-      navlink.classList.toggle('translate-x-full');
-      navlink.classList.toggle('md:translate-x-[200%]');
+      navlink.classList.toggle('translate-x-[200%]');
+      navlink.classList.toggle('md:translate-x-[600%]');
     }, 100*index);
   });
   setTimeout(() => {
