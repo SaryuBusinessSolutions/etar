@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <% include('seo') %>
+  <% include('main/seo') %>
 
   <link rel="stylesheet" href="<%- page.srcfix %>css/fontawsome.css">
   <link rel="stylesheet" href="<%- page.srcfix %>css/tailwind.css">
@@ -14,11 +14,11 @@
   <link rel="stylesheet" href="<%- page.srcfix %>css/main.css">
 </head>
 
-<body siteSearch="<%- page.srcfix %>siteSearch.json" x-data="{navOpen:false,test:'wokring'}" data-scroll-container class="max-w-full overflow-x-hidden">
-  <%- include("preloader") %>
-  <%- include("navbar") %>
+<body srcfix="<%- page.srcfix %>" x-data="{navOpen:false,test:'wokring'}" data-scroll-container class="max-w-full overflow-x-hidden">
+  <%- include("main/preloader") %>
+  <%- include("main/navbar") %>
   <%- body %>
-  <%- include("footer") %>
+  <%- include("main/footer") %>
 
   <script src="<%- page.srcfix %>js/alpine.js"></script>
   <script src="<%- page.srcfix %>js/locomotive.js"></script>

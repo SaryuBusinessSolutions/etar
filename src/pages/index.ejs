@@ -24,18 +24,31 @@
     <%- include('page/card1',{name:'Earbuds', img:'R17.png',link:'bluetooth-earphone/move-1'}) %>
     <%- include('page/card1',{name:'Power Bank', img:'PB-701.png',link:'bluetooth-earphone/move-1'}) %>
     <%- include('page/card1',{name:'Car Charger', img:'ET-C11.png',link:'bluetooth-earphone/move-1'}) %>
+    <%- include('page/card1',{name:'Stand', img:'ROYAL_SERIES_BATTERY.png',link:'bluetooth-earphone/move-1'}) %>
+    <%- include('page/card1',{name:'USB Connector', img:'TC-02.png',link:'bluetooth-earphone/move-1'}) %>
   </div>
 </div>
 
 <div data-scroll-section
   class="container mx-auto px-6 md:px-10 mt-12 space-y-8">
   <div class="flex justify-end">
-    <span style="clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%)" class="button-1 pl-8 rounded-md text-xl">PRODUCTS</span>
+    <span style="clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%)" class="button-1 pl-10 rounded-md text-xl">FEATURED PRODUCTS</span>
+  </div>
+  <div class="grid gap-5 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 md:gap-10">
+    <% site.pages.filter(page=> page.data.featured).forEach(page => { %>
+      <%- include('page/card2',{name: page.data.name, img:page.data.img ,link: page.actualpath}) %>
+    <% }) %>  
+  </div>
+</div>
+
+<div data-scroll-section
+  class="container mx-auto px-6 md:px-10 mt-12 space-y-8">
+  <div class="flex justify-start">
+    <span style="clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%)" class="button-1 pr-10 rounded-md text-xl">PRODUCTS</span>
   </div>
   <div class="grid gap-5 grid-cols-2 sm:grid-cols-3 md:gap-10 lg:grid-cols-4">  
-    <%- include('page/card2',{name:'BH-65', img:'BH-65.png',link:'bluetooth-earphone/move-1'}) %>
-    <%- include('page/card2',{name:'A122', img:'A122.png',link:'bluetooth-earphone/move-1'}) %>
-    <%- include('page/card2',{name:'earphone', img:'A122.png',link:'bluetooth-earphone/move-1'}) %>
-    <%- include('page/card2',{name:'earphone', img:'A122.png',link:'bluetooth-earphone/move-1'}) %>
+    <% site.pages.filter(page=> page.data.type).some((page,index) => { if(index>7) return true %>
+      <%- include('page/card2',{name: page.data.name, img:page.data.img ,link: page.actualpath}) %>
+    <% }) %>
   </div>
 </div>

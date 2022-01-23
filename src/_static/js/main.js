@@ -1,32 +1,37 @@
 // variables
 let scroll;
-let fuse;
+let productFuse;
 let swiper;
 
 // events
 document.addEventListener('DOMContentLoaded', () => {
-  loadFuse();
+  loadProductFuse();
   navbarfix();
   locomotiveInit();
   swiperWraper();
-  textSplit();
 });
 
 window.onload = ()=>{
   loaded();
 }
 
-function loadFuse(){
-  const options = {
-    keys: ['url', 'title', 'content']
-  }
-  fuse = new Fuse([], options)
 
-  searchFile = document.body.getAttribute("siteSearch")
-  fetch(searchFile)
+function strToRegex(string) {
+  return string.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&')
+}
+
+function loadProductFuse() {
+  const options = {
+    threshold:0.4,
+    keys: ['name','type']
+  }
+  productFuse = new Fuse([], options)
+
+  searchFile = document.body.getAttribute("srcfix")
+  fetch(searchFile + "siteSearch.json")
     .then(body => body.json())
     .then(data => {
-      fuse.setCollection(data);
+      productFuse.setCollection(data);
     })
     .catch((error) => {
       console.log(error);
@@ -54,7 +59,7 @@ function locomotiveInit() {
       el: document.querySelector('[data-scroll-container]'),
       smooth: true,
       repeat : true,
-      speed: 0.33,
+      speed: 0.3,
       reloadOnContextChange: true,
       smartphone:{
         smooth: false,
@@ -98,6 +103,28 @@ function swiperWraper(){
       pauseOnMouseEnter : false,
     },
   });
+}
+
+function searchProduct(value){
+  if(value.length > 0){
+    let lists = productFuse.search(strToRegex(value))
+    let products = document.querySelectorAll("[product]");
+    products.forEach(product=>{
+      product.classList.add('hidden')
+      let word = product.getAttribute("product").split(',')
+      lists.some(list => {
+        if(word.includes(list.item.name) || word.includes(list.item.type)) {
+          product.classList.remove('hidden')
+          return true
+        }
+      })
+    }); 
+  }else{
+    document.querySelectorAll("[product]").forEach(product => {
+      product.classList.remove('hidden')
+    });
+  }
+  scroll.update()
 }
 
 function textSplit(){
