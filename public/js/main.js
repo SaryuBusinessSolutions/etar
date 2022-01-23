@@ -1,39 +1,43 @@
 // variables
 let scroll;
-let fuse;
+let productFuse;
 let swiper;
 
 // events
 document.addEventListener('DOMContentLoaded', () => {
-  loadFuse();
+  loadProductFuse();
   navbarfix();
   locomotiveInit();
   swiperWraper();
-  textSplit();
 });
 
 window.onload = ()=>{
   loaded();
 }
 
-function loadFuse(){
-  const options = {
-    keys: ['url', 'title', 'content']
-  }
-  fuse = new Fuse([], options)
+// function
+function strToRegex(string) {
+  return string.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&')
+}
 
-  searchFile = document.body.getAttribute("siteSearch")
-  fetch(searchFile)
+function loadProductFuse() {
+  const options = {
+    threshold:0.3,
+    keys: ['name','type']
+  }
+  productFuse = new Fuse([], options)
+
+  searchFile = document.body.getAttribute("srcfix")
+  fetch(searchFile + "siteSearch.json")
     .then(body => body.json())
     .then(data => {
-      fuse.setCollection(data);
+      productFuse.setCollection(data);
     })
     .catch((error) => {
       console.log(error);
     });
 }
 
-// function
 function loaded(){
   document.querySelector("#preloader").remove();
 }
@@ -54,7 +58,7 @@ function locomotiveInit() {
       el: document.querySelector('[data-scroll-container]'),
       smooth: true,
       repeat : true,
-      speed: 0.33,
+      speed: 0.3,
       reloadOnContextChange: true,
       smartphone:{
         smooth: false,
@@ -98,6 +102,18 @@ function swiperWraper(){
       pauseOnMouseEnter : false,
     },
   });
+}
+
+function searchProduct(value){
+  if(value.length > 0){
+    let result = productFuse.search(strToRegex(value));
+    document.querySelector('[x-data*="search"]')._x_dataStack[0].lists = result;
+  }else{
+    document.querySelector('[x-data*="search"]')._x_dataStack[0].lists = [];
+  }
+  setTimeout(() => {
+    scroll.update()
+  }, 100);
 }
 
 function textSplit(){

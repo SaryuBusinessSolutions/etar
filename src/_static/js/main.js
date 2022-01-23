@@ -15,14 +15,14 @@ window.onload = ()=>{
   loaded();
 }
 
-
+// function
 function strToRegex(string) {
   return string.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&')
 }
 
 function loadProductFuse() {
   const options = {
-    threshold:0.4,
+    threshold:0.3,
     keys: ['name','type']
   }
   productFuse = new Fuse([], options)
@@ -38,7 +38,6 @@ function loadProductFuse() {
     });
 }
 
-// function
 function loaded(){
   document.querySelector("#preloader").remove();
 }
@@ -107,24 +106,14 @@ function swiperWraper(){
 
 function searchProduct(value){
   if(value.length > 0){
-    let lists = productFuse.search(strToRegex(value))
-    let products = document.querySelectorAll("[product]");
-    products.forEach(product=>{
-      product.classList.add('hidden')
-      let word = product.getAttribute("product").split(',')
-      lists.some(list => {
-        if(word.includes(list.item.name) || word.includes(list.item.type)) {
-          product.classList.remove('hidden')
-          return true
-        }
-      })
-    }); 
+    let result = productFuse.search(strToRegex(value));
+    document.querySelector('[x-data*="search"]')._x_dataStack[0].lists = result;
   }else{
-    document.querySelectorAll("[product]").forEach(product => {
-      product.classList.remove('hidden')
-    });
+    document.querySelector('[x-data*="search"]')._x_dataStack[0].lists = [];
   }
-  scroll.update()
+  setTimeout(() => {
+    scroll.update()
+  }, 100);
 }
 
 function textSplit(){

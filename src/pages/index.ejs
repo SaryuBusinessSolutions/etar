@@ -19,13 +19,10 @@
   class="container mx-auto px-6 md:px-10 mt-10 space-y-8">
   <span style="clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%)" class="button-1 pr-10 rounded-md text-xl">CATEGORY</span>
   <div class="grid gap-y-5  md:gap-y-10 md:gap-10 md:grid-cols-2">  
-    <%- include('page/card1',{name:'Bluetooth Earphone', img:'BH-53.png',link:'bluetooth-earphone/move-1'}) %>
-    <%- include('page/card1',{name:'Earphone', img:'Q6.png',link:'bluetooth-earphone/move-1'}) %>
-    <%- include('page/card1',{name:'Earbuds', img:'R17.png',link:'bluetooth-earphone/move-1'}) %>
-    <%- include('page/card1',{name:'Power Bank', img:'PB-701.png',link:'bluetooth-earphone/move-1'}) %>
-    <%- include('page/card1',{name:'Car Charger', img:'ET-C11.png',link:'bluetooth-earphone/move-1'}) %>
-    <%- include('page/card1',{name:'Stand', img:'ROYAL_SERIES_BATTERY.png',link:'bluetooth-earphone/move-1'}) %>
-    <%- include('page/card1',{name:'USB Connector', img:'TC-02.png',link:'bluetooth-earphone/move-1'}) %>
+    
+    <% site.pages.filter(page=> page.data.category).forEach(page => { %>
+      <%- include('page/card1',{name: page.data.type, img:page.data.img ,link: page.actualpath}) %>
+    <% }) %>  
   </div>
 </div>
 
