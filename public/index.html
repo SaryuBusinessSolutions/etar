@@ -39,10 +39,14 @@
 <div @click="navTogle(navOpen)" :class="navOpen || 'hidden'"
   class="fixed top-0 left-0 w-full h-full z-[8] bg-white bg-opacity-20 backdrop-blur-[8px] flex items-center">
   <div class="container mx-auto px-6 md:px-3 space-y-5 flex flex-col justify-center items-center">
-    <a href="./" class="text-5xl navlink transition-all duration-500 ease-in-out translate-x-[200%] md:translate-x-[600%]">HOME</a>
-    <a href="./products" class="text-5xl navlink transition-all duration-500 ease-in-out translate-x-[200%] md:translate-x-[600%]">PRODUCTS</a>
-    <a href="./about" class="text-5xl navlink transition-all duration-500 ease-in-out translate-x-[200%] md:translate-x-[600%]">ABOUT</a>
-    <a href="./contact" class="text-5xl navlink transition-all duration-500 ease-in-out translate-x-[200%] md:translate-x-[600%]">CONTACT</a>
+    <a href="./"
+      class="stroke-red text-transparent text-5xl navlink transition-all duration-500 ease-in-out translate-x-[200%] md:translate-x-[600%]">HOME</a>
+    <a href="./products"
+      class="stroke-red text-transparent text-5xl navlink transition-all duration-500 ease-in-out translate-x-[200%] md:translate-x-[600%]">PRODUCTS</a>
+    <a href="./about"
+      class="stroke-red text-transparent text-5xl navlink transition-all duration-500 ease-in-out translate-x-[200%] md:translate-x-[600%]">ABOUT</a>
+    <a href="./contact"
+      class="stroke-red text-transparent text-5xl navlink transition-all duration-500 ease-in-out translate-x-[200%] md:translate-x-[600%]">CONTACT</a>
   </div>
 </div>
 <div data-scroll-section id="navfix" class="h-16"></div>
@@ -73,7 +77,7 @@
   </div>
 </div>
   <div data-scroll-section class="relative landscape:min-h-screen">
-  <div  class="swiper relative landscape:min-h-screen">
+  <div class="swiper relative landscape:min-h-screen">
     <div class="swiper-wrapper">
       <div class="swiper-slide overflow-hidden"><div class="relative landscape:min-h-screen">
   <div data-scroll data-scroll-speed="1" class="px-6 flex flex-col-reverse md:px-3 md:flex-row">
@@ -220,152 +224,14 @@
   </div>
 </div>
 
-
-<div data-scroll-section
-  class="container mx-auto px-6 md:px-10 mt-10 space-y-8">
-  <span style="clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%)" class="button-1 pr-10 rounded-md text-xl">CATEGORY</span>
-  <div class="grid gap-y-5  md:gap-y-10 md:gap-10 md:grid-cols-2">  
-    
-    
-      <div class="flex bg-neutral-50 relative rounded-2xl py-4 px-8 overflow-hidden hover:shadow-2xl group transition-shadow duration-300 ease-in-out">
-  <div class="flex-[3] z-[1] flex flex-col justify-around">
-    <p class="lg:text-2xl">CHARGER</p>
-    <a href="/products/a122" class="button-1 rounded-lg px-5 mr-auto text-sm lg:text-base cursor-pointer">VIEW MORE</a>
-  </div>
-  <div data-scroll data-scroll-speed="1" class="flex-[2] z-[1]">
-    <picture class="group-hover:scale-95 transition-all duration-500 ease-in-out">
-  
-  <img src="img/products/small/A122.png" alt="product ">
-</picture>
-  </div>
-  <div class="circle-bg w-1/2 bg-neutral-100 top-[80%] left-[80%] -translate-x-1/2 -translate-y-1/2 group-hover:shadow-2xl transition-shadow duration-300 ease-in-out"></div>
-</div>
-    
-      <div class="flex bg-neutral-50 relative rounded-2xl py-4 px-8 overflow-hidden hover:shadow-2xl group transition-shadow duration-300 ease-in-out">
-  <div class="flex-[3] z-[1] flex flex-col justify-around">
-    <p class="lg:text-2xl">EARPHONE</p>
-    <a href="/products/bh-65" class="button-1 rounded-lg px-5 mr-auto text-sm lg:text-base cursor-pointer">VIEW MORE</a>
-  </div>
-  <div data-scroll data-scroll-speed="1" class="flex-[2] z-[1]">
-    <picture class="group-hover:scale-95 transition-all duration-500 ease-in-out">
-  
-  <img src="img/products/small/BH-65.png" alt="product ">
-</picture>
-  </div>
-  <div class="circle-bg w-1/2 bg-neutral-100 top-[80%] left-[80%] -translate-x-1/2 -translate-y-1/2 group-hover:shadow-2xl transition-shadow duration-300 ease-in-out"></div>
-</div>
-    
-      <div class="flex bg-neutral-50 relative rounded-2xl py-4 px-8 overflow-hidden hover:shadow-2xl group transition-shadow duration-300 ease-in-out">
-  <div class="flex-[3] z-[1] flex flex-col justify-around">
-    <p class="lg:text-2xl">STAND</p>
-    <a href="/products/et-013-01" class="button-1 rounded-lg px-5 mr-auto text-sm lg:text-base cursor-pointer">VIEW MORE</a>
-  </div>
-  <div data-scroll data-scroll-speed="1" class="flex-[2] z-[1]">
-    <picture class="group-hover:scale-95 transition-all duration-500 ease-in-out">
-  
-  <img src="img/products/small/ET-013-01.png" alt="product ">
-</picture>
-  </div>
-  <div class="circle-bg w-1/2 bg-neutral-100 top-[80%] left-[80%] -translate-x-1/2 -translate-y-1/2 group-hover:shadow-2xl transition-shadow duration-300 ease-in-out"></div>
-</div>
-    
-      <div class="flex bg-neutral-50 relative rounded-2xl py-4 px-8 overflow-hidden hover:shadow-2xl group transition-shadow duration-300 ease-in-out">
-  <div class="flex-[3] z-[1] flex flex-col justify-around">
-    <p class="lg:text-2xl">CAR CHARGER</p>
-    <a href="/products/et-c11" class="button-1 rounded-lg px-5 mr-auto text-sm lg:text-base cursor-pointer">VIEW MORE</a>
-  </div>
-  <div data-scroll data-scroll-speed="1" class="flex-[2] z-[1]">
-    <picture class="group-hover:scale-95 transition-all duration-500 ease-in-out">
-  
-  <img src="img/products/small/ET-C11.png" alt="product ">
-</picture>
-  </div>
-  <div class="circle-bg w-1/2 bg-neutral-100 top-[80%] left-[80%] -translate-x-1/2 -translate-y-1/2 group-hover:shadow-2xl transition-shadow duration-300 ease-in-out"></div>
-</div>
-    
-      <div class="flex bg-neutral-50 relative rounded-2xl py-4 px-8 overflow-hidden hover:shadow-2xl group transition-shadow duration-300 ease-in-out">
-  <div class="flex-[3] z-[1] flex flex-col justify-around">
-    <p class="lg:text-2xl">POWERBANK</p>
-    <a href="/products/pb-701" class="button-1 rounded-lg px-5 mr-auto text-sm lg:text-base cursor-pointer">VIEW MORE</a>
-  </div>
-  <div data-scroll data-scroll-speed="1" class="flex-[2] z-[1]">
-    <picture class="group-hover:scale-95 transition-all duration-500 ease-in-out">
-  
-  <img src="img/products/small/PB-701.png" alt="product ">
-</picture>
-  </div>
-  <div class="circle-bg w-1/2 bg-neutral-100 top-[80%] left-[80%] -translate-x-1/2 -translate-y-1/2 group-hover:shadow-2xl transition-shadow duration-300 ease-in-out"></div>
-</div>
-    
-      <div class="flex bg-neutral-50 relative rounded-2xl py-4 px-8 overflow-hidden hover:shadow-2xl group transition-shadow duration-300 ease-in-out">
-  <div class="flex-[3] z-[1] flex flex-col justify-around">
-    <p class="lg:text-2xl">EARBUDS</p>
-    <a href="/products/r17" class="button-1 rounded-lg px-5 mr-auto text-sm lg:text-base cursor-pointer">VIEW MORE</a>
-  </div>
-  <div data-scroll data-scroll-speed="1" class="flex-[2] z-[1]">
-    <picture class="group-hover:scale-95 transition-all duration-500 ease-in-out">
-  
-  <img src="img/products/small/R17.png" alt="product ">
-</picture>
-  </div>
-  <div class="circle-bg w-1/2 bg-neutral-100 top-[80%] left-[80%] -translate-x-1/2 -translate-y-1/2 group-hover:shadow-2xl transition-shadow duration-300 ease-in-out"></div>
-</div>
-    
-      <div class="flex bg-neutral-50 relative rounded-2xl py-4 px-8 overflow-hidden hover:shadow-2xl group transition-shadow duration-300 ease-in-out">
-  <div class="flex-[3] z-[1] flex flex-col justify-around">
-    <p class="lg:text-2xl">BATTERY</p>
-    <a href="/products/royel-series-battery" class="button-1 rounded-lg px-5 mr-auto text-sm lg:text-base cursor-pointer">VIEW MORE</a>
-  </div>
-  <div data-scroll data-scroll-speed="1" class="flex-[2] z-[1]">
-    <picture class="group-hover:scale-95 transition-all duration-500 ease-in-out">
-  
-  <img src="img/products/small/ROYAL-SERIES-BATTERY.png" alt="product ">
-</picture>
-  </div>
-  <div class="circle-bg w-1/2 bg-neutral-100 top-[80%] left-[80%] -translate-x-1/2 -translate-y-1/2 group-hover:shadow-2xl transition-shadow duration-300 ease-in-out"></div>
-</div>
-    
-      <div class="flex bg-neutral-50 relative rounded-2xl py-4 px-8 overflow-hidden hover:shadow-2xl group transition-shadow duration-300 ease-in-out">
-  <div class="flex-[3] z-[1] flex flex-col justify-around">
-    <p class="lg:text-2xl">USB CONNECTOR</p>
-    <a href="/products/tc-02" class="button-1 rounded-lg px-5 mr-auto text-sm lg:text-base cursor-pointer">VIEW MORE</a>
-  </div>
-  <div data-scroll data-scroll-speed="1" class="flex-[2] z-[1]">
-    <picture class="group-hover:scale-95 transition-all duration-500 ease-in-out">
-  
-  <img src="img/products/small/TC-02.png" alt="product ">
-</picture>
-  </div>
-  <div class="circle-bg w-1/2 bg-neutral-100 top-[80%] left-[80%] -translate-x-1/2 -translate-y-1/2 group-hover:shadow-2xl transition-shadow duration-300 ease-in-out"></div>
-</div>
-      
-  </div>
-</div>
-
-<div data-scroll-section
-  class="container mx-auto px-6 md:px-10 mt-12 space-y-8">
-  <div class="flex justify-end">
-    <span style="clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%)" class="button-1 pl-10 rounded-md text-xl">FEATURED PRODUCTS</span>
+<div data-scroll-section class="container mx-auto px-6 md:px-10 mt-16 space-y-8">
+  <div class="flex justify-start">
+    <span style="clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%)" class="button-1 pr-10 rounded-md text-xl">
+      FEATURED PRODUCTS</span>
   </div>
   <div class="grid gap-5 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 md:gap-10">
     
-      <div class="bg-neutral-50 rounded-2xl flex flex-col p-4 py-6 md:px-8 relative overflow-hidden group hover:shadow-xl transition-shadow duration-300 ease-in-out">
-  <div data-scroll data-scroll-speed="1" class="flex-[2] z-[1]">
-    <picture class="group-hover:scale-95 transition-all duration-500 ease-in-out">
-  
-  <img src="img/products/small/A122.png" alt="product ">
-</picture>
-  </div>
-  <div class="flex-[3] z-[1] space-y-4">
-    <p class="lg:text-xl group-hover:tracking-wide transition-all duration-500 ease-in-out uppercase">A122</p>
-    <div>
-      <a href="/products/a122" class="button-1 rounded-md px-5 mr-auto text-sm lg:text-base cursor-pointer">VIEW MORE</a>
-    </div>
-  </div>
-  <div class="circle-bg w-full bg-neutral-100 top-[-15%] left-[-15%] group-hover:shadow-md transition-shadow duration-300 ease-in-out"></div>
-</div>
-    
-      <div class="bg-neutral-50 rounded-2xl flex flex-col p-4 py-6 md:px-8 relative overflow-hidden group hover:shadow-xl transition-shadow duration-300 ease-in-out">
+    <div class="bg-neutral-50 rounded-2xl flex flex-col p-4 py-6 md:px-8 relative overflow-hidden group hover:shadow-xl transition-shadow duration-300 ease-in-out">
   <div data-scroll data-scroll-speed="1" class="flex-[2] z-[1]">
     <picture class="group-hover:scale-95 transition-all duration-500 ease-in-out">
   
@@ -381,39 +247,7 @@
   <div class="circle-bg w-full bg-neutral-100 top-[-15%] left-[-15%] group-hover:shadow-md transition-shadow duration-300 ease-in-out"></div>
 </div>
     
-      <div class="bg-neutral-50 rounded-2xl flex flex-col p-4 py-6 md:px-8 relative overflow-hidden group hover:shadow-xl transition-shadow duration-300 ease-in-out">
-  <div data-scroll data-scroll-speed="1" class="flex-[2] z-[1]">
-    <picture class="group-hover:scale-95 transition-all duration-500 ease-in-out">
-  
-  <img src="img/products/small/ET-013-01.png" alt="product ">
-</picture>
-  </div>
-  <div class="flex-[3] z-[1] space-y-4">
-    <p class="lg:text-xl group-hover:tracking-wide transition-all duration-500 ease-in-out uppercase">ET-013-01</p>
-    <div>
-      <a href="/products/et-013-01" class="button-1 rounded-md px-5 mr-auto text-sm lg:text-base cursor-pointer">VIEW MORE</a>
-    </div>
-  </div>
-  <div class="circle-bg w-full bg-neutral-100 top-[-15%] left-[-15%] group-hover:shadow-md transition-shadow duration-300 ease-in-out"></div>
-</div>
-    
-      <div class="bg-neutral-50 rounded-2xl flex flex-col p-4 py-6 md:px-8 relative overflow-hidden group hover:shadow-xl transition-shadow duration-300 ease-in-out">
-  <div data-scroll data-scroll-speed="1" class="flex-[2] z-[1]">
-    <picture class="group-hover:scale-95 transition-all duration-500 ease-in-out">
-  
-  <img src="img/products/small/ET-C11.png" alt="product ">
-</picture>
-  </div>
-  <div class="flex-[3] z-[1] space-y-4">
-    <p class="lg:text-xl group-hover:tracking-wide transition-all duration-500 ease-in-out uppercase">ET-C11</p>
-    <div>
-      <a href="/products/et-c11" class="button-1 rounded-md px-5 mr-auto text-sm lg:text-base cursor-pointer">VIEW MORE</a>
-    </div>
-  </div>
-  <div class="circle-bg w-full bg-neutral-100 top-[-15%] left-[-15%] group-hover:shadow-md transition-shadow duration-300 ease-in-out"></div>
-</div>
-    
-      <div class="bg-neutral-50 rounded-2xl flex flex-col p-4 py-6 md:px-8 relative overflow-hidden group hover:shadow-xl transition-shadow duration-300 ease-in-out">
+    <div class="bg-neutral-50 rounded-2xl flex flex-col p-4 py-6 md:px-8 relative overflow-hidden group hover:shadow-xl transition-shadow duration-300 ease-in-out">
   <div data-scroll data-scroll-speed="1" class="flex-[2] z-[1]">
     <picture class="group-hover:scale-95 transition-all duration-500 ease-in-out">
   
@@ -429,7 +263,7 @@
   <div class="circle-bg w-full bg-neutral-100 top-[-15%] left-[-15%] group-hover:shadow-md transition-shadow duration-300 ease-in-out"></div>
 </div>
     
-      <div class="bg-neutral-50 rounded-2xl flex flex-col p-4 py-6 md:px-8 relative overflow-hidden group hover:shadow-xl transition-shadow duration-300 ease-in-out">
+    <div class="bg-neutral-50 rounded-2xl flex flex-col p-4 py-6 md:px-8 relative overflow-hidden group hover:shadow-xl transition-shadow duration-300 ease-in-out">
   <div data-scroll data-scroll-speed="1" class="flex-[2] z-[1]">
     <picture class="group-hover:scale-95 transition-all duration-500 ease-in-out">
   
@@ -445,174 +279,126 @@
   <div class="circle-bg w-full bg-neutral-100 top-[-15%] left-[-15%] group-hover:shadow-md transition-shadow duration-300 ease-in-out"></div>
 </div>
     
-      <div class="bg-neutral-50 rounded-2xl flex flex-col p-4 py-6 md:px-8 relative overflow-hidden group hover:shadow-xl transition-shadow duration-300 ease-in-out">
-  <div data-scroll data-scroll-speed="1" class="flex-[2] z-[1]">
-    <picture class="group-hover:scale-95 transition-all duration-500 ease-in-out">
-  
-  <img src="img/products/small/ROYAL-SERIES-BATTERY.png" alt="product ">
-</picture>
-  </div>
-  <div class="flex-[3] z-[1] space-y-4">
-    <p class="lg:text-xl group-hover:tracking-wide transition-all duration-500 ease-in-out uppercase">ROYAL-SERIES-BATTERY</p>
-    <div>
-      <a href="/products/royel-series-battery" class="button-1 rounded-md px-5 mr-auto text-sm lg:text-base cursor-pointer">VIEW MORE</a>
-    </div>
-  </div>
-  <div class="circle-bg w-full bg-neutral-100 top-[-15%] left-[-15%] group-hover:shadow-md transition-shadow duration-300 ease-in-out"></div>
-</div>
-    
-      <div class="bg-neutral-50 rounded-2xl flex flex-col p-4 py-6 md:px-8 relative overflow-hidden group hover:shadow-xl transition-shadow duration-300 ease-in-out">
-  <div data-scroll data-scroll-speed="1" class="flex-[2] z-[1]">
-    <picture class="group-hover:scale-95 transition-all duration-500 ease-in-out">
-  
-  <img src="img/products/small/TC-02.png" alt="product ">
-</picture>
-  </div>
-  <div class="flex-[3] z-[1] space-y-4">
-    <p class="lg:text-xl group-hover:tracking-wide transition-all duration-500 ease-in-out uppercase">TC-02</p>
-    <div>
-      <a href="/products/tc-02" class="button-1 rounded-md px-5 mr-auto text-sm lg:text-base cursor-pointer">VIEW MORE</a>
-    </div>
-  </div>
-  <div class="circle-bg w-full bg-neutral-100 top-[-15%] left-[-15%] group-hover:shadow-md transition-shadow duration-300 ease-in-out"></div>
-</div>
-      
   </div>
 </div>
 
-<div data-scroll-section
-  class="container mx-auto px-6 md:px-10 mt-12 space-y-8">
-  <div class="flex justify-start">
-    <span style="clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%)" class="button-1 pr-10 rounded-md text-xl">PRODUCTS</span>
+<div data-scroll-section class="container mx-auto px-6 md:px-10 mt-16 space-y-8">
+  <div class="flex justify-end">
+    <span style="clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%)"
+      class="button-1 pl-10 rounded-md text-xl">CATEGORY</span>
   </div>
-  <div class="grid gap-5 grid-cols-2 sm:grid-cols-3 md:gap-10 lg:grid-cols-4">  
+  <div class="grid gap-y-5  md:gap-y-10 md:gap-10 md:grid-cols-2">
     
-      <div class="bg-neutral-50 rounded-2xl flex flex-col p-4 py-6 md:px-8 relative overflow-hidden group hover:shadow-xl transition-shadow duration-300 ease-in-out">
+    <div class="flex bg-neutral-50 relative rounded-2xl py-4 px-8 overflow-hidden hover:shadow-2xl group transition-shadow duration-300 ease-in-out">
+  <div class="flex-[3] z-[1] flex flex-col justify-around">
+    <p class="lg:text-2xl">CHARGER</p>
+    <a href="/products/a122" class="button-1 rounded-lg px-5 mr-auto text-sm lg:text-base cursor-pointer">VIEW MORE</a>
+  </div>
   <div data-scroll data-scroll-speed="1" class="flex-[2] z-[1]">
     <picture class="group-hover:scale-95 transition-all duration-500 ease-in-out">
   
   <img src="img/products/small/A122.png" alt="product ">
 </picture>
   </div>
-  <div class="flex-[3] z-[1] space-y-4">
-    <p class="lg:text-xl group-hover:tracking-wide transition-all duration-500 ease-in-out uppercase">A122</p>
-    <div>
-      <a href="/products/a122" class="button-1 rounded-md px-5 mr-auto text-sm lg:text-base cursor-pointer">VIEW MORE</a>
-    </div>
-  </div>
-  <div class="circle-bg w-full bg-neutral-100 top-[-15%] left-[-15%] group-hover:shadow-md transition-shadow duration-300 ease-in-out"></div>
+  <div class="circle-bg w-1/2 bg-neutral-100 top-[80%] left-[80%] -translate-x-1/2 -translate-y-1/2 group-hover:shadow-2xl transition-shadow duration-300 ease-in-out"></div>
 </div>
     
-      <div class="bg-neutral-50 rounded-2xl flex flex-col p-4 py-6 md:px-8 relative overflow-hidden group hover:shadow-xl transition-shadow duration-300 ease-in-out">
-  <div data-scroll data-scroll-speed="1" class="flex-[2] z-[1]">
-    <picture class="group-hover:scale-95 transition-all duration-500 ease-in-out">
-  
-  <img src="img/products/small/BH-53.png" alt="product ">
-</picture>
+    <div class="flex bg-neutral-50 relative rounded-2xl py-4 px-8 overflow-hidden hover:shadow-2xl group transition-shadow duration-300 ease-in-out">
+  <div class="flex-[3] z-[1] flex flex-col justify-around">
+    <p class="lg:text-2xl">EARPHONE</p>
+    <a href="/products/bh-65" class="button-1 rounded-lg px-5 mr-auto text-sm lg:text-base cursor-pointer">VIEW MORE</a>
   </div>
-  <div class="flex-[3] z-[1] space-y-4">
-    <p class="lg:text-xl group-hover:tracking-wide transition-all duration-500 ease-in-out uppercase">BH-53</p>
-    <div>
-      <a href="/products/bh-53" class="button-1 rounded-md px-5 mr-auto text-sm lg:text-base cursor-pointer">VIEW MORE</a>
-    </div>
-  </div>
-  <div class="circle-bg w-full bg-neutral-100 top-[-15%] left-[-15%] group-hover:shadow-md transition-shadow duration-300 ease-in-out"></div>
-</div>
-    
-      <div class="bg-neutral-50 rounded-2xl flex flex-col p-4 py-6 md:px-8 relative overflow-hidden group hover:shadow-xl transition-shadow duration-300 ease-in-out">
   <div data-scroll data-scroll-speed="1" class="flex-[2] z-[1]">
     <picture class="group-hover:scale-95 transition-all duration-500 ease-in-out">
   
   <img src="img/products/small/BH-65.png" alt="product ">
 </picture>
   </div>
-  <div class="flex-[3] z-[1] space-y-4">
-    <p class="lg:text-xl group-hover:tracking-wide transition-all duration-500 ease-in-out uppercase">BH-65</p>
-    <div>
-      <a href="/products/bh-65" class="button-1 rounded-md px-5 mr-auto text-sm lg:text-base cursor-pointer">VIEW MORE</a>
-    </div>
-  </div>
-  <div class="circle-bg w-full bg-neutral-100 top-[-15%] left-[-15%] group-hover:shadow-md transition-shadow duration-300 ease-in-out"></div>
+  <div class="circle-bg w-1/2 bg-neutral-100 top-[80%] left-[80%] -translate-x-1/2 -translate-y-1/2 group-hover:shadow-2xl transition-shadow duration-300 ease-in-out"></div>
 </div>
     
-      <div class="bg-neutral-50 rounded-2xl flex flex-col p-4 py-6 md:px-8 relative overflow-hidden group hover:shadow-xl transition-shadow duration-300 ease-in-out">
-  <div data-scroll data-scroll-speed="1" class="flex-[2] z-[1]">
-    <picture class="group-hover:scale-95 transition-all duration-500 ease-in-out">
-  
-  <img src="img/products/small/BH-67.png" alt="product ">
-</picture>
+    <div class="flex bg-neutral-50 relative rounded-2xl py-4 px-8 overflow-hidden hover:shadow-2xl group transition-shadow duration-300 ease-in-out">
+  <div class="flex-[3] z-[1] flex flex-col justify-around">
+    <p class="lg:text-2xl">STAND</p>
+    <a href="/products/et-013-01" class="button-1 rounded-lg px-5 mr-auto text-sm lg:text-base cursor-pointer">VIEW MORE</a>
   </div>
-  <div class="flex-[3] z-[1] space-y-4">
-    <p class="lg:text-xl group-hover:tracking-wide transition-all duration-500 ease-in-out uppercase">BH-67</p>
-    <div>
-      <a href="/products/bh-67" class="button-1 rounded-md px-5 mr-auto text-sm lg:text-base cursor-pointer">VIEW MORE</a>
-    </div>
-  </div>
-  <div class="circle-bg w-full bg-neutral-100 top-[-15%] left-[-15%] group-hover:shadow-md transition-shadow duration-300 ease-in-out"></div>
-</div>
-    
-      <div class="bg-neutral-50 rounded-2xl flex flex-col p-4 py-6 md:px-8 relative overflow-hidden group hover:shadow-xl transition-shadow duration-300 ease-in-out">
   <div data-scroll data-scroll-speed="1" class="flex-[2] z-[1]">
     <picture class="group-hover:scale-95 transition-all duration-500 ease-in-out">
   
   <img src="img/products/small/ET-013-01.png" alt="product ">
 </picture>
   </div>
-  <div class="flex-[3] z-[1] space-y-4">
-    <p class="lg:text-xl group-hover:tracking-wide transition-all duration-500 ease-in-out uppercase">ET-013-01</p>
-    <div>
-      <a href="/products/et-013-01" class="button-1 rounded-md px-5 mr-auto text-sm lg:text-base cursor-pointer">VIEW MORE</a>
-    </div>
-  </div>
-  <div class="circle-bg w-full bg-neutral-100 top-[-15%] left-[-15%] group-hover:shadow-md transition-shadow duration-300 ease-in-out"></div>
+  <div class="circle-bg w-1/2 bg-neutral-100 top-[80%] left-[80%] -translate-x-1/2 -translate-y-1/2 group-hover:shadow-2xl transition-shadow duration-300 ease-in-out"></div>
 </div>
     
-      <div class="bg-neutral-50 rounded-2xl flex flex-col p-4 py-6 md:px-8 relative overflow-hidden group hover:shadow-xl transition-shadow duration-300 ease-in-out">
+    <div class="flex bg-neutral-50 relative rounded-2xl py-4 px-8 overflow-hidden hover:shadow-2xl group transition-shadow duration-300 ease-in-out">
+  <div class="flex-[3] z-[1] flex flex-col justify-around">
+    <p class="lg:text-2xl">CAR CHARGER</p>
+    <a href="/products/et-c11" class="button-1 rounded-lg px-5 mr-auto text-sm lg:text-base cursor-pointer">VIEW MORE</a>
+  </div>
   <div data-scroll data-scroll-speed="1" class="flex-[2] z-[1]">
     <picture class="group-hover:scale-95 transition-all duration-500 ease-in-out">
   
   <img src="img/products/small/ET-C11.png" alt="product ">
 </picture>
   </div>
-  <div class="flex-[3] z-[1] space-y-4">
-    <p class="lg:text-xl group-hover:tracking-wide transition-all duration-500 ease-in-out uppercase">ET-C11</p>
-    <div>
-      <a href="/products/et-c11" class="button-1 rounded-md px-5 mr-auto text-sm lg:text-base cursor-pointer">VIEW MORE</a>
-    </div>
-  </div>
-  <div class="circle-bg w-full bg-neutral-100 top-[-15%] left-[-15%] group-hover:shadow-md transition-shadow duration-300 ease-in-out"></div>
+  <div class="circle-bg w-1/2 bg-neutral-100 top-[80%] left-[80%] -translate-x-1/2 -translate-y-1/2 group-hover:shadow-2xl transition-shadow duration-300 ease-in-out"></div>
 </div>
     
-      <div class="bg-neutral-50 rounded-2xl flex flex-col p-4 py-6 md:px-8 relative overflow-hidden group hover:shadow-xl transition-shadow duration-300 ease-in-out">
+    <div class="flex bg-neutral-50 relative rounded-2xl py-4 px-8 overflow-hidden hover:shadow-2xl group transition-shadow duration-300 ease-in-out">
+  <div class="flex-[3] z-[1] flex flex-col justify-around">
+    <p class="lg:text-2xl">POWERBANK</p>
+    <a href="/products/pb-701" class="button-1 rounded-lg px-5 mr-auto text-sm lg:text-base cursor-pointer">VIEW MORE</a>
+  </div>
   <div data-scroll data-scroll-speed="1" class="flex-[2] z-[1]">
     <picture class="group-hover:scale-95 transition-all duration-500 ease-in-out">
   
-  <img src="img/products/small/ET-C12.png" alt="product ">
+  <img src="img/products/small/PB-701.png" alt="product ">
 </picture>
   </div>
-  <div class="flex-[3] z-[1] space-y-4">
-    <p class="lg:text-xl group-hover:tracking-wide transition-all duration-500 ease-in-out uppercase">ET-C12</p>
-    <div>
-      <a href="/products/et-c12" class="button-1 rounded-md px-5 mr-auto text-sm lg:text-base cursor-pointer">VIEW MORE</a>
-    </div>
-  </div>
-  <div class="circle-bg w-full bg-neutral-100 top-[-15%] left-[-15%] group-hover:shadow-md transition-shadow duration-300 ease-in-out"></div>
+  <div class="circle-bg w-1/2 bg-neutral-100 top-[80%] left-[80%] -translate-x-1/2 -translate-y-1/2 group-hover:shadow-2xl transition-shadow duration-300 ease-in-out"></div>
 </div>
     
-      <div class="bg-neutral-50 rounded-2xl flex flex-col p-4 py-6 md:px-8 relative overflow-hidden group hover:shadow-xl transition-shadow duration-300 ease-in-out">
+    <div class="flex bg-neutral-50 relative rounded-2xl py-4 px-8 overflow-hidden hover:shadow-2xl group transition-shadow duration-300 ease-in-out">
+  <div class="flex-[3] z-[1] flex flex-col justify-around">
+    <p class="lg:text-2xl">EARBUDS</p>
+    <a href="/products/r17" class="button-1 rounded-lg px-5 mr-auto text-sm lg:text-base cursor-pointer">VIEW MORE</a>
+  </div>
   <div data-scroll data-scroll-speed="1" class="flex-[2] z-[1]">
     <picture class="group-hover:scale-95 transition-all duration-500 ease-in-out">
   
-  <img src="img/products/small/ET-C13.png" alt="product ">
+  <img src="img/products/small/R17.png" alt="product ">
 </picture>
   </div>
-  <div class="flex-[3] z-[1] space-y-4">
-    <p class="lg:text-xl group-hover:tracking-wide transition-all duration-500 ease-in-out uppercase">ET-C13</p>
-    <div>
-      <a href="/products/et-c13" class="button-1 rounded-md px-5 mr-auto text-sm lg:text-base cursor-pointer">VIEW MORE</a>
-    </div>
+  <div class="circle-bg w-1/2 bg-neutral-100 top-[80%] left-[80%] -translate-x-1/2 -translate-y-1/2 group-hover:shadow-2xl transition-shadow duration-300 ease-in-out"></div>
+</div>
+    
+    <div class="flex bg-neutral-50 relative rounded-2xl py-4 px-8 overflow-hidden hover:shadow-2xl group transition-shadow duration-300 ease-in-out">
+  <div class="flex-[3] z-[1] flex flex-col justify-around">
+    <p class="lg:text-2xl">BATTERY</p>
+    <a href="/products/royel-series-battery" class="button-1 rounded-lg px-5 mr-auto text-sm lg:text-base cursor-pointer">VIEW MORE</a>
   </div>
-  <div class="circle-bg w-full bg-neutral-100 top-[-15%] left-[-15%] group-hover:shadow-md transition-shadow duration-300 ease-in-out"></div>
+  <div data-scroll data-scroll-speed="1" class="flex-[2] z-[1]">
+    <picture class="group-hover:scale-95 transition-all duration-500 ease-in-out">
+  
+  <img src="img/products/small/ROYAL-SERIES-BATTERY.png" alt="product ">
+</picture>
+  </div>
+  <div class="circle-bg w-1/2 bg-neutral-100 top-[80%] left-[80%] -translate-x-1/2 -translate-y-1/2 group-hover:shadow-2xl transition-shadow duration-300 ease-in-out"></div>
+</div>
+    
+    <div class="flex bg-neutral-50 relative rounded-2xl py-4 px-8 overflow-hidden hover:shadow-2xl group transition-shadow duration-300 ease-in-out">
+  <div class="flex-[3] z-[1] flex flex-col justify-around">
+    <p class="lg:text-2xl">USB CONNECTOR</p>
+    <a href="/products/tc-02" class="button-1 rounded-lg px-5 mr-auto text-sm lg:text-base cursor-pointer">VIEW MORE</a>
+  </div>
+  <div data-scroll data-scroll-speed="1" class="flex-[2] z-[1]">
+    <picture class="group-hover:scale-95 transition-all duration-500 ease-in-out">
+  
+  <img src="img/products/small/TC-02.png" alt="product ">
+</picture>
+  </div>
+  <div class="circle-bg w-1/2 bg-neutral-100 top-[80%] left-[80%] -translate-x-1/2 -translate-y-1/2 group-hover:shadow-2xl transition-shadow duration-300 ease-in-out"></div>
 </div>
     
   </div>
@@ -623,8 +409,8 @@
       <p class="font-bold text-red-600">COMPNAY</p>
       <img class="w-20" src="./img/logo.png" alt="">
       <p class="w-3/4 text-white font-light text-sm">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply
-        dummy text of the printing and typesetting industry
+        ETAR Mobile Accessories established in 2017 and having it's headquarters in Mumbai, ETAR is India's most
+        progressive Consumer Mobile Accessories brand
       </p>
     </div>
     <div class="flex-1 space-y-3">
@@ -677,8 +463,9 @@
         Subscribe to get notified about product launches, special offers and company news.
       </p>
       <div class="flex flex-col space-y-3">
-        <input type="text" class="w-full px-3 text-lg py-2 rounded focus:ring-transparent" placeholder="Enter Your Email Address">
-        <button class="button-1 rounded mr-auto">SIGN UP</button>
+        <input type="text" class="w-full px-3 text-lg py-2 rounded focus:ring-transparent"
+          placeholder="Enter Your Email Address">
+        <button class="button-1 rounded mr-auto">SUBSCRIBE</button>
       </div>
     </div>
   </div>

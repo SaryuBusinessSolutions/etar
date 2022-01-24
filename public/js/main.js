@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   swiperWraper();
 });
 
-window.onload = ()=>{
+window.onload = () => {
   loaded();
 }
 
@@ -22,8 +22,8 @@ function strToRegex(string) {
 
 function loadProductFuse() {
   const options = {
-    threshold:0.3,
-    keys: ['name','type']
+    threshold: 0.3,
+    keys: ['name', 'type']
   }
   productFuse = new Fuse([], options)
 
@@ -38,14 +38,14 @@ function loadProductFuse() {
     });
 }
 
-function loaded(){
+function loaded() {
   document.querySelector("#preloader").remove();
 }
 
-function navbarfix(){
+function navbarfix() {
   try {
     let navHeight = document.querySelector('navbar').scrollHeight;
-    document.querySelector("#navfix").style.height = navHeight+"px";
+    document.querySelector("#navfix").style.height = navHeight + "px";
     document.querySelector("#maxhfix").style.minHeight = document.querySelector("#maxhfix").clientHeight - navHeight + "px";
   } catch (error) {
     console.log(error);
@@ -57,13 +57,13 @@ function locomotiveInit() {
     scroll = new LocomotiveScroll({
       el: document.querySelector('[data-scroll-container]'),
       smooth: true,
-      repeat : true,
+      repeat: true,
       speed: 0.3,
       reloadOnContextChange: true,
-      smartphone:{
+      smartphone: {
         smooth: false,
       },
-      tablet:{
+      tablet: {
         smooth: false,
       }
     });
@@ -75,40 +75,46 @@ function locomotiveInit() {
 }
 
 function navTogle(navOpen) {
-  let nav  = document.querySelector('[x-data*="navOpen"]')._x_dataStack[0];
-
-  if(!navOpen) nav.$data.navOpen = !nav.$data.navOpen;
-  navOpen ? document.body.classList.add('overflow-hidden') : document.body.classList.remove('overflow-hidden');
-  navOpen ? swiper.disable() : swiper.enable();
+  let nav = document.querySelector('[x-data*="navOpen"]')._x_dataStack[0];
+  if (!navOpen) {
+    nav.$data.navOpen = true;
+    document.body.classList.add('overflow-hidden');
+    swiper.disable();
+    scroll.stop()
+  } else {
+    setTimeout(() => {
+      nav.$data.navOpen = false;
+      document.body.classList.remove('overflow-hidden');
+      swiper.enable();
+      scroll.start()
+    }, 600);
+  }
   document.querySelectorAll('.navlink').forEach((navlink, index) => {
     setTimeout(() => {
       navlink.classList.toggle('translate-x-[200%]');
       navlink.classList.toggle('md:translate-x-[600%]');
-    }, 100*index);
+    }, 100 * index);
   });
-  setTimeout(() => {
-    if (navOpen) nav.$data.navOpen = !nav.$data.navOpen;
-  }, 600);
 }
 
-function swiperWraper(){
+function swiperWraper() {
   swiper = new Swiper('.swiper', {
-    autoHeight:true,
+    autoHeight: true,
     loop: true,
     slidesPerView: "auto",
     autoplay: {
-      delay : 2000,
-      disableOnInteraction : false,
-      pauseOnMouseEnter : false,
+      delay: 2000,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: false,
     },
   });
 }
 
-function searchProduct(value){
-  if(value.length > 0){
+function searchProduct(value) {
+  if (value.length > 0) {
     let result = productFuse.search(strToRegex(value));
     document.querySelector('[x-data*="search"]')._x_dataStack[0].lists = result;
-  }else{
+  } else {
     document.querySelector('[x-data*="search"]')._x_dataStack[0].lists = [];
   }
   setTimeout(() => {
@@ -116,12 +122,12 @@ function searchProduct(value){
   }, 100);
 }
 
-function textSplit(){
+function textSplit() {
   try {
     document.querySelectorAll('[split]').forEach(split => {
       console.log(split.innerText);
     });
   } catch (error) {
     console.log(error)
-  } 
+  }
 }

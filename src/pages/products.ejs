@@ -21,12 +21,10 @@
   </div>
   <div :class="search.length > 0?'hidden':'grid'" class="grid gap-5 grid-cols-2 sm:grid-cols-3 md:gap-10 lg:grid-cols-4">
     <% site.pages.filter(page=> page.data.type).forEach(page => { %>
-    <%- include('page/card2Search',{
+    <%- include('page/card2',{
       name: page.data.name,
       img:page.data.img,
       link: page.actualpath,
-      productname:page.data.name,
-      productType:page.data.type
     }) %>
     <% }) %>
   </div>
