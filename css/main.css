@@ -8,3 +8,8 @@
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: rgba(77, 77, 77, 0.186);
 }
+
+.stroke-red{
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(255, 0, 0);
+}
