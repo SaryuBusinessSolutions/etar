@@ -7,12 +7,16 @@ let swiper;
 document.addEventListener('DOMContentLoaded', () => {
   loadProductFuse();
   navbarfix();
-  locomotiveInit();
   swiperWraper();
 });
 
 window.onload = () => {
   loaded();
+  locomotiveInit();
+}
+
+window.onscroll = ()=>{
+  // scroll.update();
 }
 
 // function

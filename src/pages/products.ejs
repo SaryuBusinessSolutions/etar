@@ -24,7 +24,7 @@
     <%- include('page/card2',{
       name: page.data.name,
       img:page.data.img,
-      link: page.actualpath,
+      link: page.srcfix+page.actualpath.substring(1),
     }) %>
     <% }) %>
   </div>

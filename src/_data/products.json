@@ -1,0 +1,272 @@
+[
+  {
+    "name": "a122",
+    "title": "A122",
+    "category": true,
+    "type": "CHARGER",
+    "img": "A122.png"
+  },
+  {
+    "name": "a2206",
+    "title": "A2206",
+    "type": "CHARGER",
+    "img": "A2206.png"
+  },
+  {
+    "name": "all-1",
+    "title": "ALL-1",
+    "type": "MICE",
+    "img": "ALL-1.png"
+  },
+  {
+    "name": "b26",
+    "title": "B26",
+    "type": "USB CABLE",
+    "img": "B26.png"
+  },
+  {
+    "name": "bh-53",
+    "title": "BH-53",
+    "type": "EARPHONE",
+    "img": "BH-53.png"
+  },
+  {
+    "name": "bh-65",
+    "title": "BH-65",
+    "featured": true,
+    "category": true,
+    "type": "EARPHONE",
+    "img": "BH-65.png"
+  },
+  {
+    "name": "bh-67",
+    "title": "BH-67",
+    "type": "EARPHONE",
+    "img": "BH-67.png"
+  },
+  {
+    "name": "bh-73",
+    "title": "BH-73",
+    "type": "EARPHONE",
+    "img": "BH-73.png"
+  },
+  {
+    "name": "et-013-01",
+    "title": "ET-013-01",
+    "category": true,
+    "type": "STAND",
+    "img": "ET-013-01.png"
+  },
+  {
+    "name": "et-27",
+    "title": "ET-27",
+    "type": "EARPHONE",
+    "img": "ET-27.png"
+  },
+  {
+    "name": "et-84h",
+    "title": "ET-84H",
+    "type": "HEADPHONE",
+    "img": "ET-84H.png"
+  },
+  {
+    "name": "et-A2210",
+    "title": "ET-A2210",
+    "type": "CHARGER",
+    "img": "ET-A2210.png"
+  },
+  {
+    "name": "et-B27",
+    "title": "ET-B27",
+    "type": "USB CABLE",
+    "img": "ET-B27.png"
+  },
+  {
+    "name": "et-c11",
+    "title": "ET-C11",
+    "category": true,
+    "type": "CAR CHARGER",
+    "img": "ET-C11.png"
+  },
+  {
+    "name": "et-c12",
+    "title": "ET-C12",
+    "type": "CAR CHARGER",
+    "img": "ET-C12.png"
+  },
+  {
+    "name": "et-c13",
+    "title": "ET-C13",
+    "type": "CAR CHARGER",
+    "img": "ET-C13.png"
+  },
+  {
+    "name": "et-c15",
+    "title": "ET-C15",
+    "type": "CAR CHARGER",
+    "img": "ET-C15.png"
+  },
+  {
+    "name": "et-c16",
+    "title": "ET-C16",
+    "type": "CAR CHARGER",
+    "img": "ET-C16.png"
+  },
+  {
+    "name": "et-q23",
+    "title": "ET-Q23",
+    "type": "EARPHONE",
+    "img": "ET-Q23.png"
+  },
+  {
+    "name": "et-r18",
+    "title": "ET-R18",
+    "type": "EARBUDS",
+    "img": "ET-R18.png"
+  },
+  {
+    "name": "et-s19",
+    "title": "ET-S19",
+    "type": "STAND",
+    "img": "ET-S19.png"
+  },
+  {
+    "name": "et-sp34",
+    "title": "ET-SP34",
+    "type": "SPEAKER",
+    "img": "ET-SP34.png"
+  },
+  {
+    "name": "etar2",
+    "title": "ETAR2",
+    "type": "EARPHONE",
+    "img": "ETAR2.png"
+  },
+  {
+    "name": "ex-779",
+    "title": "EX-779",
+    "type": "EARPHONE",
+    "img": "EX-779.png"
+  },
+  {
+    "name": "ex-999",
+    "title": "EX-999",
+    "type": "EARPHONE",
+    "img": "EX-999.png"
+  },
+  {
+    "name": "pb-701",
+    "title": "PB-701",
+    "featured": true,
+    "category": true,
+    "type": "POWERBANK",
+    "img": "PB-701.png"
+  },
+  {
+    "name": "pb-705",
+    "title": "PB-705",
+    "type": "POWERBANK",
+    "img": "PB-705.png"
+  },
+  {
+    "name": "q6",
+    "title": "Q6",
+    "type": "EARPHONE",
+    "img": "Q6.png"
+  },
+  {
+    "name": "q14",
+    "title": "Q14",
+    "type": "EARPHONE",
+    "img": "Q14.png"
+  },
+  {
+    "name": "q21",
+    "title": "Q21",
+    "type": "EARPHONE",
+    "img": "Q21.png"
+  },
+  {
+    "name": "qc-200",
+    "title": "QC-200",
+    "type": "CHARGER",
+    "img": "QC-200.png"
+  },
+  {
+    "name": "r16",
+    "title": "R16",
+    "type": "EARBUDS",
+    "img": "R16.png"
+  },
+  {
+    "name": "r17",
+    "title": "R17",
+    "featured": true,
+    "category": true,
+    "type": "EARBUDS",
+    "img": "R17.png"
+  },
+  {
+    "name": "rm-battery",
+    "title": "RM-BATTERY",
+    "type": "BATTERY",
+    "img": "RM-BATTERY.png"
+  },
+  {
+    "name": "royal-series-battery",
+    "title": "ROYAL-SERIES-BATTERY",
+    "category": true,
+    "type": "BATTERY",
+    "img": "ROYAL-SERIES-BATTERY.png"
+  },
+  {
+    "name": "s17",
+    "title": "S17",
+    "type": "STAND",
+    "img": "S17.png"
+  },
+  {
+    "name": "SMART-TRYPOD",
+    "title": "SMART-TRYPOD",
+    "type": "STAND",
+    "img": "SMART-TRYPOD.png"
+  },
+
+  {
+    "name": "sp-400",
+    "title": "SP-400",
+    "type": "SPEAKER",
+    "img": "SP-400.png"
+  },
+  {
+    "name": "sp44-vggg",
+    "title": "SP44-VGGG",
+    "type": "SPEAKER",
+    "img": "SP44-VGGG.png"
+  },
+  {
+    "name": "sp44",
+    "title": "SP44",
+    "type": "SPEAKER",
+    "img": "SP44.png"
+  },
+  {
+    "name": "sp45",
+    "title": "SP45",
+    "type": "SPEAKER",
+    "img": "SP45.png"
+  },
+  {
+    "name": "tc-02",
+    "title": "TC-02",
+    "category": true,
+    "type": "USB CONNECTOR",
+    "img": "TC-02.png"
+  },
+  {
+    "name": "watch",
+    "title": "WATCH",
+    "type": "USB CONNECTOR",
+    "img": "WATCH.png"
+  }
+]
