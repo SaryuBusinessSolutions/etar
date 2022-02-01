@@ -7,107 +7,232 @@
 	</url>
 	<url>
 		<loc>https://etarindia.com/contact</loc>
-		<lastmod>2022-01-22T10:50:44.983Z</lastmod>
+		<lastmod>2022-02-01T11:25:07.082Z</lastmod>
 		<priority>0.80</priority>
 	</url>
 	<url>
 		<loc>https://etarindia.com/</loc>
-		<lastmod>2022-01-24T09:50:13.254Z</lastmod>
+		<lastmod>2022-02-01T11:45:30.757Z</lastmod>
 		<priority>1.0</priority>
 	</url>
 	<url>
 		<loc>https://etarindia.com/products</loc>
-		<lastmod>2022-01-24T09:51:41.860Z</lastmod>
+		<lastmod>2022-02-01T11:44:28.117Z</lastmod>
 		<priority>0.80</priority>
 	</url>
 	<url>
 		<loc>https://etarindia.com/products/a122</loc>
-		<lastmod>2022-01-24T09:47:29.981Z</lastmod>
+		<lastmod>2022-02-01T11:17:38.876Z</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://etarindia.com/products/a2206</loc>
+		<lastmod>2022-02-01T11:17:38.876Z</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://etarindia.com/products/all-1</loc>
+		<lastmod>2022-02-01T11:17:38.876Z</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://etarindia.com/products/b26</loc>
+		<lastmod>2022-02-01T11:17:38.876Z</lastmod>
 		<priority>0.64</priority>
 	</url>
 	<url>
 		<loc>https://etarindia.com/products/bh-53</loc>
-		<lastmod>2022-01-23T16:25:34.301Z</lastmod>
+		<lastmod>2022-02-01T11:17:38.876Z</lastmod>
 		<priority>0.64</priority>
 	</url>
 	<url>
 		<loc>https://etarindia.com/products/bh-65</loc>
-		<lastmod>2022-01-23T16:25:34.300Z</lastmod>
+		<lastmod>2022-02-01T11:17:38.876Z</lastmod>
 		<priority>0.64</priority>
 	</url>
 	<url>
 		<loc>https://etarindia.com/products/bh-67</loc>
-		<lastmod>2022-01-23T16:25:34.299Z</lastmod>
+		<lastmod>2022-02-01T11:17:38.876Z</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://etarindia.com/products/bh-73</loc>
+		<lastmod>2022-02-01T11:17:38.876Z</lastmod>
 		<priority>0.64</priority>
 	</url>
 	<url>
 		<loc>https://etarindia.com/products/et-013-01</loc>
-		<lastmod>2022-01-24T09:47:48.824Z</lastmod>
+		<lastmod>2022-02-01T11:17:38.876Z</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://etarindia.com/products/et-27</loc>
+		<lastmod>2022-02-01T11:17:38.876Z</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://etarindia.com/products/et-84h</loc>
+		<lastmod>2022-02-01T11:17:38.876Z</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://etarindia.com/products/et-A2210</loc>
+		<lastmod>2022-02-01T11:17:38.876Z</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://etarindia.com/products/et-B27</loc>
+		<lastmod>2022-02-01T11:17:38.876Z</lastmod>
 		<priority>0.64</priority>
 	</url>
 	<url>
 		<loc>https://etarindia.com/products/et-c11</loc>
-		<lastmod>2022-01-24T09:47:58.021Z</lastmod>
+		<lastmod>2022-02-01T11:17:38.877Z</lastmod>
 		<priority>0.64</priority>
 	</url>
 	<url>
 		<loc>https://etarindia.com/products/et-c12</loc>
-		<lastmod>2022-01-23T16:27:27.092Z</lastmod>
+		<lastmod>2022-02-01T11:17:38.877Z</lastmod>
 		<priority>0.64</priority>
 	</url>
 	<url>
 		<loc>https://etarindia.com/products/et-c13</loc>
-		<lastmod>2022-01-23T16:27:27.092Z</lastmod>
+		<lastmod>2022-02-01T11:17:38.877Z</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://etarindia.com/products/et-c15</loc>
+		<lastmod>2022-02-01T11:17:38.877Z</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://etarindia.com/products/et-c16</loc>
+		<lastmod>2022-02-01T11:17:38.877Z</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://etarindia.com/products/et-q23</loc>
+		<lastmod>2022-02-01T11:17:38.877Z</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://etarindia.com/products/et-r18</loc>
+		<lastmod>2022-02-01T11:17:38.877Z</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://etarindia.com/products/et-s19</loc>
+		<lastmod>2022-02-01T11:17:38.877Z</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://etarindia.com/products/et-sp34</loc>
+		<lastmod>2022-02-01T11:17:38.877Z</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://etarindia.com/products/etar2</loc>
+		<lastmod>2022-02-01T11:17:38.878Z</lastmod>
 		<priority>0.64</priority>
 	</url>
 	<url>
 		<loc>https://etarindia.com/products/ex-779</loc>
-		<lastmod>2022-01-23T16:25:34.301Z</lastmod>
+		<lastmod>2022-02-01T11:17:38.878Z</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://etarindia.com/products/ex-999</loc>
+		<lastmod>2022-02-01T11:17:38.878Z</lastmod>
 		<priority>0.64</priority>
 	</url>
 	<url>
 		<loc>https://etarindia.com/products/pb-701</loc>
-		<lastmod>2022-01-23T16:27:45.630Z</lastmod>
+		<lastmod>2022-02-01T11:17:38.878Z</lastmod>
 		<priority>0.64</priority>
 	</url>
 	<url>
 		<loc>https://etarindia.com/products/pb-705</loc>
-		<lastmod>2022-01-23T16:27:45.630Z</lastmod>
+		<lastmod>2022-02-01T11:17:38.878Z</lastmod>
 		<priority>0.64</priority>
 	</url>
 	<url>
 		<loc>https://etarindia.com/products/q14</loc>
-		<lastmod>2022-01-23T16:25:34.301Z</lastmod>
+		<lastmod>2022-02-01T11:17:38.878Z</lastmod>
 		<priority>0.64</priority>
 	</url>
 	<url>
 		<loc>https://etarindia.com/products/q21</loc>
-		<lastmod>2022-01-23T16:26:24.905Z</lastmod>
+		<lastmod>2022-02-01T11:17:38.878Z</lastmod>
 		<priority>0.64</priority>
 	</url>
 	<url>
 		<loc>https://etarindia.com/products/q6</loc>
-		<lastmod>2022-01-23T16:25:34.301Z</lastmod>
+		<lastmod>2022-02-01T11:17:38.878Z</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://etarindia.com/products/qc-200</loc>
+		<lastmod>2022-02-01T11:17:38.878Z</lastmod>
 		<priority>0.64</priority>
 	</url>
 	<url>
 		<loc>https://etarindia.com/products/r16</loc>
-		<lastmod>2022-01-23T16:28:02.570Z</lastmod>
+		<lastmod>2022-02-01T11:17:38.878Z</lastmod>
 		<priority>0.64</priority>
 	</url>
 	<url>
 		<loc>https://etarindia.com/products/r17</loc>
-		<lastmod>2022-01-23T16:28:02.570Z</lastmod>
+		<lastmod>2022-02-01T11:17:38.878Z</lastmod>
 		<priority>0.64</priority>
 	</url>
 	<url>
-		<loc>https://etarindia.com/products/royel-series-battery</loc>
-		<lastmod>2022-01-24T09:48:09.265Z</lastmod>
+		<loc>https://etarindia.com/products/rm-battery</loc>
+		<lastmod>2022-02-01T11:17:38.878Z</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://etarindia.com/products/royal-series-battery</loc>
+		<lastmod>2022-02-01T11:17:38.878Z</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://etarindia.com/products/s17</loc>
+		<lastmod>2022-02-01T11:17:38.879Z</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://etarindia.com/products/SMART-TRYPOD</loc>
+		<lastmod>2022-02-01T11:17:38.879Z</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://etarindia.com/products/sp-400</loc>
+		<lastmod>2022-02-01T11:17:38.879Z</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://etarindia.com/products/sp44-vggg</loc>
+		<lastmod>2022-02-01T11:17:38.879Z</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://etarindia.com/products/sp44</loc>
+		<lastmod>2022-02-01T11:17:38.879Z</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://etarindia.com/products/sp45</loc>
+		<lastmod>2022-02-01T11:17:38.879Z</lastmod>
 		<priority>0.64</priority>
 	</url>
 	<url>
 		<loc>https://etarindia.com/products/tc-02</loc>
-		<lastmod>2022-01-24T09:48:11.620Z</lastmod>
+		<lastmod>2022-02-01T11:17:38.879Z</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://etarindia.com/products/watch</loc>
+		<lastmod>2022-02-01T11:17:38.879Z</lastmod>
 		<priority>0.64</priority>
 	</url>
 </urlset>
