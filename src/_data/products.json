@@ -1,272 +1,868 @@
 [
   {
-    "name": "a122",
-    "title": "A122",
-    "category": true,
-    "type": "CHARGER",
-    "img": "A122.png"
-  },
-  {
-    "name": "a2206",
-    "title": "A2206",
-    "type": "CHARGER",
-    "img": "A2206.png"
-  },
-  {
-    "name": "all-1",
-    "title": "ALL-1",
-    "type": "MICE",
-    "img": "ALL-1.png"
-  },
-  {
-    "name": "b26",
-    "title": "B26",
-    "type": "USB CABLE",
-    "img": "B26.png"
-  },
-  {
-    "name": "bh-53",
-    "title": "BH-53",
-    "type": "EARPHONE",
-    "img": "BH-53.png"
-  },
-  {
-    "name": "bh-65",
-    "title": "BH-65",
-    "featured": true,
-    "category": true,
-    "type": "EARPHONE",
-    "img": "BH-65.png"
-  },
-  {
-    "name": "bh-67",
-    "title": "BH-67",
-    "type": "EARPHONE",
-    "img": "BH-67.png"
-  },
-  {
-    "name": "bh-73",
-    "title": "BH-73",
-    "type": "EARPHONE",
-    "img": "BH-73.png"
-  },
-  {
     "name": "et-013-01",
     "title": "ET-013-01",
     "category": true,
     "type": "STAND",
-    "img": "ET-013-01.png"
+    "img": "ET-013-01.png",
+    "colors": [
+      "#ffffff",
+      "#000000",
+      "#FFEE00",
+      "#F07F1B",
+      "#E60C80",
+      "#E60C80"
+    ],
+    "features": [],
+    "description": ""
   },
   {
     "name": "et-27",
     "title": "ET-27",
     "type": "EARPHONE",
-    "img": "ET-27.png"
+    "img": "ET-27.png",
+    "colors": ["#000000"],
+    "features": [
+      {
+        "name": "Hi-Fi Stereo",
+        "img": ""
+      },
+      {
+        "name": "Noise Isolation",
+        "img": ""
+      },
+      {
+        "name": "In-line Mic",
+        "img": ""
+      }
+    ],
+    "description": ""
   },
   {
     "name": "et-84h",
     "title": "ET-84H",
     "type": "HEADPHONE",
-    "img": "ET-84H.png"
+    "img": "ET-84H.png",
+    "colors": ["#000000"],
+    "features": [
+      {
+        "name": "Hi-Fi Stereo",
+        "img": ""
+      },
+      {
+        "name": "Noise Isolation",
+        "img": ""
+      },
+      {
+        "name": "In-line Mic",
+        "img": ""
+      }
+    ],
+    "description": ""
   },
   {
-    "name": "et-A2210",
+    "name": "et-a122",
+    "title": "ET-A122",
+    "category": true,
+    "type": "CHARGER",
+    "img": "ET-A122.png",
+    "colors": ["#ffffff"],
+    "features": [
+      {
+        "name": "over-charging protection",
+        "img": ""
+      },
+      {
+        "name": "over-voltage protection",
+        "img": ""
+      },
+      {
+        "name": "temprature protection",
+        "img": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "name": "et-a2206",
+    "title": "ET-A2206",
+    "type": "CHARGER",
+    "img": "ET-A2206.png",
+    "colors": ["#ffffff"],
+    "features": [
+      {
+        "name": "over-charging protection",
+        "img": ""
+      },
+      {
+        "name": "over-voltage protection",
+        "img": ""
+      },
+      {
+        "name": "temprature protection",
+        "img": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "name": "et-a2210",
     "title": "ET-A2210",
     "type": "CHARGER",
-    "img": "ET-A2210.png"
+    "img": "ET-A2210.png",
+    "colors": ["#000000"],
+    "features": [
+      {
+        "name": "over-charging protection",
+        "img": ""
+      },
+      {
+        "name": "over-voltage protection",
+        "img": ""
+      },
+      {
+        "name": "temprature protection",
+        "img": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "name": "et-b26",
+    "title": "ET-B26",
+    "type": "USB CABLE",
+    "img": "ET-B26.png",
+    "colors": ["#ffffff"],
+    "features": [
+      {
+        "name": "Fast Charging",
+        "img": ""
+      },
+      {
+        "name": "Data Cable",
+        "img": ""
+      },
+      {
+        "name": "2.4A Output",
+        "img": ""
+      }
+    ],
+    "description": ""
   },
   {
     "name": "et-B27",
     "title": "ET-B27",
     "type": "USB CABLE",
-    "img": "ET-B27.png"
+    "img": "ET-B27.png",
+    "colors": ["#000000"],
+    "features": [
+      {
+        "name": "Fast Charging",
+        "img": ""
+      },
+      {
+        "name": "Data Cable",
+        "img": ""
+      },
+      {
+        "name": "2.4A Output",
+        "img": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "name": "et-bh53",
+    "title": "ET-BH53",
+    "type": "EARPHONE",
+    "img": "ET-BH53.png",
+    "colors": ["#504328"],
+    "features": [
+      {
+        "name": "Hi-Fi Stereo",
+        "img": ""
+      },
+      {
+        "name": "Noise Isolation",
+        "img": ""
+      },
+      {
+        "name": "In-line Mic",
+        "img": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "name": "et-bh65",
+    "title": "ET-BH65",
+    "featured": true,
+    "category": true,
+    "type": "EARPHONE",
+    "img": "ET-BH65.png",
+    "colors": ["#000000"],
+    "features": [
+      {
+        "name": "25H playback time",
+        "img": ""
+      },
+      {
+        "name": "Noise Isolation",
+        "img": ""
+      },
+      {
+        "name": "In-line Mic",
+        "img": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "name": "et-bh67",
+    "title": "ET-BH67",
+    "type": "EARPHONE",
+    "img": "ET-BH67.png",
+    "colors": ["#000000"],
+    "features": [
+      {
+        "name": "20H playback time",
+        "img": ""
+      },
+      {
+        "name": "Noise Isolation",
+        "img": ""
+      },
+      {
+        "name": "In-line Mic",
+        "img": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "name": "et-bh73",
+    "title": "ET-BH73",
+    "type": "EARPHONE",
+    "img": "ET-BH73.png",
+    "colors": ["#000000"],
+    "features": [
+      {
+        "name": "15H playback time",
+        "img": ""
+      },
+      {
+        "name": "Noise Isolation",
+        "img": ""
+      },
+      {
+        "name": "In-line Mic",
+        "img": ""
+      }
+    ],
+    "description": ""
   },
   {
     "name": "et-c11",
     "title": "ET-C11",
     "category": true,
     "type": "CAR CHARGER",
-    "img": "ET-C11.png"
+    "img": "ET-C11.png",
+    "colors": ["#000000"],
+    "features": [
+      {
+        "name": "QC Quickcharge 3.0",
+        "img": ""
+      },
+      {
+        "name": "USB C",
+        "img": ""
+      },
+      {
+        "name": "2 USB Ports",
+        "img": ""
+      }
+    ],
+    "description": ""
   },
   {
     "name": "et-c12",
     "title": "ET-C12",
     "type": "CAR CHARGER",
-    "img": "ET-C12.png"
+    "img": "ET-C12.png",
+    "colors": ["#000000"],
+    "features": [
+      {
+        "name": "QC Quickcharge 3.0",
+        "img": ""
+      },
+      {
+        "name": "USB C",
+        "img": ""
+      },
+      {
+        "name": "2 USB Ports",
+        "img": ""
+      }
+    ],
+    "description": ""
   },
   {
     "name": "et-c13",
     "title": "ET-C13",
     "type": "CAR CHARGER",
-    "img": "ET-C13.png"
+    "img": "ET-C13.png",
+    "colors": ["#000000"],
+    "features": [
+      {
+        "name": "QC Quickcharge 3.0",
+        "img": ""
+      },
+      {
+        "name": "USB C",
+        "img": ""
+      },
+      {
+        "name": "2 USB Ports",
+        "img": ""
+      }
+    ],
+    "description": ""
   },
   {
     "name": "et-c15",
     "title": "ET-C15",
     "type": "CAR CHARGER",
-    "img": "ET-C15.png"
+    "img": "ET-C15.png",
+    "colors": ["#ffffff"],
+    "features": [
+      {
+        "name": "QC Quickcharge 3.0",
+        "img": ""
+      },
+      {
+        "name": "USB C",
+        "img": ""
+      },
+      {
+        "name": "2 USB Ports",
+        "img": ""
+      }
+    ],
+    "description": ""
   },
   {
     "name": "et-c16",
     "title": "ET-C16",
     "type": "CAR CHARGER",
-    "img": "ET-C16.png"
+    "img": "ET-C16.png",
+    "colors": ["#000000"],
+    "features": [
+      {
+        "name": "QC Quickcharge 3.0",
+        "img": ""
+      },
+      {
+        "name": "USB C",
+        "img": ""
+      },
+      {
+        "name": "2 USB Ports",
+        "img": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "name": "et-ex779",
+    "title": "ET-EX779",
+    "type": "EARPHONE",
+    "img": "ET-EX779.png",
+    "colors": ["#000000"],
+    "features": [
+      {
+        "name": "Hi-Fi Stereo",
+        "img": ""
+      },
+      {
+        "name": "Noise Isolation",
+        "img": ""
+      },
+      {
+        "name": "In-line Mic",
+        "img": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "name": "et-EX999",
+    "title": "ET-EX999",
+    "type": "EARPHONE",
+    "img": "ET-EX999.png",
+    "colors": ["#000000"],
+    "features": [
+      {
+        "name": "Hi-Fi Stereo",
+        "img": ""
+      },
+      {
+        "name": "Noise Isolation",
+        "img": ""
+      },
+      {
+        "name": "In-line Mic",
+        "img": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "name": "et-pb701",
+    "title": "ET-PB701",
+    "featured": true,
+    "category": true,
+    "type": "POWERBANK",
+    "img": "ET-PB701.png",
+    "colors": ["#000000"],
+    "features": [
+      {
+        "name": "Type C Port",
+        "img": ""
+      },
+      {
+        "name": "Quick Charge",
+        "img": ""
+      },
+      {
+        "name": "10000mAh",
+        "img": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "name": "et-pb705",
+    "title": "ET-PB705",
+    "type": "POWERBANK",
+    "img": "ET-PB705.png",
+    "colors": ["#000000"],
+    "features": [
+      {
+        "name": "Type C Port",
+        "img": ""
+      },
+      {
+        "name": "Quick Charge",
+        "img": ""
+      },
+      {
+        "name": "10000mAh",
+        "img": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "name": "et-q14",
+    "title": "ET-Q14",
+    "type": "EARPHONE",
+    "img": "ET-Q14.png",
+    "colors": ["#000000"],
+    "features": [
+      {
+        "name": "Hi-Fi Stereo",
+        "img": ""
+      },
+      {
+        "name": "Noise Isolation",
+        "img": ""
+      },
+      {
+        "name": "In-line Mic",
+        "img": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "name": "et-q21",
+    "title": "ET-Q21",
+    "type": "EARPHONE",
+    "img": "ET-Q21.png",
+    "colors": ["#000000"],
+    "features": [
+      {
+        "name": "Hi-Fi Stereo",
+        "img": ""
+      },
+      {
+        "name": "Noise Isolation",
+        "img": ""
+      },
+      {
+        "name": "In-line Mic",
+        "img": ""
+      }
+    ],
+    "description": ""
   },
   {
     "name": "et-q23",
     "title": "ET-Q23",
     "type": "EARPHONE",
-    "img": "ET-Q23.png"
+    "img": "ET-Q23.png",
+    "colors": ["#ffffff"],
+    "features": [
+      {
+        "name": "Hi-Fi Stereo",
+        "img": ""
+      },
+      {
+        "name": "Noise Isolation",
+        "img": ""
+      },
+      {
+        "name": "In-line Mic",
+        "img": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "name": "et-q6",
+    "title": "ET-Q6",
+    "type": "EARPHONE",
+    "img": "ET-Q6.png",
+    "colors": ["#000000"],
+    "features": [
+      {
+        "name": "Hi-Fi Stereo",
+        "img": ""
+      },
+      {
+        "name": "Noise Isolation",
+        "img": ""
+      },
+      {
+        "name": "In-line Mic",
+        "img": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "name": "et-qc200",
+    "title": "ET-QC200",
+    "type": "CHARGER",
+    "img": "ET-QC200.png",
+    "colors": ["#000000"],
+    "features": [
+      {
+        "name": "Fast Charging",
+        "img": ""
+      },
+      {
+        "name": "Data Cable",
+        "img": ""
+      },
+      {
+        "name": "2.0A Output",
+        "img": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "name": "et-r16",
+    "title": "ET-R16",
+    "type": "EARBUDS",
+    "img": "ET-R16.png",
+    "colors": ["#000000"],
+    "features": [
+      {
+        "name": "Hi-Fi Stereo",
+        "img": ""
+      },
+      {
+        "name": "Noise Isolation",
+        "img": ""
+      },
+      {
+        "name": "In-line Mic",
+        "img": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "name": "et-r17",
+    "title": "ET-R17",
+    "featured": true,
+    "category": true,
+    "type": "EARBUDS",
+    "img": "ET-R17.png",
+    "colors": ["#000000"],
+    "features": [
+      {
+        "name": "Hi-Fi Stereo",
+        "img": ""
+      },
+      {
+        "name": "Noise Isolation",
+        "img": ""
+      },
+      {
+        "name": "In-line Mic",
+        "img": ""
+      }
+    ],
+    "description": ""
   },
   {
     "name": "et-r18",
     "title": "ET-R18",
     "type": "EARBUDS",
-    "img": "ET-R18.png"
+    "img": "ET-R18.png",
+    "colors": ["#000000"],
+    "features": [
+      {
+        "name": "Hi-Fi Stereo",
+        "img": ""
+      },
+      {
+        "name": "Noise Isolation",
+        "img": ""
+      },
+      {
+        "name": "In-line Mic",
+        "img": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "name": "et-s17",
+    "title": "ET-S17",
+    "type": "STAND",
+    "img": "ET-S17.png",
+    "colors": ["#000000"],
+    "features": [],
+    "description": ""
   },
   {
     "name": "et-s19",
     "title": "ET-S19",
     "type": "STAND",
-    "img": "ET-S19.png"
+    "img": "ET-S19.png",
+    "colors": ["#000000"],
+    "features": [],
+    "description": ""
   },
   {
     "name": "et-sp34",
     "title": "ET-SP34",
     "type": "SPEAKER",
-    "img": "ET-SP34.png"
+    "img": "ET-SP34.png",
+    "colors": [
+      "#DC2C2F",
+      "#DC2C2F",
+      "#83C0D2",
+      "#31483D",
+      "#E96F38",
+      "#BCBDC3",
+      "#9ED3CF"
+    ],
+    "features": [
+      {
+        "name": "SD Card Slot",
+        "img": ""
+      },
+      {
+        "name": "Fm Radio",
+        "img": ""
+      },
+      {
+        "name": "Wireless",
+        "img": ""
+      }
+    ],
+    "description": ""
   },
   {
-    "name": "etar2",
-    "title": "ETAR2",
-    "type": "EARPHONE",
-    "img": "ETAR2.png"
+    "name": "et-sp44",
+    "title": "ET-SP44",
+    "type": "SPEAKER",
+    "img": "ET-SP44.png",
+    "colors": [
+      "#000000",
+      "#C42F31",
+      "#ED9660",
+      "#4A6DB0",
+      "#BEBDC2",
+      "#728C8E"
+    ],
+    "features": [
+      {
+        "name": "SD Card Slot",
+        "img": ""
+      },
+      {
+        "name": "Fm Radio",
+        "img": ""
+      },
+      {
+        "name": "Wireless",
+        "img": ""
+      }
+    ],
+    "description": ""
   },
   {
-    "name": "ex-779",
-    "title": "EX-779",
-    "type": "EARPHONE",
-    "img": "EX-779.png"
+    "name": "et-sp45",
+    "title": "ET-SP45",
+    "type": "SPEAKER",
+    "img": "ET-SP45.png",
+    "colors": [
+      "#000000",
+      "#C42F31",
+      "#ED9660",
+      "#4A6DB0",
+      "#BEBDC2",
+      "#728C8E"
+    ],
+    "features": [
+      {
+        "name": "SD Card Slot",
+        "img": ""
+      },
+      {
+        "name": "Fm Radio",
+        "img": ""
+      },
+      {
+        "name": "Wireless",
+        "img": ""
+      }
+    ],
+    "description": ""
   },
   {
-    "name": "ex-999",
-    "title": "EX-999",
-    "type": "EARPHONE",
-    "img": "EX-999.png"
+    "name": "et-sp260",
+    "title": "ET-SP260",
+    "type": "MICE",
+    "img": "ET-SP260.png",
+    "colors": ["#000000", "#2921DC", "#9BE7ED", "#D7E2F8"],
+    "features": [
+      {
+        "name": "SD Card Slot",
+        "img": ""
+      },
+      {
+        "name": "Fm Radio",
+        "img": ""
+      },
+      {
+        "name": "Wireless",
+        "img": ""
+      }
+    ],
+    "description": ""
   },
   {
-    "name": "pb-701",
-    "title": "PB-701",
-    "featured": true,
+    "name": "et-sp400",
+    "title": "ET-SP400",
+    "type": "SPEAKER",
+    "img": "ET-SP400.png",
+    "colors": ["#000000"],
+    "features": [
+      {
+        "name": "SD Card Slot",
+        "img": ""
+      },
+      {
+        "name": "Fm Radio",
+        "img": ""
+      },
+      {
+        "name": "Wireless",
+        "img": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "name": "et-tc02",
+    "title": "ET-TC02",
     "category": true,
-    "type": "POWERBANK",
-    "img": "PB-701.png"
+    "type": "USB CONNECTOR",
+    "img": "ET-TC02.png",
+    "colors": ["#F5D284"],
+    "features": [
+      {
+        "name": "High Speed Transfer Rate",
+        "img": ""
+      },
+      {
+        "name": "2 in one usb",
+        "img": ""
+      }
+    ],
+    "description": ""
   },
   {
-    "name": "pb-705",
-    "title": "PB-705",
-    "type": "POWERBANK",
-    "img": "PB-705.png"
+    "name": "et-TR200",
+    "title": "ET-TR200",
+    "type": "STAND",
+    "img": "ET-TR200.png",
+    "colors": ["#000000"],
+    "features": [],
+    "description": ""
   },
   {
-    "name": "q6",
-    "title": "Q6",
-    "type": "EARPHONE",
-    "img": "Q6.png"
-  },
-  {
-    "name": "q14",
-    "title": "Q14",
-    "type": "EARPHONE",
-    "img": "Q14.png"
-  },
-  {
-    "name": "q21",
-    "title": "Q21",
-    "type": "EARPHONE",
-    "img": "Q21.png"
-  },
-  {
-    "name": "qc-200",
-    "title": "QC-200",
-    "type": "CHARGER",
-    "img": "QC-200.png"
-  },
-  {
-    "name": "r16",
-    "title": "R16",
-    "type": "EARBUDS",
-    "img": "R16.png"
-  },
-  {
-    "name": "r17",
-    "title": "R17",
-    "featured": true,
-    "category": true,
-    "type": "EARBUDS",
-    "img": "R17.png"
+    "name": "et-vp-t10",
+    "title": "ET-VP-T10",
+    "type": "SMART WATCH",
+    "img": "ET-VP-T10.png",
+    "colors": ["#000000"],
+    "features": [
+      {
+        "name": "HD display",
+        "img": ""
+      },
+      {
+        "name": "Heart Monitoring",
+        "img": ""
+      }
+    ],
+    "description": ""
   },
   {
     "name": "rm-battery",
     "title": "RM-BATTERY",
     "type": "BATTERY",
-    "img": "RM-BATTERY.png"
+    "img": "RM-BATTERY.png",
+    "colors": ["#ffffff"],
+    "features": [
+      {
+        "name": "4000mAh",
+        "img": ""
+      }
+    ],
+    "description": ""
   },
   {
     "name": "royal-series-battery",
     "title": "ROYAL-SERIES-BATTERY",
     "category": true,
     "type": "BATTERY",
-    "img": "ROYAL-SERIES-BATTERY.png"
-  },
-  {
-    "name": "s17",
-    "title": "S17",
-    "type": "STAND",
-    "img": "S17.png"
-  },
-  {
-    "name": "SMART-TRYPOD",
-    "title": "SMART-TRYPOD",
-    "type": "STAND",
-    "img": "SMART-TRYPOD.png"
-  },
-
-  {
-    "name": "sp-400",
-    "title": "SP-400",
-    "type": "SPEAKER",
-    "img": "SP-400.png"
-  },
-  {
-    "name": "sp44-vggg",
-    "title": "SP44-VGGG",
-    "type": "SPEAKER",
-    "img": "SP44-VGGG.png"
-  },
-  {
-    "name": "sp44",
-    "title": "SP44",
-    "type": "SPEAKER",
-    "img": "SP44.png"
-  },
-  {
-    "name": "sp45",
-    "title": "SP45",
-    "type": "SPEAKER",
-    "img": "SP45.png"
-  },
-  {
-    "name": "tc-02",
-    "title": "TC-02",
-    "category": true,
-    "type": "USB CONNECTOR",
-    "img": "TC-02.png"
-  },
-  {
-    "name": "watch",
-    "title": "WATCH",
-    "type": "USB CONNECTOR",
-    "img": "WATCH.png"
+    "img": "ROYAL-SERIES-BATTERY.png",
+    "colors": ["#ffffff"],
+    "features": [
+      {
+        "name": "4000mAh",
+        "img": ""
+      }
+    ],
+    "description": ""
   }
 ]

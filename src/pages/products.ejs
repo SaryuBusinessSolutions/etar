@@ -19,12 +19,13 @@
       <%- include('page/card2Alpine') %>
     </template>
   </div>
-  <div :class="search.length > 0?'hidden':'grid'" class="grid gap-5 grid-cols-2 sm:grid-cols-3 md:gap-10 lg:grid-cols-4">
-    <% site.pages.filter(page=> page.data.type).forEach(page => { %>
+  <div :class="search.length > 0?'hidden':'grid'" class="grid gap-5 grid-cols-2 sm:grid-cols-3 md:gap-10">
+    <% site.data.products.forEach(page => { %>
     <%- include('page/card2',{
-      name: page.data.name,
-      img:page.data.img,
-      link: page.srcfix+page.actualpath.substring(1),
+      name: page.name,
+      img:page.img,
+      link: "./products/"+page.name,
+      features : page.features,
     }) %>
     <% }) %>
   </div>

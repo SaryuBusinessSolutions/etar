@@ -6,8 +6,13 @@
       classes : "group-hover:scale-95 transition-all duration-500 ease-in-out",
     }) %>
   </div>
-  <div class="flex-[3] z-[1] space-y-4">
+  <div class="flex-[3] z-[1] space-y-4 flex flex-col justify-between">
     <p class="lg:text-xl group-hover:tracking-wide transition-all duration-500 ease-in-out uppercase"><%- name %></p>
+    <div>
+    <% features.forEach(feature => { %>
+    <p class="text-xs md:text-sm text-gray-500"><%-feature.name%></p>
+    <% }) %>
+    </div>
     <div>
       <a href="<%- link %>" class="button-1 rounded-md px-5 mr-auto text-sm lg:text-base cursor-pointer">VIEW MORE</a>
     </div>

@@ -7,9 +7,9 @@
 <div data-scroll-section class="relative landscape:min-h-screen">
   <div class="swiper relative landscape:min-h-screen">
     <div class="swiper-wrapper">
-      <div class="swiper-slide overflow-hidden"><%- include('page/hero',{img:'A122.png'}) %></div>
-      <div class="swiper-slide overflow-hidden"><%- include('page/hero',{img:'BH-53.png'}) %></div>
-      <div class="swiper-slide overflow-hidden"><%- include('page/hero',{img:'BH-65.png'}) %></div>
+      <div class="swiper-slide overflow-hidden"><%- include('page/hero',{img:'ET-A122.png'}) %></div>
+      <div class="swiper-slide overflow-hidden"><%- include('page/hero',{img:'ET-BH53.png'}) %></div>
+      <div class="swiper-slide overflow-hidden"><%- include('page/hero',{img:'ET-BH65.png'}) %></div>
     </div>
   </div>
 </div>
@@ -20,8 +20,13 @@
       FEATURED PRODUCTS</span>
   </div>
   <div class="grid gap-5 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 md:gap-10">
-    <% site.pages.filter(page=> page.data.featured).forEach(page => { %>
-    <%- include('page/card2',{name: page.data.name, img:page.data.img ,link: page.actualpath.substring(1) }) %>
+    <% site.data.products.filter(page=> page.featured).forEach(page => { %>
+    <%- include('page/card2',{
+      name: page.name, 
+      img:page.img ,
+      link: "./products/"+page.name,
+      features : page.features,
+    }) %>
     <% }) %>
   </div>
 </div>
@@ -32,8 +37,12 @@
       class="button-1 pl-10 rounded-md text-xl">CATEGORY</span>
   </div>
   <div class="grid gap-y-5  md:gap-y-10 md:gap-10 md:grid-cols-2">
-    <% site.pages.filter(page=> page.data.category).forEach(page => { %>
-    <%- include('page/card1',{name: page.data.type, img:page.data.img ,link: page.actualpath.substring(1)}) %>
+    <% site.data.products.filter(page=> page.category).forEach(page => { %>
+    <%- include('page/card1',{
+      name: page.type, 
+      img:page.img ,
+      link: "./products/"+page.name 
+    }) %>
     <% }) %>
   </div>
 </div>
