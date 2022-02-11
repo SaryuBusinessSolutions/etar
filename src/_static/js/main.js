@@ -1,4 +1,6 @@
 // variables
+var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+var h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
 let scroll;
 let productFuse;
 let swiper;
@@ -6,17 +8,24 @@ let swiper;
 // events
 document.addEventListener('DOMContentLoaded', () => {
   loadProductFuse();
-  navbarfix();
   swiperWraper();
 });
 
 window.onload = () => {
   loaded();
   locomotiveInit();
+  loadCategory();
 }
 
 window.onscroll = ()=>{
-  // scroll.update();
+  let nav = document.querySelector("#navbar");
+  if (document.body.scrollTop > h * 0.15 || document.documentElement.scrollTop > h * 0.15) {
+    nav.classList.add("bg-white", "bg-opacity-20", "backdrop-blur-sm");
+    nav.classList.remove("opacity-30");
+  } else {
+    nav.classList.add("opacity-30");
+    nav.classList.remove("bg-white", "bg-opacity-20", "backdrop-blur-sm");
+  }
 }
 
 // function
@@ -48,7 +57,8 @@ function loaded() {
 
 function navbarfix() {
   try {
-    let navHeight = document.querySelector('navbar').scrollHeight;
+    let navHeight = document.querySelector('#navbar').scrollHeight;
+    console.log(navHeight)
     document.querySelector("#navfix").style.height = navHeight + "px";
     document.querySelector("#maxhfix").style.minHeight = document.querySelector("#maxhfix").clientHeight - navHeight + "px";
   } catch (error) {
@@ -70,6 +80,9 @@ function locomotiveInit() {
       tablet: {
         smooth: false,
       }
+    });
+    scroll.on('scroll', (args) => {
+      args
     });
     document.querySelector('.c-scrollbar').classList.add('z-50')
     document.querySelector('.c-scrollbar_thumb').classList.add('!bg-neutral-400')
@@ -134,4 +147,42 @@ function textSplit() {
   } catch (error) {
     console.log(error)
   }
+}
+
+function setCategory(event){
+  document.cookie = "category=" + event.target.getAttribute('category') + "; path=/";
+}
+
+function sendResponse(event) {
+  if (document.submitted) {
+    document.submitted = undefined;
+    document.volunteer_form.reset();
+    showNotification('Response recorded')
+  } else {
+    document.submitted = true;
+  }
+}
+
+function loadCategory() {
+  function getCookie(cname) {
+    let name = cname + "=";
+    var ca = document.cookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+  }
+  setTimeout(() => {
+    if (document.querySelector('[x-data*="search"]')) {
+      document.querySelector('[x-data*="search"]')._x_dataStack[0].search = getCookie('category').toLowerCase();
+      searchProduct(getCookie('category').toLowerCase());
+    }
+    document.cookie = "category=" + getCookie('category').toLowerCase() + "; max-age=0;  path=/";
+  }, 500);
 }

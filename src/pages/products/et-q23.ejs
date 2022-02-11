@@ -11,41 +11,55 @@
 ---
 
 <div data-scroll-section>
-  <%- include('mini/img',{
-    alt : "product",
-    src : "../img/posters/mobile/ET-Q23.jpg",
-    md : "../img/posters/desktop/ET-Q23.jpg",
-    classes : "",
-  }) %>
+  <%- include('mini/img',{ alt : "product" , src : "../img/posters/mobile/ET-Q23.jpg" , md
+    : "../img/posters/desktop/ET-Q23.jpg" , classes : "" , }) %>
 </div>
 
 <div data-scroll-section class="maxhfix h-screen flex justify-center items-center">
-  <%- include('mini/img',{
-    alt : "product",
-    src : "../img/products/small/ET-Q23.png",
-    md : "../img/products/large/ET-Q23.png",
-    classes : "w-full md:w-[40%] z-[1]",
-  }) %>
-  <p data-scroll data-scroll-speed="1"
-    class="text-8xl md:text-[20rem] absolute text-white stroke text-clip overflow-hidden text-center">ET-Q23</p>
+  <%- include('mini/img',{ alt : "product" , src : "../img/products/small/ET-Q23.png" , md
+    : "../img/products/large/ET-Q23.png" , classes : "w-full md:w-[40%] z-[1]" , }) %>
+    <p data-scroll data-scroll-speed="1"
+      class="text-8xl md:text-[20rem] absolute text-white stroke text-clip overflow-hidden text-center">
+      ET-Q23</p>
 </div>
 
 <div data-scroll-section>
-  <div class="flex space-x-2">
-  
-  <div class="aspect-square w-5 rounded-md" style="background-color: #ffffff;" ></div>
-  
+  <div class="flex space-x-2 justify-center">
+    
+    <div class="aspect-square w-8 rounded-md border" style="background-color: #ffffff;"></div>
+    
   </div>
 </div>
 
-<div data-scroll-section>
-  <div class="flex space-x-2">
-  
-  <div>Hi-Fi Stereo</div>
-  
-  <div>Noise Isolation</div>
-  
-  <div>In-line Mic</div>
-  
+<div data-scroll-section class="mt-10 md:mt-5">
+  <div class="flex flex-col md:flex-row space-y-5 justify-center md:space-y-0 md:space-x-8">
+    
+    <div class="flex flex-col md:flex-row items-center md:space-x-5 space-y-3 md:space-y-0">
+      <div class="p-2 md:p-3 bg-indigo-100 rounded-full w-16 h-16 flex items-center justify-center">
+        <img class="w-8" src="../img/icons/music.svg" alt="">
+      </div>
+      <p data-sal="slide-right" class="text-center md:text-left text-sm md:text-lg">
+        Hi-Fi Stereo
+      </p>
+    </div>
+    
+    <div class="flex flex-col md:flex-row items-center md:space-x-5 space-y-3 md:space-y-0">
+      <div class="p-2 md:p-3 bg-indigo-100 rounded-full w-16 h-16 flex items-center justify-center">
+        <img class="w-8" src="../img/icons/head-side-headphones.svg" alt="">
+      </div>
+      <p data-sal="slide-right" class="text-center md:text-left text-sm md:text-lg">
+        Noise Isolation
+      </p>
+    </div>
+    
+    <div class="flex flex-col md:flex-row items-center md:space-x-5 space-y-3 md:space-y-0">
+      <div class="p-2 md:p-3 bg-indigo-100 rounded-full w-16 h-16 flex items-center justify-center">
+        <img class="w-8" src="../img/icons/microphone.svg" alt="">
+      </div>
+      <p data-sal="slide-right" class="text-center md:text-left text-sm md:text-lg">
+        In-line Mic
+      </p>
+    </div>
+    
   </div>
 </div>

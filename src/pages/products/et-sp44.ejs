@@ -11,51 +11,65 @@
 ---
 
 <div data-scroll-section>
-  <%- include('mini/img',{
-    alt : "product",
-    src : "../img/posters/mobile/ET-SP44.jpg",
-    md : "../img/posters/desktop/ET-SP44.jpg",
-    classes : "",
-  }) %>
+  <%- include('mini/img',{ alt : "product" , src : "../img/posters/mobile/ET-SP44.jpg" , md
+    : "../img/posters/desktop/ET-SP44.jpg" , classes : "" , }) %>
 </div>
 
 <div data-scroll-section class="maxhfix h-screen flex justify-center items-center">
-  <%- include('mini/img',{
-    alt : "product",
-    src : "../img/products/small/ET-SP44.png",
-    md : "../img/products/large/ET-SP44.png",
-    classes : "w-full md:w-[40%] z-[1]",
-  }) %>
-  <p data-scroll data-scroll-speed="1"
-    class="text-8xl md:text-[20rem] absolute text-white stroke text-clip overflow-hidden text-center">ET-SP44</p>
+  <%- include('mini/img',{ alt : "product" , src : "../img/products/small/ET-SP44.png" , md
+    : "../img/products/large/ET-SP44.png" , classes : "w-full md:w-[40%] z-[1]" , }) %>
+    <p data-scroll data-scroll-speed="1"
+      class="text-8xl md:text-[20rem] absolute text-white stroke text-clip overflow-hidden text-center">
+      ET-SP44</p>
 </div>
 
 <div data-scroll-section>
-  <div class="flex space-x-2">
-  
-  <div class="aspect-square w-5 rounded-md" style="background-color: #000000;" ></div>
-  
-  <div class="aspect-square w-5 rounded-md" style="background-color: #C42F31;" ></div>
-  
-  <div class="aspect-square w-5 rounded-md" style="background-color: #ED9660;" ></div>
-  
-  <div class="aspect-square w-5 rounded-md" style="background-color: #4A6DB0;" ></div>
-  
-  <div class="aspect-square w-5 rounded-md" style="background-color: #BEBDC2;" ></div>
-  
-  <div class="aspect-square w-5 rounded-md" style="background-color: #728C8E;" ></div>
-  
+  <div class="flex space-x-2 justify-center">
+    
+    <div class="aspect-square w-8 rounded-md border" style="background-color: #000000;"></div>
+    
+    <div class="aspect-square w-8 rounded-md border" style="background-color: #C42F31;"></div>
+    
+    <div class="aspect-square w-8 rounded-md border" style="background-color: #ED9660;"></div>
+    
+    <div class="aspect-square w-8 rounded-md border" style="background-color: #4A6DB0;"></div>
+    
+    <div class="aspect-square w-8 rounded-md border" style="background-color: #BEBDC2;"></div>
+    
+    <div class="aspect-square w-8 rounded-md border" style="background-color: #728C8E;"></div>
+    
   </div>
 </div>
 
-<div data-scroll-section>
-  <div class="flex space-x-2">
-  
-  <div>SD Card Slot</div>
-  
-  <div>Fm Radio</div>
-  
-  <div>Wireless</div>
-  
+<div data-scroll-section class="mt-10 md:mt-5">
+  <div class="flex flex-col md:flex-row space-y-5 justify-center md:space-y-0 md:space-x-8">
+    
+    <div class="flex flex-col md:flex-row items-center md:space-x-5 space-y-3 md:space-y-0">
+      <div class="p-2 md:p-3 bg-indigo-100 rounded-full w-16 h-16 flex items-center justify-center">
+        <img class="w-8" src="../img/icons/sd-card.svg" alt="">
+      </div>
+      <p data-sal="slide-right" class="text-center md:text-left text-sm md:text-lg">
+        SD Card Slot
+      </p>
+    </div>
+    
+    <div class="flex flex-col md:flex-row items-center md:space-x-5 space-y-3 md:space-y-0">
+      <div class="p-2 md:p-3 bg-indigo-100 rounded-full w-16 h-16 flex items-center justify-center">
+        <img class="w-8" src="../img/icons/radio-alt.svg" alt="">
+      </div>
+      <p data-sal="slide-right" class="text-center md:text-left text-sm md:text-lg">
+        Fm Radio
+      </p>
+    </div>
+    
+    <div class="flex flex-col md:flex-row items-center md:space-x-5 space-y-3 md:space-y-0">
+      <div class="p-2 md:p-3 bg-indigo-100 rounded-full w-16 h-16 flex items-center justify-center">
+        <img class="w-8" src="../img/icons/wifi-2.svg" alt="">
+      </div>
+      <p data-sal="slide-right" class="text-center md:text-left text-sm md:text-lg">
+        Wireless
+      </p>
+    </div>
+    
   </div>
 </div>

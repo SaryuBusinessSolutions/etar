@@ -25,15 +25,15 @@
     "features": [
       {
         "name": "Hi-Fi Stereo",
-        "img": ""
+        "img": "music.svg"
       },
       {
         "name": "Noise Isolation",
-        "img": ""
+        "img": "head-side-headphones.svg"
       },
       {
         "name": "In-line Mic",
-        "img": ""
+        "img": "microphone.svg"
       }
     ],
     "description": ""
@@ -47,15 +47,15 @@
     "features": [
       {
         "name": "Hi-Fi Stereo",
-        "img": ""
+        "img": "music.svg"
       },
       {
         "name": "Noise Isolation",
-        "img": ""
+        "img": "head-side-headphones.svg"
       },
       {
         "name": "In-line Mic",
-        "img": ""
+        "img": "microphone.svg"
       }
     ],
     "description": ""
@@ -70,37 +70,15 @@
     "features": [
       {
         "name": "over-charging protection",
-        "img": ""
+        "img": "battery-full.svg"
       },
       {
         "name": "over-voltage protection",
-        "img": ""
+        "img": "charging-station.svg"
       },
       {
         "name": "temprature protection",
-        "img": ""
-      }
-    ],
-    "description": ""
-  },
-  {
-    "name": "et-a2206",
-    "title": "ET-A2206",
-    "type": "CHARGER",
-    "img": "ET-A2206.png",
-    "colors": ["#ffffff"],
-    "features": [
-      {
-        "name": "over-charging protection",
-        "img": ""
-      },
-      {
-        "name": "over-voltage protection",
-        "img": ""
-      },
-      {
-        "name": "temprature protection",
-        "img": ""
+        "img": "temperature-high.svg"
       }
     ],
     "description": ""
@@ -114,15 +92,15 @@
     "features": [
       {
         "name": "over-charging protection",
-        "img": ""
+        "img": "battery-full.svg"
       },
       {
         "name": "over-voltage protection",
-        "img": ""
+        "img": "charging-station.svg"
       },
       {
         "name": "temprature protection",
-        "img": ""
+        "img": "temperature-high.svg"
       }
     ],
     "description": ""
@@ -136,37 +114,15 @@
     "features": [
       {
         "name": "Fast Charging",
-        "img": ""
+        "img": "battery-bolt.svg"
       },
       {
         "name": "Data Cable",
-        "img": ""
+        "img": "usb.svg"
       },
       {
         "name": "2.4A Output",
-        "img": ""
-      }
-    ],
-    "description": ""
-  },
-  {
-    "name": "et-B27",
-    "title": "ET-B27",
-    "type": "USB CABLE",
-    "img": "ET-B27.png",
-    "colors": ["#000000"],
-    "features": [
-      {
-        "name": "Fast Charging",
-        "img": ""
-      },
-      {
-        "name": "Data Cable",
-        "img": ""
-      },
-      {
-        "name": "2.4A Output",
-        "img": ""
+        "img": "2.4a.svg"
       }
     ],
     "description": ""
@@ -180,15 +136,15 @@
     "features": [
       {
         "name": "Hi-Fi Stereo",
-        "img": ""
+        "img": "music.svg"
       },
       {
         "name": "Noise Isolation",
-        "img": ""
+        "img": "head-side-headphones.svg"
       },
       {
         "name": "In-line Mic",
-        "img": ""
+        "img": "microphone.svg"
       }
     ],
     "description": ""
@@ -204,15 +160,15 @@
     "features": [
       {
         "name": "25H playback time",
-        "img": ""
+        "img": "25h.svg"
       },
       {
         "name": "Noise Isolation",
-        "img": ""
+        "img": "head-side-headphones.svg"
       },
       {
         "name": "In-line Mic",
-        "img": ""
+        "img": "microphone.svg"
       }
     ],
     "description": ""
@@ -226,15 +182,15 @@
     "features": [
       {
         "name": "20H playback time",
-        "img": ""
+        "img": "20h.svg"
       },
       {
         "name": "Noise Isolation",
-        "img": ""
+        "img": "head-side-headphones.svg"
       },
       {
         "name": "In-line Mic",
-        "img": ""
+        "img": "microphone.svg"
       }
     ],
     "description": ""
@@ -248,15 +204,15 @@
     "features": [
       {
         "name": "15H playback time",
-        "img": ""
+        "img": "15h.svg"
       },
       {
         "name": "Noise Isolation",
-        "img": ""
+        "img": "head-side-headphones.svg"
       },
       {
         "name": "In-line Mic",
-        "img": ""
+        "img": "microphone.svg"
       }
     ],
     "description": ""
@@ -271,15 +227,15 @@
     "features": [
       {
         "name": "QC Quickcharge 3.0",
-        "img": ""
+        "img": "qc.svg"
       },
       {
         "name": "USB C",
-        "img": ""
+        "img": "type-c.svg"
       },
       {
         "name": "2 USB Ports",
-        "img": ""
+        "img": "usb-drive.svg"
       }
     ],
     "description": ""
@@ -293,15 +249,15 @@
     "features": [
       {
         "name": "QC Quickcharge 3.0",
-        "img": ""
+        "img": "qc.svg"
       },
       {
         "name": "USB C",
-        "img": ""
+        "img": "type-c.svg"
       },
       {
         "name": "2 USB Ports",
-        "img": ""
+        "img": "usb-drive.svg"
       }
     ],
     "description": ""
@@ -315,15 +271,15 @@
     "features": [
       {
         "name": "QC Quickcharge 3.0",
-        "img": ""
+        "img": "qc.svg"
       },
       {
         "name": "USB C",
-        "img": ""
+        "img": "type-c.svg"
       },
       {
         "name": "2 USB Ports",
-        "img": ""
+        "img": "usb-drive.svg"
       }
     ],
     "description": ""
@@ -337,15 +293,15 @@
     "features": [
       {
         "name": "QC Quickcharge 3.0",
-        "img": ""
+        "img": "qc.svg"
       },
       {
         "name": "USB C",
-        "img": ""
+        "img": "type-c.svg"
       },
       {
         "name": "2 USB Ports",
-        "img": ""
+        "img": "usb-drive.svg"
       }
     ],
     "description": ""
@@ -359,15 +315,15 @@
     "features": [
       {
         "name": "QC Quickcharge 3.0",
-        "img": ""
+        "img": "qc.svg"
       },
       {
         "name": "USB C",
-        "img": ""
+        "img": "type-c.svg"
       },
       {
         "name": "2 USB Ports",
-        "img": ""
+        "img": "usb-drive.svg"
       }
     ],
     "description": ""
@@ -381,61 +337,15 @@
     "features": [
       {
         "name": "Hi-Fi Stereo",
-        "img": ""
+        "img": "music.svg"
       },
       {
         "name": "Noise Isolation",
-        "img": ""
+        "img": "head-side-headphones.svg"
       },
       {
         "name": "In-line Mic",
-        "img": ""
-      }
-    ],
-    "description": ""
-  },
-  {
-    "name": "et-EX999",
-    "title": "ET-EX999",
-    "type": "EARPHONE",
-    "img": "ET-EX999.png",
-    "colors": ["#000000"],
-    "features": [
-      {
-        "name": "Hi-Fi Stereo",
-        "img": ""
-      },
-      {
-        "name": "Noise Isolation",
-        "img": ""
-      },
-      {
-        "name": "In-line Mic",
-        "img": ""
-      }
-    ],
-    "description": ""
-  },
-  {
-    "name": "et-pb701",
-    "title": "ET-PB701",
-    "featured": true,
-    "category": true,
-    "type": "POWERBANK",
-    "img": "ET-PB701.png",
-    "colors": ["#000000"],
-    "features": [
-      {
-        "name": "Type C Port",
-        "img": ""
-      },
-      {
-        "name": "Quick Charge",
-        "img": ""
-      },
-      {
-        "name": "10000mAh",
-        "img": ""
+        "img": "microphone.svg"
       }
     ],
     "description": ""
@@ -443,21 +353,23 @@
   {
     "name": "et-pb705",
     "title": "ET-PB705",
+    "featured": true,
+    "category": true,
     "type": "POWERBANK",
     "img": "ET-PB705.png",
     "colors": ["#000000"],
     "features": [
       {
         "name": "Type C Port",
-        "img": ""
+        "img": "type-c.svg"
       },
       {
         "name": "Quick Charge",
-        "img": ""
+        "img": "bolt.svg"
       },
       {
         "name": "10000mAh",
-        "img": ""
+        "img": "10000.svg"
       }
     ],
     "description": ""
@@ -471,15 +383,15 @@
     "features": [
       {
         "name": "Hi-Fi Stereo",
-        "img": ""
+        "img": "music.svg"
       },
       {
         "name": "Noise Isolation",
-        "img": ""
+        "img": "head-side-headphones.svg"
       },
       {
         "name": "In-line Mic",
-        "img": ""
+        "img": "microphone.svg"
       }
     ],
     "description": ""
@@ -493,15 +405,15 @@
     "features": [
       {
         "name": "Hi-Fi Stereo",
-        "img": ""
+        "img": "music.svg"
       },
       {
         "name": "Noise Isolation",
-        "img": ""
+        "img": "head-side-headphones.svg"
       },
       {
         "name": "In-line Mic",
-        "img": ""
+        "img": "microphone.svg"
       }
     ],
     "description": ""
@@ -515,15 +427,15 @@
     "features": [
       {
         "name": "Hi-Fi Stereo",
-        "img": ""
+        "img": "music.svg"
       },
       {
         "name": "Noise Isolation",
-        "img": ""
+        "img": "head-side-headphones.svg"
       },
       {
         "name": "In-line Mic",
-        "img": ""
+        "img": "microphone.svg"
       }
     ],
     "description": ""
@@ -537,15 +449,15 @@
     "features": [
       {
         "name": "Hi-Fi Stereo",
-        "img": ""
+        "img": "music.svg"
       },
       {
         "name": "Noise Isolation",
-        "img": ""
+        "img": "head-side-headphones.svg"
       },
       {
         "name": "In-line Mic",
-        "img": ""
+        "img": "microphone.svg"
       }
     ],
     "description": ""
@@ -559,15 +471,15 @@
     "features": [
       {
         "name": "Fast Charging",
-        "img": ""
+        "img": "battery-bolt.svg"
       },
       {
         "name": "Data Cable",
-        "img": ""
+        "img": "usb.svg"
       },
       {
         "name": "2.0A Output",
-        "img": ""
+        "img": "2.0a.svg"
       }
     ],
     "description": ""
@@ -581,15 +493,15 @@
     "features": [
       {
         "name": "Hi-Fi Stereo",
-        "img": ""
+        "img": "music.svg"
       },
       {
         "name": "Noise Isolation",
-        "img": ""
+        "img": "head-side-headphones.svg"
       },
       {
         "name": "In-line Mic",
-        "img": ""
+        "img": "microphone.svg"
       }
     ],
     "description": ""
@@ -605,15 +517,15 @@
     "features": [
       {
         "name": "Hi-Fi Stereo",
-        "img": ""
+        "img": "music.svg"
       },
       {
         "name": "Noise Isolation",
-        "img": ""
+        "img": "head-side-headphones.svg"
       },
       {
         "name": "In-line Mic",
-        "img": ""
+        "img": "microphone.svg"
       }
     ],
     "description": ""
@@ -627,15 +539,15 @@
     "features": [
       {
         "name": "Hi-Fi Stereo",
-        "img": ""
+        "img": "music.svg"
       },
       {
         "name": "Noise Isolation",
-        "img": ""
+        "img": "head-side-headphones.svg"
       },
       {
         "name": "In-line Mic",
-        "img": ""
+        "img": "microphone.svg"
       }
     ],
     "description": ""
@@ -662,6 +574,7 @@
     "name": "et-sp34",
     "title": "ET-SP34",
     "type": "SPEAKER",
+
     "img": "ET-SP34.png",
     "colors": [
       "#DC2C2F",
@@ -675,15 +588,15 @@
     "features": [
       {
         "name": "SD Card Slot",
-        "img": ""
+        "img": "sd-card.svg"
       },
       {
         "name": "Fm Radio",
-        "img": ""
+        "img": "radio-alt.svg"
       },
       {
         "name": "Wireless",
-        "img": ""
+        "img": "wifi-2.svg"
       }
     ],
     "description": ""
@@ -704,15 +617,15 @@
     "features": [
       {
         "name": "SD Card Slot",
-        "img": ""
+        "img": "sd-card.svg"
       },
       {
         "name": "Fm Radio",
-        "img": ""
+        "img": "radio-alt.svg"
       },
       {
         "name": "Wireless",
-        "img": ""
+        "img": "wifi-2.svg"
       }
     ],
     "description": ""
@@ -720,6 +633,7 @@
   {
     "name": "et-sp45",
     "title": "ET-SP45",
+    "category": true,
     "type": "SPEAKER",
     "img": "ET-SP45.png",
     "colors": [
@@ -733,15 +647,15 @@
     "features": [
       {
         "name": "SD Card Slot",
-        "img": ""
+        "img": "sd-card.svg"
       },
       {
         "name": "Fm Radio",
-        "img": ""
+        "img": "radio-alt.svg"
       },
       {
         "name": "Wireless",
-        "img": ""
+        "img": "wifi-2.svg"
       }
     ],
     "description": ""
@@ -755,15 +669,15 @@
     "features": [
       {
         "name": "SD Card Slot",
-        "img": ""
+        "img": "sd-card.svg"
       },
       {
         "name": "Fm Radio",
-        "img": ""
+        "img": "radio-alt.svg"
       },
       {
         "name": "Wireless",
-        "img": ""
+        "img": "wifi-2.svg"
       }
     ],
     "description": ""
@@ -777,15 +691,15 @@
     "features": [
       {
         "name": "SD Card Slot",
-        "img": ""
+        "img": "sd-card.svg"
       },
       {
         "name": "Fm Radio",
-        "img": ""
+        "img": "radio-alt.svg"
       },
       {
         "name": "Wireless",
-        "img": ""
+        "img": "wifi-2.svg"
       }
     ],
     "description": ""
@@ -800,11 +714,11 @@
     "features": [
       {
         "name": "High Speed Transfer Rate",
-        "img": ""
+        "img": "bolt.svg"
       },
       {
         "name": "2 in one usb",
-        "img": ""
+        "img": "usb-drive.svg"
       }
     ],
     "description": ""
@@ -827,11 +741,11 @@
     "features": [
       {
         "name": "HD display",
-        "img": ""
+        "img": "tv.svg"
       },
       {
         "name": "Heart Monitoring",
-        "img": ""
+        "img": "heart-pulse.svg"
       }
     ],
     "description": ""
@@ -845,7 +759,7 @@
     "features": [
       {
         "name": "4000mAh",
-        "img": ""
+        "img": "4000.svg"
       }
     ],
     "description": ""
@@ -860,7 +774,7 @@
     "features": [
       {
         "name": "4000mAh",
-        "img": ""
+        "img": "4000.svg"
       }
     ],
     "description": ""

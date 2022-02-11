@@ -1,0 +1,90 @@
+[
+  {
+    "name": "et-a2206",
+    "title": "ET-A2206",
+    "type": "CHARGER",
+    "img": "ET-A2206.png",
+    "colors": ["#ffffff"],
+    "features": [
+      {
+        "name": "over-charging protection",
+        "img": ""
+      },
+      {
+        "name": "over-voltage protection",
+        "img": ""
+      },
+      {
+        "name": "temprature protection",
+        "img": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "name": "et-B27",
+    "title": "ET-B27",
+    "type": "USB CABLE",
+    "img": "ET-B27.png",
+    "colors": ["#000000"],
+    "features": [
+      {
+        "name": "Fast Charging",
+        "img": ""
+      },
+      {
+        "name": "Data Cable",
+        "img": ""
+      },
+      {
+        "name": "2.4A Output",
+        "img": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "name": "et-EX999",
+    "title": "ET-EX999",
+    "type": "EARPHONE",
+    "img": "ET-EX999.png",
+    "colors": ["#000000"],
+    "features": [
+      {
+        "name": "Hi-Fi Stereo",
+        "img": ""
+      },
+      {
+        "name": "Noise Isolation",
+        "img": ""
+      },
+      {
+        "name": "In-line Mic",
+        "img": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "name": "et-pb701",
+    "title": "ET-PB701",
+    "type": "POWERBANK",
+    "img": "ET-PB701.png",
+    "colors": ["#000000"],
+    "features": [
+      {
+        "name": "Type C Port",
+        "img": ""
+      },
+      {
+        "name": "Quick Charge",
+        "img": ""
+      },
+      {
+        "name": "10000mAh",
+        "img": ""
+      }
+    ],
+    "description": ""
+  }
+]
