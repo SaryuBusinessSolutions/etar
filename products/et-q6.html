@@ -19,7 +19,7 @@
   <img class="w-14" src="../img/logo.png" alt="">
   <p>loading...</p>
 </div>
-  <header id="navbar" class="fixed w-full z-[9] bg-white bg-opacity-20 backdrop-blur-sm">
+  <header id="navbar" class="fixed w-full z-[9] opacity-30 md:opacity-100 md:bg-white md:bg-opacity-20 md:backdrop-blur-[2px]">
   <div class="flex w-full container mx-auto justify-between items-center py-2 px-6 md:px-3">
     <a href="../">
       <img class="w-20 lg:w-24 2xl:w-32" src="../img/logo.png" alt="">
@@ -49,12 +49,13 @@
       class="text-5xl navlink transition-all duration-500 ease-in-out translate-x-[200%] md:translate-x-[600%]">CONTACT</a>
   </div>
 </div>
-<div data-scroll-section id="navfix" class="h-16"></div>
 
+<div data-scroll-section id="navfix"></div>
 <div class="fixed z-[5] right-0 p-2 rounded-l-md top-1/2 -translate-y-1/2 flex flex-col space-y-5 bg-red-600">
   <div class="cursor-pointer">
-    <svg class="w-6 md:w-8" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M10.2778 0C4.61061 0 0 4.61061 0 10.2778V26.7222C0 32.3894 4.61061 37 10.2778 37H26.7222C32.3894 37 37 32.3894 37 26.7222V10.2778C37 4.61061 
+    <a href="https://www.instagram.com/etar__india_/">
+      <svg class="w-6 md:w-8" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10.2778 0C4.61061 0 0 4.61061 0 10.2778V26.7222C0 32.3894 4.61061 37 10.2778 37H26.7222C32.3894 37 37 32.3894 37 26.7222V10.2778C37 4.61061 
       32.3894 0 26.7222 0H10.2778ZM10.2778 4.11111H26.7222C30.1221 4.11111 32.8889 6.87789 32.8889 10.2778V26.7222C32.8889 30.1221 30.1221 32.8889 26.7222 
       32.8889H10.2778C6.87789 32.8889 4.11111 30.1221 4.11111 26.7222V10.2778C4.11111 6.87789 6.87789 4.11111 10.2778 4.11111ZM28.7778 6.16667C28.2326 
       6.16667 27.7098 6.38323 27.3243 6.76873C26.9388 7.15422 26.7222 7.67706 26.7222 8.22222C26.7222 8.76739 26.9388 9.29023 27.3243 9.67572C27.7098 
@@ -63,17 +64,20 @@
       18.5C8.22222 24.1672 12.8328 28.7778 18.5 28.7778C24.1672 28.7778 28.7778 24.1672 28.7778 18.5C28.7778 12.8328 24.1672 8.22222 18.5 8.22222ZM18.5 
       12.3333C21.8999 12.3333 24.6667 15.1001 24.6667 18.5C24.6667 21.8999 21.8999 24.6667 18.5 24.6667C15.1001 24.6667 12.3333 21.8999 12.3333 18.5C12.3333 
       15.1001 15.1001 12.3333 18.5 12.3333Z" fill="#fff" />
-    </svg>
+      </svg>
+    </a>
   </div>
   <div class="w-25 cursor-pointer">
-    <svg class="w-6 md:w-8" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path
-        d="M18.5 0C8.30464 0 0 8.30464 0 18.5C0 28.6954 8.30464 37 18.5 37C28.6954 37 37 28.6954 37 18.5C37 8.30464 28.6954 0 18.5 0ZM18.5 3.7C26.6957 
+    <a href="https://www.facebook.com/ETAR-INDIA-690652841364556">
+      <svg class="w-6 md:w-8" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M18.5 0C8.30464 0 0 8.30464 0 18.5C0 28.6954 8.30464 37 18.5 37C28.6954 37 37 28.6954 37 18.5C37 8.30464 28.6954 0 18.5 0ZM18.5 3.7C26.6957 
         3.7 33.3 10.3043 33.3 18.5C33.3 25.9268 27.8708 32.0291 20.7547 33.1121V22.9118H25.0617L25.7374 18.5361H20.7547V16.1441C20.7547 14.3256 21.3471 
         12.7115 23.0491 12.7115H25.7808V8.89229C25.2998 8.82754 24.2847 8.68633 22.3662 8.68633C18.3591 8.68633 16.0105 10.8027 16.0105 
         15.6238V18.5361H11.8913V22.9118H16.0105V33.076C9.01004 31.8956 3.7 25.8449 3.7 18.5C3.7 10.3043 10.3043 3.7 18.5 3.7Z"
-        fill="#fff" />
-    </svg>
+          fill="#fff" />
+      </svg>
+    </a>
   </div>
 </div>
   <div data-scroll-section>
@@ -85,40 +89,62 @@
 </picture>
 </div>
 
-<div data-scroll-section class="maxhfix h-screen flex justify-center items-center">
+<div data-scroll-section class="maxhfix h-screen flex justify-center  relative overflow-hidden items-center">
   <picture class="w-full md:w-[40%] z-[1]">
   
   <source media="(min-width:768px)" srcset="../img/products/large/ET-Q6.png">
   
   <img src="../img/products/small/ET-Q6.png" alt="product ">
 </picture>
-  <p data-scroll data-scroll-speed="1"
-    class="text-8xl md:text-[20rem] absolute text-white stroke text-clip overflow-hidden text-center">ET-Q6</p>
+    <p data-scroll data-scroll-speed="1"
+      class="text-8xl md:text-[20rem] absolute text-white stroke text-clip text-center">
+      ET-Q6</p>
 </div>
 
 <div data-scroll-section>
-  <div class="flex space-x-2">
-  
-  <div class="aspect-square w-5 rounded-md" style="background-color: #000000;" ></div>
-  
+  <div class="flex space-x-2 justify-center">
+    
+    <div class="aspect-square w-8 rounded-md border" style="background-color: #000000;"></div>
+    
   </div>
 </div>
 
-<div data-scroll-section>
-  <div class="flex space-x-2">
-  
-  <div>Hi-Fi Stereo</div>
-  
-  <div>Noise Isolation</div>
-  
-  <div>In-line Mic</div>
-  
+<div data-scroll-section class="mt-10 md:mt-5">
+  <div class="flex flex-col md:flex-row space-y-5 justify-center md:space-y-0 md:space-x-8">
+    
+    <div class="flex flex-col md:flex-row items-center md:space-x-5 space-y-3 md:space-y-0">
+      <div class="p-2 md:p-3 bg-indigo-100 rounded-full w-16 h-16 flex items-center justify-center">
+        <img class="w-8" src="../img/icons/music.svg" alt="">
+      </div>
+      <p data-sal="slide-right" class="text-center md:text-left text-sm md:text-lg">
+        Hi-Fi Stereo
+      </p>
+    </div>
+    
+    <div class="flex flex-col md:flex-row items-center md:space-x-5 space-y-3 md:space-y-0">
+      <div class="p-2 md:p-3 bg-indigo-100 rounded-full w-16 h-16 flex items-center justify-center">
+        <img class="w-8" src="../img/icons/head-side-headphones.svg" alt="">
+      </div>
+      <p data-sal="slide-right" class="text-center md:text-left text-sm md:text-lg">
+        Noise Isolation
+      </p>
+    </div>
+    
+    <div class="flex flex-col md:flex-row items-center md:space-x-5 space-y-3 md:space-y-0">
+      <div class="p-2 md:p-3 bg-indigo-100 rounded-full w-16 h-16 flex items-center justify-center">
+        <img class="w-8" src="../img/icons/microphone.svg" alt="">
+      </div>
+      <p data-sal="slide-right" class="text-center md:text-left text-sm md:text-lg">
+        In-line Mic
+      </p>
+    </div>
+    
   </div>
 </div>
   <footer data-scroll-section class="bg-[#111111] py-5 mt-10 space-y-10">
-  <div class="container px-6 md:px-3 mx-auto flex flex-col md:flex-row space-y-8 md:space-y-0">
+  <div class="container px-6 md:px-3 mx-auto flex flex-col md:flex-row space-y-8 md:space-x-5 md:space-y-0">
     <div class="flex-[2] space-y-3">
-      <p class="font-bold text-red-600">COMPNAY</p>
+      <p class="font-bold text-red-600 ">COMPNAY</p>
       <img class="w-20" src="../img/logo.png" alt="">
       <p class="w-3/4 text-white font-light text-sm">
         ETAR Mobile Accessories established in 2017 and having it's headquarters in Mumbai, ETAR is India's most
@@ -128,45 +154,67 @@
     <div class="flex-1 space-y-3">
       <p class="font-bold text-red-600">PRODUCTS</p>
       <div class="flex flex-col">
-        <div class="flex flex-col">
-          <a class="text-white font-light group transition-all duration-500 ease-in-out text-sm" href="../earbuds">
-  <i class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-500 ease-in-out"></i><i class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-500 ease-in-out"></i>
-  <span class="group-hover:ml-0.5 transition-all duration-500 ease-in-out">Earbuds</span>
+        <div class="flex flex-col space-y-1">
+          <a class="text-white font-light group transition-all duration-500 ease-in-out text-sm" category="stand"
+  onclick="setCategory(event)" href="../products">
+  <i category="stand" class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-500 ease-in-out"></i><i
+    category="stand" class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-500 ease-in-out"></i>
+  <span category="stand" class="group-hover:ml-0.5 transition-all duration-500 ease-in-out">Stand</span>
 </a>
-          <a class="text-white font-light group transition-all duration-500 ease-in-out text-sm" href="../speaker">
-  <i class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-500 ease-in-out"></i><i class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-500 ease-in-out"></i>
-  <span class="group-hover:ml-0.5 transition-all duration-500 ease-in-out">Speaker</span>
+          <a class="text-white font-light group transition-all duration-500 ease-in-out text-sm" category="charger"
+  onclick="setCategory(event)" href="../products">
+  <i category="charger" class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-500 ease-in-out"></i><i
+    category="charger" class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-500 ease-in-out"></i>
+  <span category="charger" class="group-hover:ml-0.5 transition-all duration-500 ease-in-out">Charger</span>
 </a>
-          <a class="text-white font-light group transition-all duration-500 ease-in-out text-sm" href="../mini-speaker">
-  <i class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-500 ease-in-out"></i><i class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-500 ease-in-out"></i>
-  <span class="group-hover:ml-0.5 transition-all duration-500 ease-in-out">Mini Speaker</span>
+          <a class="text-white font-light group transition-all duration-500 ease-in-out text-sm" category="car charger"
+  onclick="setCategory(event)" href="../products">
+  <i category="car charger" class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-500 ease-in-out"></i><i
+    category="car charger" class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-500 ease-in-out"></i>
+  <span category="car charger" class="group-hover:ml-0.5 transition-all duration-500 ease-in-out">Car Charger</span>
 </a>
-          <a class="text-white font-light group transition-all duration-500 ease-in-out text-sm" href="../earphone">
-  <i class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-500 ease-in-out"></i><i class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-500 ease-in-out"></i>
-  <span class="group-hover:ml-0.5 transition-all duration-500 ease-in-out">Earphone</span>
+          <a class="text-white font-light group transition-all duration-500 ease-in-out text-sm" category="earphone"
+  onclick="setCategory(event)" href="../products">
+  <i category="earphone" class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-500 ease-in-out"></i><i
+    category="earphone" class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-500 ease-in-out"></i>
+  <span category="earphone" class="group-hover:ml-0.5 transition-all duration-500 ease-in-out">Earphone</span>
+</a>
+          <a class="text-white font-light group transition-all duration-500 ease-in-out text-sm" category="speaker"
+  onclick="setCategory(event)" href="../products">
+  <i category="speaker" class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-500 ease-in-out"></i><i
+    category="speaker" class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-500 ease-in-out"></i>
+  <span category="speaker" class="group-hover:ml-0.5 transition-all duration-500 ease-in-out">Speaker</span>
 </a>
         </div>
       </div>
     </div>
     <div class="flex-1 space-y-3">
       <p class="font-bold text-red-600">CONTACT</p>
-      <div class="flex flex-col">
-        <a class="text-white font-light group transition-all duration-500 ease-in-out text-sm" href="../earbuds">
-  <i class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-500 ease-in-out"></i><i class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-500 ease-in-out"></i>
-  <span class="group-hover:ml-0.5 transition-all duration-500 ease-in-out">Earbuds</span>
-</a>
-        <a class="text-white font-light group transition-all duration-500 ease-in-out text-sm" href="../earbuds">
-  <i class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-500 ease-in-out"></i><i class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-500 ease-in-out"></i>
-  <span class="group-hover:ml-0.5 transition-all duration-500 ease-in-out">Earbuds</span>
-</a>
-        <a class="text-white font-light group transition-all duration-500 ease-in-out text-sm" href="../earbuds">
-  <i class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-500 ease-in-out"></i><i class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-500 ease-in-out"></i>
-  <span class="group-hover:ml-0.5 transition-all duration-500 ease-in-out">Earbuds</span>
-</a>
-        <a class="text-white font-light group transition-all duration-500 ease-in-out text-sm" href="../earbuds">
-  <i class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-500 ease-in-out"></i><i class="fal fa-angle-right group-hover:ml-0.5 transition-all duration-500 ease-in-out"></i>
-  <span class="group-hover:ml-0.5 transition-all duration-500 ease-in-out">Earbuds</span>
-</a>
+      <div class="flex flex-col space-y-1">
+        <a class="text-white font-light group transition-all duration-500 ease-in-out text-sm flex cursor-default">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-20 h-20 mr-1">
+            <path fill-rule="evenodd"
+              d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+              clip-rule="evenodd"></path>
+          </svg>
+          <p class="group-hover:ml-0.5 transition-all duration-500 ease-in-out">Office No. 10, 10th Floor Plot-156
+            Evrest Appartment, Pandit Madan Mohan Malviya Marg, Tardeo,MUMBAI-400034</p>
+        </a>
+        <a class="text-white font-light group transition-all duration-500 ease-in-out text-sm flex cursor-default">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 mr-1">
+            <path
+              d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
+            </path>
+          </svg>
+          <p class="group-hover:ml-0.5 transition-all duration-500 ease-in-out">9920202470</p>
+        </a>
+        <a class="text-white font-light group transition-all duration-500 ease-in-out text-sm flex cursor-default">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 mr-1">
+            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+          </svg>
+          <p class="group-hover:ml-0.5 transition-all duration-500 ease-in-out">info@etarindia.com</p>
+        </a>
       </div>
     </div>
     <div class="flex-1 space-y-3">
@@ -174,11 +222,11 @@
       <p class="text-white text-sm">
         Subscribe to get notified about product launches, special offers and company news.
       </p>
-      <div class="flex flex-col space-y-3">
+      <form class="flex flex-col space-y-3">
         <input type="text" class="w-full px-3 text-lg py-2 rounded focus:ring-transparent"
           placeholder="Enter Your Email Address">
         <button class="button-1 rounded mr-auto">SUBSCRIBE</button>
-      </div>
+      </form>
     </div>
   </div>
   <div class="container mx-auto spcae-y-2 text-white">
