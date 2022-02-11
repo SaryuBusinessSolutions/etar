@@ -6,7 +6,7 @@
 "name":"ROYAL-SERIES-BATTERY",
 "type":"BATTERY",
 "img":"ROYAL-SERIES-BATTERY.png",
-"features":"[object Object]"
+"features":"[object Object],[object Object]"
 }
 ---
 
@@ -15,11 +15,11 @@
     : "../img/posters/desktop/ROYAL-SERIES-BATTERY.jpg" , classes : "" , }) %>
 </div>
 
-<div data-scroll-section class="maxhfix h-screen flex justify-center items-center">
+<div data-scroll-section class="maxhfix h-screen flex justify-center  relative overflow-hidden items-center">
   <%- include('mini/img',{ alt : "product" , src : "../img/products/small/ROYAL-SERIES-BATTERY.png" , md
     : "../img/products/large/ROYAL-SERIES-BATTERY.png" , classes : "w-full md:w-[40%] z-[1]" , }) %>
     <p data-scroll data-scroll-speed="1"
-      class="text-8xl md:text-[20rem] absolute text-white stroke text-clip overflow-hidden text-center">
+      class="text-8xl md:text-[20rem] absolute text-white stroke text-clip text-center">
       ROYAL-SERIES-BATTERY</p>
 </div>
 
@@ -40,6 +40,15 @@
       </div>
       <p data-sal="slide-right" class="text-center md:text-left text-sm md:text-lg">
         4000mAh
+      </p>
+    </div>
+    
+    <div class="flex flex-col md:flex-row items-center md:space-x-5 space-y-3 md:space-y-0">
+      <div class="p-2 md:p-3 bg-indigo-100 rounded-full w-16 h-16 flex items-center justify-center">
+        <img class="w-8" src="../img/icons/battery-full.svg" alt="">
+      </div>
+      <p data-sal="slide-right" class="text-center md:text-left text-sm md:text-lg">
+        over-charging protection
       </p>
     </div>
     

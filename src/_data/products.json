@@ -13,7 +13,16 @@
       "#E60C80",
       "#E60C80"
     ],
-    "features": [],
+    "features": [
+      {
+        "name": "Premium Material",
+        "img": "material.svg"
+      },
+      {
+        "name": "360° Rotation",
+        "img": "360.svg"
+      }
+    ],
     "description": ""
   },
   {
@@ -558,7 +567,16 @@
     "type": "STAND",
     "img": "ET-S17.png",
     "colors": ["#000000"],
-    "features": [],
+   "features": [
+      {
+        "name": "Premium Material",
+        "img": "material.svg"
+      },
+      {
+        "name": "360° Rotation",
+        "img": "360.svg"
+      }
+    ],
     "description": ""
   },
   {
@@ -567,7 +585,16 @@
     "type": "STAND",
     "img": "ET-S19.png",
     "colors": ["#000000"],
-    "features": [],
+   "features": [
+      {
+        "name": "Premium Material",
+        "img": "material.svg"
+      },
+      {
+        "name": "360° Rotation",
+        "img": "360.svg"
+      }
+    ],
     "description": ""
   },
   {
@@ -729,7 +756,16 @@
     "type": "STAND",
     "img": "ET-TR200.png",
     "colors": ["#000000"],
-    "features": [],
+   "features": [
+      {
+        "name": "Premium Material",
+        "img": "material.svg"
+      },
+      {
+        "name": "360° Rotation",
+        "img": "360.svg"
+      }
+    ],
     "description": ""
   },
   {
@@ -760,6 +796,10 @@
       {
         "name": "4000mAh",
         "img": "4000.svg"
+      },
+      {
+        "name": "over-charging protection",
+        "img": "battery-full.svg"
       }
     ],
     "description": ""
@@ -775,6 +815,10 @@
       {
         "name": "4000mAh",
         "img": "4000.svg"
+      },
+      {
+        "name": "over-charging protection",
+        "img": "battery-full.svg"
       }
     ],
     "description": ""

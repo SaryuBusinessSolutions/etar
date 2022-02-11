@@ -7,10 +7,10 @@
 <div data-scroll-section class="relative landscape:min-h-screen">
   <div class="swiper relative landscape:min-h-screen">
     <div class="swiper-wrapper">
-      <div class="swiper-slide overflow-hidden"><%- include('page/hero2',{img:'ET-A12100.png'}) %></div>
-      <div class="swiper-slide overflow-hidden"><%- include('page/hero2',{img:'ET-BH65.png'}) %></div>
-      <div class="swiper-slide overflow-hidden"><%- include('page/hero2',{img:'ET-C11.png'}) %></div>
-      <div class="swiper-slide overflow-hidden"><%- include('page/hero2',{img:'ET-R18.png'}) %></div>
+      <div class="swiper-slide overflow-hidden"><%- include('page/hero2',{img:'ET-A2210.jpg'}) %></div>
+      <div class="swiper-slide overflow-hidden"><%- include('page/hero2',{img:'ET-BH65.jpg'}) %></div>
+      <div class="swiper-slide overflow-hidden"><%- include('page/hero2',{img:'ET-C11.jpg'}) %></div>
+      <div class="swiper-slide overflow-hidden"><%- include('page/hero2',{img:'ET-R18.jpg'}) %></div>
     </div>
   </div>
 </div>
@@ -32,6 +32,10 @@
   </div>
 </div>
 
+<div data-scroll-section="mt-16">
+  <video src="./video/mainbannervideo.mp4" class="aspect-video container mx-auto px-6 md:px-10 video" preload="auto" volume=0.3 autoplay></video>
+</div>
+
 <div data-scroll-section class="container mx-auto px-6 md:px-10 mt-16 space-y-8">
   <div class="flex justify-end">
     <span
@@ -45,5 +49,21 @@
       link: "./products/"+page.name 
     }) %>
     <% }) %>
+  </div>
+</div>
+
+<div data-scroll-section class="mt-16">
+  <div class="container mx-auto px-6 md:px-10 flex">
+    <div class="flex-[2]">
+      <video src="./video/bannervideo1.mp4" class="aspect-square video" preload="auto" autoplay></video>
+    </div>
+    <div class="flex-[1]">
+      <div>
+        <video src="./video/bannervideo2.mp4" class="aspect-square video" preload="auto" autoplay></video>
+      </div>
+      <div>
+        <video src="./video/bannervideo3.mp4" class="aspect-square video" preload="auto" autoplay></video>
+      </div>
+    </div>
   </div>
 </div>

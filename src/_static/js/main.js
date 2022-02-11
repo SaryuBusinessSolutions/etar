@@ -9,12 +9,13 @@ let swiper;
 document.addEventListener('DOMContentLoaded', () => {
   loadProductFuse();
   swiperWraper();
+  playPauseVideo();
 });
 
 window.onload = () => {
   loaded();
-  locomotiveInit();
   loadCategory();
+  locomotiveInit();
 }
 
 window.onscroll = ()=>{
@@ -80,9 +81,6 @@ function locomotiveInit() {
       tablet: {
         smooth: false,
       }
-    });
-    scroll.on('scroll', (args) => {
-      args
     });
     document.querySelector('.c-scrollbar').classList.add('z-50')
     document.querySelector('.c-scrollbar_thumb').classList.add('!bg-neutral-400')
@@ -185,4 +183,35 @@ function loadCategory() {
     }
     document.cookie = "category=" + getCookie('category').toLowerCase() + "; max-age=0;  path=/";
   }, 500);
+}
+
+function playPauseVideo() {
+  let videos = document.querySelectorAll(".video");
+  videos.forEach((video) => {
+    // We can only control playback without insteraction if video is mute
+    video.muted = true;
+    // Play is a promise so we need to check we have it
+    let playPromise = video.play();
+    if (playPromise !== undefined) {
+      playPromise.then((_) => {
+        let observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (
+                entry.intersectionRatio !== 1 &&
+                !video.paused
+              ) {
+                video.pause();
+              } else if (video.paused) {
+                video.play();
+              }
+            });
+          }, {
+            threshold: 0.2
+          }
+        );
+        observer.observe(video);
+      });
+    }
+  });
 }
