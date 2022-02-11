@@ -1,4 +1,4 @@
-<picture class="<%- classes %>">
+<picture class="<%- pictureclass %>">
   <% if (typeof sm != 'undefined') { %>
   <source media="(min-width:640px)" srcset="<%- sm %>">
   <% } if (typeof md != 'undefined') { %>
@@ -8,5 +8,5 @@
   <% } if (typeof xl != 'undefined') { %>
   <source media="(min-width:1280px)" srcset="<%- xl %>">
   <% } %>
-  <img src="<%- src %>" alt="<%- alt %> <%- typeof attr != 'undefined' ? attr : "" %>">
+  <img src="<%- src %>" alt="<%- alt %>"  class="<%- classes %>" <%- typeof attr != 'undefined' ? attr : "" %>">
 </picture>

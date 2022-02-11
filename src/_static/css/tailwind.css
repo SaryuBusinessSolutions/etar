@@ -2505,9 +2505,3 @@ select {
     width: 8rem;
   }
 }
-
-@media (orientation: landscape) {
-  .landscape\:min-h-screen {
-    min-height: 100vh;
-  }
-}
