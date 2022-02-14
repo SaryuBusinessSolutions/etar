@@ -1,0 +1,12 @@
+form : {
+link : https://docs.google.com/forms/u/1/d/e/1FAIpQLScumeD0ko8LfE4Vzg-mNyGxmuReiPOA8N69jTZXJqjSS_5q9w/formResponse
+email : entry.1691315444
+}
+form2 : {
+  link : https://docs.google.com/forms/u/1/d/e/1FAIpQLSfDZwne3SMg-ddCAsf_JqR-MPWHLgrZQfYnDQ6VMrJD72RHHA/formResponse
+  first name : entry.1726386109
+  last name : entry.1591147457
+  mail : entry.1351314800
+  phone : entry.380052746
+  message : entry.702439098
+}
