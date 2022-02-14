@@ -23,6 +23,7 @@
         "img": "360.svg"
       }
     ],
+    "specs": [],
     "description": ""
   },
   {
@@ -45,6 +46,12 @@
         "img": "microphone.svg"
       }
     ],
+    "specs": [
+      ["Unit size", "10mm"],
+      ["Impdeance", "16Ω ± 3"],
+      ["Frequency response", "20-20000Hz"],
+      ["Wire lenght", "120cm ± 5"]
+    ],
     "description": ""
   },
   {
@@ -66,6 +73,12 @@
         "name": "In-line Mic",
         "img": "microphone.svg"
       }
+    ],
+    "specs": [
+      ["Frequency response", "20-20000Hz"],
+      ["Transmision range", "10m"],
+      ["Charging time", "+3hr"],
+      ["Battery capacity", "300mAh"]
     ],
     "description": ""
   },
@@ -90,6 +103,7 @@
         "img": "temperature-high.svg"
       }
     ],
+    "specs": [],
     "description": ""
   },
   {
@@ -112,6 +126,7 @@
         "img": "temperature-high.svg"
       }
     ],
+    "specs": [],
     "description": ""
   },
   {
@@ -134,6 +149,7 @@
         "img": "2.4a.svg"
       }
     ],
+    "specs": [],
     "description": ""
   },
   {
@@ -155,6 +171,12 @@
         "name": "In-line Mic",
         "img": "microphone.svg"
       }
+    ],
+    "specs": [
+      ["Blutooth version", "5.0"],
+      ["Music Time", "23Hr"],
+      ["Charging time", "1-2Hr"],
+      ["Charging type", "Micro USB"]
     ],
     "description": ""
   },
@@ -180,6 +202,12 @@
         "img": "microphone.svg"
       }
     ],
+    "specs": [
+      ["Blutooth version", "4.1"],
+      ["Call duration", "25Hr"],
+      ["Connection distance", "15M"],
+      ["Battery capacity", "185mAh"]
+    ],
     "description": ""
   },
   {
@@ -202,6 +230,12 @@
         "img": "microphone.svg"
       }
     ],
+    "specs": [
+      ["Blutooth version", "4.1"],
+      ["Music Time", "20Hr"],
+      ["Connection distance", "15M"],
+      ["Battery capacity", "280mAh"]
+    ],
     "description": ""
   },
   {
@@ -223,6 +257,12 @@
         "name": "In-line Mic",
         "img": "microphone.svg"
       }
+    ],
+    "specs": [
+      ["Blutooth version", "5.0"],
+      ["Music Time", "15Hr"],
+      ["Connection distance", "15M"],
+      ["Battery capacity", "200mAh"]
     ],
     "description": ""
   },
@@ -247,6 +287,7 @@
         "img": "usb-drive.svg"
       }
     ],
+    "specs": [],
     "description": ""
   },
   {
@@ -269,6 +310,7 @@
         "img": "usb-drive.svg"
       }
     ],
+    "specs": [],
     "description": ""
   },
   {
@@ -291,6 +333,7 @@
         "img": "usb-drive.svg"
       }
     ],
+    "specs": [],
     "description": ""
   },
   {
@@ -313,6 +356,7 @@
         "img": "usb-drive.svg"
       }
     ],
+    "specs": [],
     "description": ""
   },
   {
@@ -335,6 +379,7 @@
         "img": "usb-drive.svg"
       }
     ],
+    "specs": [],
     "description": ""
   },
   {
@@ -357,6 +402,7 @@
         "img": "microphone.svg"
       }
     ],
+    "specs": [],
     "description": ""
   },
   {
@@ -381,71 +427,11 @@
         "img": "10000.svg"
       }
     ],
-    "description": ""
-  },
-  {
-    "name": "et-q14",
-    "title": "ET-Q14",
-    "type": "EARPHONE",
-    "img": "ET-Q14.png",
-    "colors": ["#000000"],
-    "features": [
-      {
-        "name": "Hi-Fi Stereo",
-        "img": "music.svg"
-      },
-      {
-        "name": "Noise Isolation",
-        "img": "head-side-headphones.svg"
-      },
-      {
-        "name": "In-line Mic",
-        "img": "microphone.svg"
-      }
-    ],
-    "description": ""
-  },
-  {
-    "name": "et-q21",
-    "title": "ET-Q21",
-    "type": "EARPHONE",
-    "img": "ET-Q21.png",
-    "colors": ["#000000"],
-    "features": [
-      {
-        "name": "Hi-Fi Stereo",
-        "img": "music.svg"
-      },
-      {
-        "name": "Noise Isolation",
-        "img": "head-side-headphones.svg"
-      },
-      {
-        "name": "In-line Mic",
-        "img": "microphone.svg"
-      }
-    ],
-    "description": ""
-  },
-  {
-    "name": "et-q23",
-    "title": "ET-Q23",
-    "type": "EARPHONE",
-    "img": "ET-Q23.png",
-    "colors": ["#ffffff"],
-    "features": [
-      {
-        "name": "Hi-Fi Stereo",
-        "img": "music.svg"
-      },
-      {
-        "name": "Noise Isolation",
-        "img": "head-side-headphones.svg"
-      },
-      {
-        "name": "In-line Mic",
-        "img": "microphone.svg"
-      }
+    "specs": [
+      ["Lithium battery capacity", "10000mAh"],
+      ["Rated energy of battery", "37Wh"],
+      ["Input", "5V=2A"],
+      ["Output", "5V=2.1A"]
     ],
     "description": ""
   },
@@ -469,6 +455,76 @@
         "img": "microphone.svg"
       }
     ],
+    "specs": [],
+    "description": ""
+  },
+  {
+    "name": "et-q14",
+    "title": "ET-Q14",
+    "type": "EARPHONE",
+    "img": "ET-Q14.png",
+    "colors": ["#000000"],
+    "features": [
+      {
+        "name": "Hi-Fi Stereo",
+        "img": "music.svg"
+      },
+      {
+        "name": "Noise Isolation",
+        "img": "head-side-headphones.svg"
+      },
+      {
+        "name": "In-line Mic",
+        "img": "microphone.svg"
+      }
+    ],
+    "specs": [],
+    "description": ""
+  },
+  {
+    "name": "et-q21",
+    "title": "ET-Q21",
+    "type": "EARPHONE",
+    "img": "ET-Q21.png",
+    "colors": ["#000000"],
+    "features": [
+      {
+        "name": "Hi-Fi Stereo",
+        "img": "music.svg"
+      },
+      {
+        "name": "Noise Isolation",
+        "img": "head-side-headphones.svg"
+      },
+      {
+        "name": "In-line Mic",
+        "img": "microphone.svg"
+      }
+    ],
+    "specs": [],
+    "description": ""
+  },
+  {
+    "name": "et-q23",
+    "title": "ET-Q23",
+    "type": "EARPHONE",
+    "img": "ET-Q23.png",
+    "colors": ["#ffffff"],
+    "features": [
+      {
+        "name": "Hi-Fi Stereo",
+        "img": "music.svg"
+      },
+      {
+        "name": "Noise Isolation",
+        "img": "head-side-headphones.svg"
+      },
+      {
+        "name": "In-line Mic",
+        "img": "microphone.svg"
+      }
+    ],
+    "specs": [],
     "description": ""
   },
   {
@@ -491,6 +547,7 @@
         "img": "2.0a.svg"
       }
     ],
+    "specs": [],
     "description": ""
   },
   {
@@ -512,6 +569,12 @@
         "name": "In-line Mic",
         "img": "microphone.svg"
       }
+    ],
+    "specs": [
+      ["Blutooth version", "5.0"],
+      ["Standby time", "40Hr"],
+      ["Charging compartment battery", "400M"],
+      ["Battery capacity", "45mAh"]
     ],
     "description": ""
   },
@@ -537,6 +600,12 @@
         "img": "microphone.svg"
       }
     ],
+    "specs": [
+      ["Blutooth version", "5.0"],
+      ["Standby time", "20Hr"],
+      ["Charging compartment battery", "400M"],
+      ["Battery capacity", "45mAh"]
+    ],
     "description": ""
   },
   {
@@ -559,6 +628,12 @@
         "img": "microphone.svg"
       }
     ],
+    "specs": [
+      ["Blutooth version", "5.0"],
+      ["Standby time", "20Hr"],
+      ["Charging compartment battery", "300M"],
+      ["Battery capacity", "35mAh"]
+    ],
     "description": ""
   },
   {
@@ -567,7 +642,7 @@
     "type": "STAND",
     "img": "ET-S17.png",
     "colors": ["#000000"],
-   "features": [
+    "features": [
       {
         "name": "Premium Material",
         "img": "material.svg"
@@ -577,6 +652,7 @@
         "img": "360.svg"
       }
     ],
+    "specs": [],
     "description": ""
   },
   {
@@ -585,7 +661,7 @@
     "type": "STAND",
     "img": "ET-S19.png",
     "colors": ["#000000"],
-   "features": [
+    "features": [
       {
         "name": "Premium Material",
         "img": "material.svg"
@@ -595,6 +671,7 @@
         "img": "360.svg"
       }
     ],
+    "specs": [],
     "description": ""
   },
   {
@@ -626,6 +703,12 @@
         "img": "wifi-2.svg"
       }
     ],
+    "specs": [
+      ["Blutooth version", "5.0"],
+      ["Rated Power", "2*3W"],
+      ["Frequency response", "60Hz-18KHz"],
+      ["Battery capacity", "1000mAh"]
+    ],
     "description": ""
   },
   {
@@ -654,6 +737,12 @@
         "name": "Wireless",
         "img": "wifi-2.svg"
       }
+    ],
+    "specs": [
+      ["Blutooth version", "5.0"],
+      ["Rated Power", "2*3W"],
+      ["Frequency response", "60Hz-18KHz"],
+      ["Battery capacity", "1000mAh"]
     ],
     "description": ""
   },
@@ -685,6 +774,12 @@
         "img": "wifi-2.svg"
       }
     ],
+    "specs": [
+      ["Blutooth version", "5.0"],
+      ["Rated Power", "1*5W"],
+      ["Frequency response", "60Hz-18KHz"],
+      ["Battery capacity", "1200mAh"]
+    ],
     "description": ""
   },
   {
@@ -706,6 +801,12 @@
         "name": "Wireless",
         "img": "wifi-2.svg"
       }
+    ],
+    "specs": [
+      ["Blutooth version", "5.0"],
+      ["Speaker unit", "4Ω"],
+      ["Frequency response", "90Hz-20KHz"],
+      ["Battery capacity", "800mAh"]
     ],
     "description": ""
   },
@@ -729,6 +830,12 @@
         "img": "wifi-2.svg"
       }
     ],
+    "specs": [
+      ["Blutooth version", "5.0"],
+      ["Speaker unit", "4Ω"],
+      ["Frequency response", "90Hz-20KHz"],
+      ["Battery capacity", "1200mAh"]
+    ],
     "description": ""
   },
   {
@@ -748,6 +855,7 @@
         "img": "usb-drive.svg"
       }
     ],
+    "specs": [],
     "description": ""
   },
   {
@@ -756,7 +864,7 @@
     "type": "STAND",
     "img": "ET-TR200.png",
     "colors": ["#000000"],
-   "features": [
+    "features": [
       {
         "name": "Premium Material",
         "img": "material.svg"
@@ -766,6 +874,7 @@
         "img": "360.svg"
       }
     ],
+    "specs": [],
     "description": ""
   },
   {
@@ -783,6 +892,12 @@
         "name": "Heart Monitoring",
         "img": "heart-pulse.svg"
       }
+    ],
+    "specs": [
+      ["Apperance size", "43*37*11 mm"],
+      ["Waterproof", "IP68"],
+      ["Operation Mode", "Full touch + function keys"],
+      ["Dispaly screen", "1.54HD IPS 240*240 pixels"]
     ],
     "description": ""
   },
@@ -802,6 +917,7 @@
         "img": "battery-full.svg"
       }
     ],
+    "specs": [],
     "description": ""
   },
   {
@@ -821,6 +937,7 @@
         "img": "battery-full.svg"
       }
     ],
+    "specs": [],
     "description": ""
   }
 ]
