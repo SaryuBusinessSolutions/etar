@@ -56,39 +56,43 @@
         </div>
       </div>
     </div>
-    <form class="flex-[3] flex flex-col space-y-5">
+    <form
+      action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSfDZwne3SMg-ddCAsf_JqR-MPWHLgrZQfYnDQ6VMrJD72RHHA/formResponse" 
+      target="contact_iframe" onsubmit="sendResponse(event,'contact_form')" name="contact_form"
+      class="flex-[3] flex flex-col space-y-5">
       <div class="flex w-full">
         <div class="px-2 w-full text-gray-500 focus-within:text-red-500">
           <p class="text-xs">First Name</p>
-          <input type="text"
+          <input type="text" name="entry.1726386109"
             class="!text-black border-0 border-b px-0 pt-0.5 border-b-black focus:border-b-red-600 focus:ring-transparent w-full">
         </div>
         <div class="px-2 w-full text-gray-500 focus-within:text-red-500">
           <p class="text-xs">Last Name</p>
-          <input type="text"
+          <input type="text" name="entry.1591147457"
             class="!text-black border-0 border-b px-0 pt-0.5 border-b-black focus:border-b-red-600 focus:ring-transparent w-full">
         </div>
       </div>
       <div class="flex w-full">
         <div class="px-2 w-full text-gray-500 focus-within:text-red-500">
           <p class="text-xs">Mail</p>
-          <input type="text"
+          <input type="text" name="entry.1351314800"
             class="!text-black border-0 border-b px-0 pt-0.5 border-b-black focus:border-b-red-600 focus:ring-transparent w-full">
         </div>
         <div class="px-2 w-full text-gray-500 focus-within:text-red-500">
           <p class="text-xs">Phone</p>
-          <input type="text"
+          <input type="text" name="entry.380052746"
             class="!text-black border-0 border-b px-0 pt-0.5 border-b-black focus:border-b-red-600 focus:ring-transparent w-full">
         </div>
       </div>
       <div class="px-2 text-gray-500 focus-within:text-red-500">
         <p class="text-xs">Message</p>
-        <textarea type="text"
+        <textarea type="text" name=" entry.702439098"
           class="!text-black border-0 border-b px-0 pt-0.5 border-b-black focus:border-b-red-600 focus:ring-transparent w-full"></textarea>
       </div>
       <div class="px-2 ml-auto">
-        <button class="button-1 rounded text-sm p-4">Send Message</button>
+        <button type="submit" class="button-1 rounded text-sm p-4">Send Message</button>
       </div>
     </form>
+    <iframe name="contact_iframe" class="hidden" onload="if(document.submitted) sendResponse(event,'contact_form')"></iframe>
   </div>
 </div>
