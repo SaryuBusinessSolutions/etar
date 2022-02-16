@@ -215,3 +215,14 @@ function playPauseVideo() {
     }
   });
 }
+
+function sendResponse(event, formName) {
+  if (document.submitted) {
+    document.submitted = undefined;
+    document[formName].reset();
+    alert('Response recorded')
+    // showNotification('Response recorded')
+  } else {
+    document.submitted = true;
+  }
+}
