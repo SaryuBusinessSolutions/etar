@@ -37,6 +37,7 @@ function strToRegex(string) {
 function loadProductFuse() {
   const options = {
     threshold: 0.3,
+    useExtendedSearch: true,
     keys: ['name', 'type']
   }
   productFuse = new Fuse([], options)

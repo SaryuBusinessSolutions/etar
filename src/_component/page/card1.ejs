@@ -1,19 +1,15 @@
-<div
-  class="flex bg-neutral-50 rounded-2xl py-4 px-8 overflow-hidden hover:shadow-2xl group transition-shadow duration-300 ease-in-out">
+<div class="flex bg-neutral-50 relative rounded-2xl py-4 px-8 overflow-hidden hover:shadow-2xl group transition-shadow duration-300 ease-in-out">
   <div class="flex-[3] z-[1] flex flex-col justify-around">
     <p class="lg:text-2xl"><%- name %></p>
-    <a category="<%- name %>" href="./products" onclick="setCategory(event)"
-      class="button-1 rounded-lg px-5 mr-auto text-xs lg:text-base cursor-pointer">VIEW MORE</a>
+    <a category='="<%- name %>"' href="./products" onclick="setCategory(event)" class="button-1 rounded-lg px-5 mr-auto text-xs lg:text-base cursor-pointer">VIEW MORE</a>
   </div>
   <div data-scroll data-scroll-speed="1" class="flex-[2] z-[1]">
     <%- include('../mini/img',{
-        alt : "product",
-        src : "img/products/small/"+img,
-        pictureclass : "group-hover:scale-95 transition-all duration-500 ease-in-out",
-        classes : "",
-      }) %>
+      alt : "product",
+      src : "img/products/small/"+img,
+      pictureclass : "group-hover:scale-95 transition-all duration-500 ease-in-out",
+      classes : "",
+    }) %>
   </div>
-  <div
-    class="circle-bg w-1/2 bg-neutral-100 top-[80%] left-[80%] -translate-x-1/2 -translate-y-1/2 group-hover:shadow-2xl transition-shadow duration-300 ease-in-out">
-  </div>
+  <div class="circle-bg w-1/2 bg-neutral-100 top-[80%] left-[80%] -translate-x-1/2 -translate-y-1/2 group-hover:shadow-2xl transition-shadow duration-300 ease-in-out"></div>
 </div>
