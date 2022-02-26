@@ -55,6 +55,62 @@
     "description": ""
   },
   {
+    "name": "et-333",
+    "title": "ET-333",
+    "type": "EARPHONE",
+    "img": "ET-333.png",
+    "colors": ["#000000"],
+    "features": [
+      {
+        "name": "Hi-Fi Stereo",
+        "img": "music.svg"
+      },
+      {
+        "name": "Noise Isolation",
+        "img": "head-side-headphones.svg"
+      },
+      {
+        "name": "In-line Mic",
+        "img": "microphone.svg"
+      }
+    ],
+    "specs": [
+      ["Unit size", "10mm"],
+      ["Impdeance", "16Ω ± 3"],
+      ["Frequency response", "20-20000Hz"],
+      ["Wire lenght", "120cm ± 5"]
+    ],
+    "description": ""
+  },
+  {
+    "name": "et-444",
+    "title": "ET-444",
+    "type": "EARPHONE",
+    "img": "ET-444.png",
+    "colors": ["#000000"],
+    "features": [
+      {
+        "name": "Hi-Fi Stereo",
+        "img": "music.svg"
+      },
+      {
+        "name": "Noise Isolation",
+        "img": "head-side-headphones.svg"
+      },
+      {
+        "name": "In-line Mic",
+        "img": "microphone.svg"
+      }
+    ],
+    "specs": [
+      ["Unit size", "10mm"],
+      ["Impdeance", "16Ω ± 3"],
+      ["Frequency response", "20-20000Hz"],
+      ["Wire lenght", "120cm ± 5"]
+    ],
+    "description": ""
+  },
+  {
     "name": "et-84h",
     "title": "ET-84H",
     "type": "HEADPHONE",
@@ -130,10 +186,56 @@
     "description": "Featuring a compact design, this power adapter gives fast, efficient charging. Intelligent matching current, Intelligent charge, free of blind plug. Sonic speed USB charging. High efficiency. Safe and reliable."
   },
   {
+    "name": "et-a2211",
+    "title": "ET-A2211",
+    "type": "CHARGER",
+    "img": "ET-A2211.png",
+    "colors": ["#000000"],
+    "features": [
+      {
+        "name": "over-charging protection",
+        "img": "battery-full.svg"
+      },
+      {
+        "name": "over-voltage protection",
+        "img": "charging-station.svg"
+      },
+      {
+        "name": "temprature protection",
+        "img": "temperature-high.svg"
+      }
+    ],
+    "specs": [],
+    "description": "Featuring a compact design, this power adapter gives fast, efficient charging. Intelligent matching current, Intelligent charge, free of blind plug. Sonic speed USB charging. High efficiency. Safe and reliable."
+  },
+  {
     "name": "et-b26",
     "title": "ET-B26",
     "type": "USB CABLE",
     "img": "ET-B26.png",
+    "colors": ["#ffffff"],
+    "features": [
+      {
+        "name": "Fast Charging",
+        "img": "battery-bolt.svg"
+      },
+      {
+        "name": "Data Cable",
+        "img": "usb.svg"
+      },
+      {
+        "name": "2.4A Output",
+        "img": "2.4a.svg"
+      }
+    ],
+    "specs": [],
+    "description": "Wire design specially, stay away from the trouble of winding. Using with stainless steel material connector and internal model to strengthening, extended using time. Stepwise design, no need to worry about the telephone shell. Using environmental protection material, not afraid of bending and more strong."
+  },
+  {
+    "name": "et-b30",
+    "title": "ET-B30",
+    "type": "USB CABLE",
+    "img": "ET-B30.png",
     "colors": ["#ffffff"],
     "features": [
       {
@@ -436,6 +538,36 @@
     "description": ""
   },
   {
+    "name": "et-pb712",
+    "title": "ET-PB712",
+    "featured": true,
+    "category": true,
+    "type": "POWERBANK",
+    "img": "ET-PB712.png",
+    "colors": ["#000000"],
+    "features": [
+      {
+        "name": "Type C Port",
+        "img": "type-c.svg"
+      },
+      {
+        "name": "Quick Charge",
+        "img": "bolt.svg"
+      },
+      {
+        "name": "10000mAh",
+        "img": "10000.svg"
+      }
+    ],
+    "specs": [
+      ["Lithium battery capacity", "10000mAh"],
+      ["Rated energy of battery", "37Wh"],
+      ["Input", "5V=2A"],
+      ["Output", "5V=2.1A"]
+    ],
+    "description": ""
+  },
+  {
     "name": "et-q6",
     "title": "ET-Q6",
     "type": "EARPHONE",
@@ -509,6 +641,52 @@
     "title": "ET-Q23",
     "type": "EARPHONE",
     "img": "ET-Q23.png",
+    "colors": ["#ffffff"],
+    "features": [
+      {
+        "name": "Hi-Fi Stereo",
+        "img": "music.svg"
+      },
+      {
+        "name": "Noise Isolation",
+        "img": "head-side-headphones.svg"
+      },
+      {
+        "name": "In-line Mic",
+        "img": "microphone.svg"
+      }
+    ],
+    "specs": [],
+    "description": "Enjoy the better listening experience with tangled free cable, ergonomic sound-isolating technology and multiple sizes ear-tips for comfortable fit. Compatible with smart phone and other portable player for universal 3.5 mm audio jack."
+  },
+  {
+    "name": "et-q28",
+    "title": "ET-Q28",
+    "type": "EARPHONE",
+    "img": "ET-Q28.png",
+    "colors": ["#ffffff"],
+    "features": [
+      {
+        "name": "Hi-Fi Stereo",
+        "img": "music.svg"
+      },
+      {
+        "name": "Noise Isolation",
+        "img": "head-side-headphones.svg"
+      },
+      {
+        "name": "In-line Mic",
+        "img": "microphone.svg"
+      }
+    ],
+    "specs": [],
+    "description": "Enjoy the better listening experience with tangled free cable, ergonomic sound-isolating technology and multiple sizes ear-tips for comfortable fit. Compatible with smart phone and other portable player for universal 3.5 mm audio jack."
+  },
+  {
+    "name": "et-q29",
+    "title": "ET-Q29",
+    "type": "EARPHONE",
+    "img": "ET-Q29.png",
     "colors": ["#ffffff"],
     "features": [
       {
@@ -660,6 +838,44 @@
     "title": "ET-S19",
     "type": "STAND",
     "img": "ET-S19.png",
+    "colors": ["#000000"],
+    "features": [
+      {
+        "name": "Premium Material",
+        "img": "material.svg"
+      },
+      {
+        "name": "360° Rotation",
+        "img": "360.svg"
+      }
+    ],
+    "specs": [],
+    "description": "It adopts double shaft design, double adjustment of angle and height. A charging jackis reserved at the bottom of the groove. Long-term use will not damage the machine, and will not shake."
+  },
+  {
+    "name": "et-s20",
+    "title": "ET-S20",
+    "type": "STAND",
+    "img": "ET-S20.png",
+    "colors": ["#000000"],
+    "features": [
+      {
+        "name": "Premium Material",
+        "img": "material.svg"
+      },
+      {
+        "name": "360° Rotation",
+        "img": "360.svg"
+      }
+    ],
+    "specs": [],
+    "description": "It adopts double shaft design, double adjustment of angle and height. A charging jackis reserved at the bottom of the groove. Long-term use will not damage the machine, and will not shake."
+  },
+  {
+    "name": "et-s21",
+    "title": "ET-S21",
+    "type": "STAND",
+    "img": "ET-S21.png",
     "colors": ["#000000"],
     "features": [
       {
@@ -844,6 +1060,26 @@
     "category": true,
     "type": "USB CONNECTOR",
     "img": "ET-TC02.png",
+    "colors": ["#F5D284"],
+    "features": [
+      {
+        "name": "High Speed Transfer Rate",
+        "img": "bolt.svg"
+      },
+      {
+        "name": "2 in one usb",
+        "img": "usb-drive.svg"
+      }
+    ],
+    "specs": [],
+    "description": "OTG Function allows you to transfer files from USB flash drives and connect USB peripherals. Easily back up essential files stored on your phone. Stream movies and music from your external hard drive on your phone. Supports high speed transfer rates of upto 480Mbps"
+  },
+  {
+    "name": "et-tc04",
+    "title": "ET-TC04",
+    "category": true,
+    "type": "USB CONNECTOR",
+    "img": "ET-TC04.png",
     "colors": ["#F5D284"],
     "features": [
       {
