@@ -10,7 +10,7 @@
     "tailwindcss": "tailwindcss -i ./src/_static/css/input.css -o ./src/_static/css/tailwind.css",
     "push": "git add . && git commit -m 'changes' && git push",
     "pages": "git subtree push --prefix public origin gh-pages",
-    "update": "picogen clean  && npm run tailwindcss && picogen generate -s -f && npm run push && npm run pages"
+    "update": "picogen clean  && npm run tailwindcss && picogen generate -s -f && npm run push"
   },
   "keywords": [],
   "author": "",

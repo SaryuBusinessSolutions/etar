@@ -19,14 +19,6 @@ window.onload = () => {
 }
 
 window.onscroll = ()=>{
-  let nav = document.querySelector("#navbar");
-  if (document.body.scrollTop > h * 0.15 || document.documentElement.scrollTop > h * 0.15) {
-    nav.classList.add("bg-white", "bg-opacity-20", "backdrop-blur-sm");
-    nav.classList.remove("opacity-30");
-  } else {
-    nav.classList.add("opacity-30");
-    nav.classList.remove("bg-white", "bg-opacity-20", "backdrop-blur-sm");
-  }
 }
 
 // function
@@ -60,7 +52,6 @@ function loaded() {
 function navbarfix() {
   try {
     let navHeight = document.querySelector('#navbar').scrollHeight;
-    console.log(navHeight)
     document.querySelector("#navfix").style.height = navHeight + "px";
     document.querySelector("#maxhfix").style.minHeight = document.querySelector("#maxhfix").clientHeight - navHeight + "px";
   } catch (error) {
