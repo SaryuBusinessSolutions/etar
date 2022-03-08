@@ -8,19 +8,19 @@ jobs:
     - name: 🚚 Get latest code
       uses: actions/checkout@v2.3.2
     
-    # - name: 📂 Sync files
-    #   uses: SamKirkland/FTP-Deploy-Action@4.0.0
-    #   with:
-    #     server: 194.5.156.49
-    #     username: ${{secrets.FTP_USER}}
-    #     password: ${{secrets.FTP_PASSWORD}}
-    #     local-dir: ./public/
-    #     dry-run: false
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.0.0
+      with:
+        server: 194.5.156.49
+        username: ${{secrets.FTP_USER}}
+        password: ${{secrets.FTP_PASSWORD}}
+        local-dir: ./public/
+        dry-run: false
 
-    # - name: Purge cache
-    #   uses: nathanvaughn/actions-cloudflare-purge@master
-    #   if: success()
-    #   # if: false
-    #   with:
-    #     cf_zone: ${{ secrets.CLOUDFLARE_ZONE }}
-    #     cf_auth: ${{ secrets.CLOUDFLARE_AUTH_KEY }}
+    - name: Purge cache
+      uses: nathanvaughn/actions-cloudflare-purge@master
+      if: success()
+      # if: false
+      with:
+        cf_zone: ${{ secrets.CLOUDFLARE_ZONE }}
+        cf_auth: ${{ secrets.CLOUDFLARE_AUTH_KEY }}
