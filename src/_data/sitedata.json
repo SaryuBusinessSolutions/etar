@@ -6,6 +6,6 @@
   "image": "avicon.ico",
   "favicon": "favicon.ico",
   "removehtmlext": true,
-  "removehtmlextgen": false,
+  "removehtmlextgen": true,
   "postPath": "/posts"
 }
