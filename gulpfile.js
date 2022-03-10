@@ -3,8 +3,8 @@ const minifyCss = require("gulp-clean-css");
 const concat = require("gulp-concat");
 const minifyJs = require("gulp-uglify");
 
-const cssfiles = "{fontawsome,splide,sal,odometer,tailwind,main}";
-const jsfiles = "{alpine,splide,sal,odometer,main}";
+const cssfiles = "{fontawsome,locomotive,swiper,tailwind,main}";
+const jsfiles = "{alpine,locomotive,swiper,fuse,main}";
 const cssDest = "./public/css";
 const jsDest = "./public/js";
 // const cssDest = "./src/_static/css";

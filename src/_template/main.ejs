@@ -7,12 +7,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <% include('main/seo') %>
 
+  <% if(_production){ %>
+  <link rel="stylesheet" href="<%- page.srcfix %>css/bundle.css">
+  <% }else{ %>
   <link rel="stylesheet" href="<%- page.srcfix %>css/fontawsome.css">
   <link rel="stylesheet" href="<%- page.srcfix %>css/locomotive.css">
   <link rel="stylesheet" href="<%- page.srcfix %>css/swiper.css" />
   <link rel="stylesheet" href="<%- page.srcfix %>css/tailwind.css">
   <link rel="stylesheet" href="<%- page.srcfix %>css/main.css">
-</head>
+  <% } %>
+  </head>
 
 <body srcfix="<%- page.srcfix %>" x-data="{navOpen:false,test:'wokring'}" data-scroll-container class="max-w-full overflow-x-hidden">
   <%- include("main/preloader") %>
@@ -21,11 +25,15 @@
   <!-- <%- include('mini/alert') %> -->
   <%- include("main/footer") %>
 
+  <% if(_production){ %>
+  <script defer src="<%- page.srcfix %>js/bundle.js"></script>
+  <% }else{ %>
   <script defer src="<%- page.srcfix %>js/alpine.js"></script>
   <script defer src="<%- page.srcfix %>js/locomotive.js"></script>
   <script defer src="<%- page.srcfix %>js/swiper.js"></script>
   <script defer src="<%- page.srcfix %>js/fuse.js"></script>
   <script defer src="<%- page.srcfix %>js/main.js"></script>
+  <% } %>
 </body>
 
 </html>
