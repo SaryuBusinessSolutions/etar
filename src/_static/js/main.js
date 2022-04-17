@@ -218,7 +218,7 @@ function composeContactMail(formData) {
   body += formData.has('message') ? "<p><strong>message :</strong> " + formData.get('message') + "</p>" : "";
   return {
     subject,
-    bodyfirst_name
+    body
   };
 }
 
