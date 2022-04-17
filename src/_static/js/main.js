@@ -208,13 +208,41 @@ function playPauseVideo() {
   });
 }
 
-function sendResponse(event, formName) {
-  if (document.submitted) {
-    document.submitted = undefined;
-    document[formName].reset();
-    alert('Response recorded')
-    // showNotification('Response recorded')
-  } else {
-    document.submitted = true;
-  }
+function composeContactMail(formData) {
+  let subject, body;
+  subject = formData.has('first_name') ? "New Form Submision by " + formData.get('first_name') : "New Form Submision";
+  body = "<h2 style='text-align: center;'>Form Data</h2><br>";
+  body += formData.has('first_name') ? "<p><strong>first name :</strong> " + formData.get('first_name') + "</p>" : "";
+  body += formData.has('last_name') ? "<p><strong>last name :</strong> " + formData.get('first_name') + "</p>" : "";
+  body += formData.has('email') ? "<p><strong>email :</strong> " + formData.get('email') + "</p>" : "";
+  body += formData.has('message') ? "<p><strong>message :</strong> " + formData.get('message') + "</p>" : "";
+  return {
+    subject,
+    bodyfirst_name
+  };
+}
+
+function submitForm(event) {
+  event.preventDefault();
+  let formData = new FormData(event.target);
+  let {
+    subject,
+    body
+  } = composeContactMail(formData);
+  formData.append("subject", subject);
+  formData.append("body", body);
+  event.target.reset()
+  alert("sending")
+  fetch("https://api.saryuweb.com/email", {
+    method: "POST",
+    body: formData,
+  }).then((response) => {
+    return response.text();
+  }).then((data) => {
+    console.log(data);
+    alert("message sent")
+  }).catch((error) => {
+    console.log(error);
+    alert("error occured")
+  })
 }
