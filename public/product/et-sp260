@@ -317,15 +317,11 @@
       <p class="text-white text-sm">
         Subscribe to get notified about product launches, special offers and company news.
       </p>
-      <form
-        action="https://docs.google.com/forms/u/1/d/e/1FAIpQLScumeD0ko8LfE4Vzg-mNyGxmuReiPOA8N69jTZXJqjSS_5q9w/formResponse"
-        target="email_iframe" onsubmit="sendResponse(event,'email_form')"  method="post" name="email_form"
-        class="flex flex-col space-y-3">
-        <input type="text" name="entry.1691315444" class="w-full px-3 text-lg py-2 rounded focus:ring-transparent"
-          placeholder="Enter Your Email Address">
+      <form onsubmit="submitForm(event)" class="flex flex-col space-y-3">
+        <input type="text" name="news_mail" placeholder="Enter Your Email Address"
+         class="w-full px-3 text-lg py-2 rounded focus:ring-transparent">
         <button type="submit" class="button-1 rounded mr-auto">SUBSCRIBE</button>
       </form>
-      <iframe name="email_iframe" class="hidden" onload="if(document.submitted) sendResponse(event,'email_form')"></iframe>
     </div>
   </div>
   <div class="container mx-auto spcae-y-2 text-white">

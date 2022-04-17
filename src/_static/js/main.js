@@ -210,6 +210,15 @@ function playPauseVideo() {
 
 function composeContactMail(formData) {
   let subject, body;
+  if (formData.has('news_mail')) {
+    subject = formData.has('news_mail') ? "Newsletter subscription by  " + formData.get('news_mail') : "";
+    body = "<h2 style='text-align: center;'>Form Data</h2><br>";
+    body += formData.has('news_mail') ? "<p><strong>email :</strong> " + formData.get('news_mail') + "</p>" : "";
+    return {
+      subject,
+      body
+    };
+  }
   subject = formData.has('first_name') ? "New Form Submision by " + formData.get('first_name') : "New Form Submision";
   body = "<h2 style='text-align: center;'>Form Data</h2><br>";
   body += formData.has('first_name') ? "<p><strong>first name :</strong> " + formData.get('first_name') + "</p>" : "";
@@ -228,7 +237,7 @@ function submitForm(event) {
   let {
     subject,
     body
-  } = composeContactMail(formData);
+  } = composeContactMail(formData,);
   formData.append("subject", subject);
   formData.append("body", body);
   event.target.reset()
